@@ -1,0 +1,1387 @@
+
+<!-- saved from url=(0119)http://w151.hg3088.com/app/member/browse_FS/loadgame_R.php?uid=448e0b6dm10236972l44080627&langx=zh-cn&FStype=BK&mtype=4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title></title>
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=0,Transition=5)">
+<link rel="stylesheet" href="mem_body_olympics_cn.css" type="text/css">
+<link rel="stylesheet" href="mem_body_fs.css" type="text/css">
+<script>
+﻿top.str_input_pwd = "密码请务必输入!!";
+top.str_input_repwd = "确认密码请务必输入!!";
+top.str_err_pwd = "密码确认错误,请重新输入!!";
+top.str_pwd_limit = "密码必须是6-12个字元组成。";
+top.str_pwd_limit2 = "密码必须由数字和字母组成。";
+top.str_pwd_NoChg = "您的新密码必须和现用密码不一样。";
+top.str_pwd_NowErr="您的现用密码不正确，请重试。";
+top.str_input_longin_id = "登录帐号请务必输入!!";
+top.str_longin_limit1 = "登录帐号最少必须有2个英文大小写字母和数字(0~9)组合输入限制(6~12字元)";
+top.str_longin_limit2 = "您的登录帐号需使用字母加上数字!!";
+top.str_o="单";
+top.str_e="双";
+top.str_checknum="验证码错误,请重新输入";
+top.str_irish_kiss="和";
+top.dPrivate="私域";
+top.dPublic="公有";
+top.grep="群组";
+top.grepIP="群组IP";
+top.IP_list="IP列表";
+top.Group="组别";
+top.choice="请选择";
+top.account="请输入帐号!!";
+top.password="请输入密码!!";
+top.S_EM="特早";
+top.alldata="全部";
+top.webset="资讯网";
+top.str_renew="更新";
+top.outright="冠军";
+top.financial="金融";
+top.str_HCN = new Array("主","客","无");
+
+//====== Live TV
+top.str_FT = "足球";
+top.str_BK = "篮球";
+top.str_TN = "网球";
+top.str_VB = "排球";
+top.str_BS = "棒球";
+top.str_OP = "其他";
+
+top.str_order_FT = "足球";
+top.str_order_BK = "篮球 / 美式足球 / 橄榄球";
+top.str_order_TN = "网球";
+top.str_order_VB = "排球 / 羽毛球 / 兵乓球";
+top.str_order_BS = "棒球";
+top.str_order_OP = "其他";
+
+
+top.str_fs_FT = "足球 : ";
+top.str_fs_BK = "篮球和美式足球 : ";
+top.str_fs_TN = "网球 : ";
+top.str_fs_VB = "排球 : ";
+top.str_fs_BS = "棒球 : ";
+top.str_fs_OP = "其他体育 : ";
+
+top.str_game_list = "所有球类";
+top.str_date_list = "所有日期";
+top.str_second = "秒";
+top.str_demo = "样本播放";
+top.str_alone = "独立";
+top.str_back = "返回";
+top.str_RB = "LIVE";
+
+top.str_ShowMyFavorite="我的最爱";
+top.str_ShowAllGame="全部赛事";
+top.str_delShowLoveI="移出";
+
+
+top.strRtypeSP = new Array();
+top.strRtypeSP["PGF"]="最先进球";
+top.strRtypeSP["OSF"]="最先越位";
+top.strRtypeSP["STF"]="最先替补球员";
+top.strRtypeSP["CNF"]="第一颗角球";
+top.strRtypeSP["CDF"]="第一张卡";
+top.strRtypeSP["RCF"]="会进球";
+top.strRtypeSP["YCF"]="第一张黄卡";
+top.strRtypeSP["GAF"]="有失球";
+top.strRtypeSP["PGL"]="最后进球";
+top.strRtypeSP["OSL"]="最后越位";
+top.strRtypeSP["STL"]="最后替补球员";
+top.strRtypeSP["CNL"]="最后一颗角球";
+top.strRtypeSP["CDL"]="最后一张卡";
+top.strRtypeSP["RCL"]="不会进球";
+top.strRtypeSP["YCL"]="最后一张黄卡";
+top.strRtypeSP["GAL"]="没有失球";
+top.strRtypeSP["PG"]="最先/最后进球球队";
+top.strRtypeSP["OS"]="最先/最后越位球队";
+top.strRtypeSP["ST"]="最先/最后替补球员球队";
+top.strRtypeSP["CN"]="第一颗/最后一颗角球";
+top.strRtypeSP["CD"]="第一张/最后一张卡";
+top.strRtypeSP["RC"]="会进球/不会进球";
+top.strRtypeSP["YC"]="第一张/最后一张黄卡";
+top.strRtypeSP["GA"]="有失球/没有失球";
+
+
+top.strOver="大";
+top.strUnder="小";
+top.strOdd="单";
+top.strEven="双";
+
+
+//下注警语
+top.message001="请输入下注金额。";
+top.message002="只能输入数字!!";
+top.message003="最低投注额是";
+top.message004="对不起,本场有下注金额最高: ";
+top.message005=" 元限制!!";
+top.message006="最高投注额设在";
+top.message007="总下注金额已超过单场限额。";
+top.message008="本场累计下注共: ";
+top.message009="\n总下注金额已超过单场限额";
+top.message010="下注金额不可大于信用额度。";
+top.message011="可赢金额：";
+top.message012="<br>确定进行下注吗?";
+top.message013="确定进行下注吗?<br>";
+top.message014='未输入下注金额!!!';
+top.message015="下注金额只能输入数字";
+top.message016="\n\n确定进行下注吗?";
+top.message017="串1";
+top.message018="队联碰";
+top.message019="您必须选择至少";
+top.message020="个队伍,否则不能下注!!";
+top.message021="不接受";
+top.message022="串过关投注!!";
+top.message023="请输入欲下注金额!!";
+top.message024="已超过某场次之过关注单限额!!";
+top.message025="下注金额不可大于信用额度。";
+top.message026="请选择下注队伍!!";
+top.message027="单式投注请至单式下注页面下注!!";
+top.message028="仅接受";
+top.message029="串投注!!";
+top.message030="确定要进行交易吗？";
+
+top.message031="请输入要搜寻的文字";
+top.message032="找不到相符项目";
+top.message033="你的浏览器不支援";
+
+
+top.page="页";
+top.refreshTime="刷新";
+top.showmonth="月";
+top.showday="日";
+
+top.str_RB ="滚球";
+top.Half1st="上半滚球";
+top.Half2nd="下半滚球";
+
+top.mem_logut="您的帐号已登出";
+top.retime1H="上";
+top.retime2H="下";
+
+top.str_otb_close="赛事已关闭。";
+//奧運用
+top.no_oly="您选择的项目暂时没有赛事。请查看冠军玩法。";</script>
+<script>
+
+var Showtypes="R";
+var ordersR=new Array();
+var ordersOU=new Array();
+var keep_rs_windows="";
+var se="90";
+var sessions="2";
+var keep_action1="";
+var keep_leg="";
+var Ratio=new Array();
+var defaultOpen = true;			// 預設盤面顯示全縮 或是 全打開
+var NoshowLeg=new Array();
+function showgame_table(){
+	
+	init();
+	//obj_msg = document.getElementById('real_msg');
+	//obj_msg.innerHTML = '<marquee scrolldelay=\"300\">'+msg+'</marquee>';
+	var tmp_outright='';
+	if(parent.rtype=='fs'){
+		tmp_outright=eval("top.str_fs_"+FStype)+top.outright;
+	}else{
+		tmp_outright=top.financial;
+	}
+	obj_TMP_ITEM = document.getElementById('tmp_TMP_ITEM');
+	obj_TMP_ITEM.innerHTML=tmp_outright;
+	
+	start_time=get_timer();
+	var AllLayer="";
+	var layers="";
+	//var shows=showlayers.innerHTML;
+	var tr_data="";
+	if(document.all){
+     		var shows=showlayers.innerText;
+     		tr_data=document.getElementById('glist').innerText;
+     		//notrdata=document.getElementById('NoDataTR').innerText;
+	} else{
+			var shows=showlayers.textContent;
+     	 	tr_data=document.getElementById('glist').textContent;
+     	 	//notrdata=document.getElementById('NoDataTR').textContent;
+	}
+	notrdata=document.getElementById('NoDataTR').innerHTML;
+	
+//	var tr_data=document.getElementById('glist').innerHTML;
+	doings="";
+	keep_leg="";
+  	for (i=0;i<gamount;i++){
+		gid=GameFT[i][0];
+		AllLayer+=layer_screen(gid,tr_data);
+		
+	}
+  	if(AllLayer=="")AllLayer=notrdata;
+  	showgames.innerHTML=shows.replace("*ShowGame*",AllLayer);
+	
+	
+	
+	if (defaultOpen){
+		for (i=0;i<gamount;i++){
+			gid=GameFT[i][0];
+			leg=GameFT[i][2];
+			//alert(NoshowLeg[gid])
+			if (NoshowLeg[gid+"_"+leg]*1==-1){
+				document.getElementById('TR'+gid).style.display="none";
+				document.getElementById('TR_1_'+gid).style.display="none";
+				//document.getElementById(leg).innerHTML="<span id='LegClose'></span>";				
+
+			}else{
+				//document.getElementById(leg).innerHTML="<span id='LegOpen'></span>";
+				if (document.getElementById('TR'+gid)!=null){
+					document.getElementById('TR'+gid).style.display="";
+					document.getElementById('TR_1_'+gid).style.display="";
+				}
+			}
+		}
+	}
+	
+	var conscroll= document.getElementById('controlscroll');
+	conscroll.style.display="none";
+	//document.getElementById('pages').innerHTML=get_timer()-start_time;
+	loadingOK();
+	
+		try{
+		parent.mem_order.document.getElementById('today_btn').className="today_btn";
+		parent.mem_order.document.getElementById('early_btn').className="early_btn";
+		}catch(E){}			
+	
+		if (top.hot_game!="" || top.swShowLoveI){
+		document.getElementById('sel_leagues').style.display='none';
+ 		}else{
+ 		document.getElementById('sel_leagues').style.display='';
+ 		}	
+	
+		showHOT(gameCount);
+		parent.mem_order.getCountHOT(gameCount);
+		
+	
+}
+function layer_screen(gid,layers){	
+	//檢查賠率是否有變動
+	changeRatio=check_ratio(gid).split(",");	
+		param=getpararm('2');
+		gno=gidx[gid];
+		layers=layers.replace(/\*GID\*/g,GameFT[gno][0]);/*gid*/
+		//layers=layers.replace("*GID*",GameFT[gno][0]);/*gid*/ 
+		layers=layers.replace("*TIME*",(GameFT[gno][1]));/*時間*/
+		layers=layers.replace(/\*LEG\*/g,GameFT[gno][2]);/*聯盟*/
+		
+		
+		if (keep_leg==GameFT[gno][2]) layers=layers.replace("*ST*","style='display: none'");
+		else layers=layers.replace("*ST*","");
+		
+		//--------------判斷聯盟底下的賽事顯示或隱藏----------------
+	
+		if (NoshowLeg[GameFT[gno][0]+"_"+GameFT[gno][2]]==-1){
+			//layers=layers.replace(/\*CLASS\*/g,"style='display: none;'");
+			layers=layers.replace("*LegMark*","<span id='LegClose'></span>"); //聯盟的小圖
+		}else{
+			//layers=layers.replace(/\*CLASS\*/g,"style='display: ;'");
+			layers=layers.replace("*LegMark*","<span id='LegOpen'></span>");  //聯盟的小圖
+		}		
+		keep_leg=GameFT[gno][2]
+		layers=layers.replace("*ITEM*",GameFT[gno][3]); /*場次*/
+		if (parent.LegGame.indexOf((GameFT[gno][2]+"_").replace("<br>"," ").replace(" _","_"),0)<0 && parent.LegGame!="ALL" ) return ""; //select game
+		if (GameFT[gno][4]=="N"){
+			return "";
+		}else{
+			layers=layers.replace("*CLASS*",'bgcolor=#ffffff');
+		}
+		var teamdata=new Array();
+		teamdata[0]="<table class='b_tab' cellpadding=0 cellspacing=0 border=0>";
+		teamdata[1]="<table class='b_tab' cellpadding=0 cellspacing=0 border=0>";
+		var countRec=0;
+		result="";
+		if (GameFT[gno][5]*1>0){
+			for (k=0;k<GameFT[gno][5];k++){
+				if (GameFT[gno][6+k*4]=="N") {
+					if (GameFT[gno][9+k*4]*1==0) {
+						GameFT[gno][9+k*4]="";
+					}else{
+						countRec++;
+						GameFT[gno][9+k*4]=printf(GameFT[gno][9+k*4],2);
+						teamdata[countRec%2]+="<tr><td bgcolor=white width=90% class='team_name'>"+result+GameFT[gno][8+k*4]+ "</td>";
+						//teamdata[countRec%2]+="<td "+getcolor(changeRatio,k)+" width=60 class='r_bold' bgcolor=white><font class='b_cen' title=\""+GameFT[gno][8+k*4]+"\" style='cursor:hand' onclick=parent.mem_order.location.href='../FT_order/FT_order_nfs.php?gametype="+GameFT[i][(GameFT[i].length-1)]+"&gid="+GameFT[i][0]+"&uid="+parent.uid+"&rtype="+GameFT[gno][7+k*4]+"&wtype="+parent.rtype.toUpperCase()+"'>"+GameFT[gno][9+k*4]+"</font></td></tr>";
+						param="gametype="+GameFT[i][(GameFT[i].length-1)]+"&gid="+GameFT[i][0]+"&uid="+parent.uid+"&rtype="+GameFT[gno][7+k*4]+"&wtype="+parent.rtype.toUpperCase()+"&langx="+top.langx;
+						teamdata[countRec%2]+="<td "+getcolor(changeRatio,k)+" width=60 class='r_bold' bgcolor=white><font class='b_cen' title=\""+GameFT[gno][8+k*4]+"\" style='cursor:hand' onclick=\"parent.mem_order.betOrder('FT','NFS','"+param+"');\">"+GameFT[gno][9+k*4]+"</font></td></tr>";
+						
+					}
+				}
+			}
+		}
+		
+		if (countRec%2==1){
+			teamdata[0]+="<tr><td bgcolor=white width=90% class='team_name'>&nbsp;</td>";
+			teamdata[0]+="<td width=60 class='r_bold' bgcolor=white>&nbsp;</td></tr>";
+		}
+		teamdata[0]+="</table>";
+		teamdata[1]+="</table>";
+		orders="";
+		//alert(teamdata);
+		layers=layers.replace("*ORDER*",orders);
+		layers=layers.replace("*TEAM1*",teamdata[1]);
+		layers=layers.replace("*TEAM2*",teamdata[0]);
+		//layers=layers.replace("*IORATIO*",teamdata_R);
+		
+		
+	return layers;
+}
+
+function getcolor(changeRatio,Rpos){
+	if (changeRatio[Rpos]=="1"){
+		backgrounds=" style='background-color:yellow' ";
+	}else{
+		 backgrounds="";
+	}
+	return backgrounds;
+	}
+//檢查賠率
+function check_ratio(gid){
+	gnos=gidx[gid];
+	var changes="";
+	if (""+Ratio[gid]=="undefined"){ 
+		Ratio[gid]=new Array();
+		}
+	for (u=0;u<(GameFT[gnos][5]+1);u++){
+		if (""+Ratio[gid][u]!="undefined"){ 
+			if (Ratio[gid][u]!=GameFT[gnos][9+u*4]){
+				changes+="1,";
+			}else changes+="0,";
+		}else changes+="0,";
+	eval("Ratio[gid]["+u+"]=GameFT[gnos]["+(9+u*4)+"];");	
+	}
+	return changes;
+}
+
+
+function showLEG(gid){
+	tmp_leg=GameFT[gidx[gid]][2];
+	for (x=0;x < GameFT.length;x++){
+		if (tmp_leg==GameFT[x][2]){//&&gid==GameFT[x][0]){
+			gid=GameFT[x][0];
+			if ((""+NoshowLeg[gid+"_"+tmp_leg])=="undefined"){
+				NoshowLeg[gid+"_"+tmp_leg]=-1;
+			}else{
+				NoshowLeg[gid+"_"+tmp_leg]=NoshowLeg[gid+"_"+tmp_leg]*-1;
+			}
+			if(document.getElementById('TR'+gid).style.display=="none"){
+				document.getElementById('TR'+gid).style.display="";
+				document.getElementById('TR_1_'+gid).style.display="";
+				document.getElementById(gid+"_"+tmp_leg).innerHTML="<span id='LegOpen'></span>";
+			}else{
+				document.getElementById(gid+"_"+tmp_leg).innerHTML="<span id='LegClose'></span>";		
+				document.getElementById('TR'+gid).style.display="none";
+				document.getElementById('TR_1_'+gid).style.display="none";
+			}
+		}
+	}
+	
+	
+	
+
+
+	}
+
+//===選擇區域===
+function chg_area(){
+	var obj_area = document.getElementById('sel_aid');
+	sel_area=obj_area.value;
+	parent.sel_area=sel_area;
+	homepage="reloadgame_"+Showtypes+".php?"+get_pageparam();
+	//alert(homepage);
+	reloadPHP.location.href=homepage;
+	
+}
+
+function ShowArea(aid){
+	//if ((""+aid=="undefined")) aid="";	
+	area_data = "";
+	var temp = "";
+	var temparray = new Array();
+	var area = document.getElementById("area");
+	var bodyA = document.getElementById("bodyA");
+	var show_a = document.getElementById("show_a");
+//	var temparea = area.innerText;
+	var temparea;
+		if(document.all){
+ 		 temparea= area.innerText;
+	} else{
+     	 temparea = area.textContent ;
+    	}
+	
+	
+	txt_bodyA = bodyA.innerHTML;
+	if(areasarray != '') {
+		area_data = areasarray.split(",");
+		for(i=1; i<area_data.length; i++) {
+			temparray = area_data[i].split("*");
+			txt_area = temparea.replace("*AREA_ID*",temparray[0]);
+			if(aid == temparray[0]) txt_area = txt_area.replace("*SELECT_AREA*","SELECTED");
+			else txt_area = txt_area.replace("*SELECT_AREA*","");
+			txt_area = txt_area.replace("*AREA_NAME*",temparray[1]);
+			temp += txt_area;
+		}
+		txt_bodyA = txt_bodyA.replace("*SHOW_A*",temp);
+	} else {
+		txt_bodyA =txt_bodyA.replace("*SHOW_A*","");
+	}
+	sel_areas.innerHTML=txt_bodyA;
+}
+
+//===選擇類別===
+function chg_item(){
+	var obj_item = document.getElementById('sel_itemid');
+	sel_item=obj_item.value;
+	parent.sel_item=sel_item;
+	homepage="reloadgame_"+Showtypes+".php?"+get_pageparam();
+	//alert(homepage);
+	reloadPHP.location.href=homepage;
+	
+}
+
+function ShowItem(FS_items){
+	item_data = "";
+	var temp = "";
+	var temparray = new Array();
+	var item = document.getElementById("item");;
+	var bodyI = document.getElementById("bodyI");
+	var show_i = document.getElementById("show_i");
+//	var tempitem = item.innerText;
+		var tempitem;
+	if(document.all){
+ 		 tempitem= item.innerText;
+	} else{
+     	 tempitem = item.textContent ;
+    	}
+	txt_bodyI = bodyI.innerHTML;
+	if(itemsarray != '') {
+		item_data = itemsarray.split(",");
+		for(i=1; i<item_data.length; i++) {
+			temparray = item_data[i].split("*");
+			txt_item = tempitem.replace("*ITEM_ID*",temparray[0]);
+			if(FS_items == temparray[0]) txt_item = txt_item.replace("*SELECT_ITEM*","SELECTED");
+			else txt_item = txt_item.replace("*SELECT_ITEM*","");
+			txt_item = txt_item.replace("*ITEM_NAME*",temparray[1]);
+			temp += txt_item;
+		}
+		txt_bodyI = txt_bodyI.replace("*SHOW_I*",temp);
+	} else {
+		txt_bodyI =txt_bodyI.replace("*SHOW_I*","");
+	}
+	sel_items.innerHTML=txt_bodyI;
+}
+
+//===選擇聯盟===
+/*
+function chg_league(){
+	var obj_league = document.getElementById('sel_leagueid');
+	sel_league=obj_league.value;
+	parent.sel_league=sel_league;
+	homepage="reloadgame_"+Showtypes+".php?"+get_pageparam();
+	//alert(homepage);
+	reloadPHP.location.href=homepage;
+//	reloadPHP.src=homepage;
+}
+*/
+function chg_league(){
+//	var legframe= document.getElementById('legFrame');
+	var legview =document.getElementById('legView');
+	//alert("./body_var_lid.php?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype;);
+	try{
+		legFrame.location.href="./body_var_lid.php?"+get_pageparam();
+	}catch(e){
+		legFrame.src="./body_var_lid.php?"+get_pageparam();
+	}
+	legview.style.display='block';
+	legview.style.top=  document.body.scrollTop+82; //21+34+25+10;
+	legview.style.left=10; //100;
+	//self.location="./body_var_lid.php?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype;
+}
+
+function ShowLeague(lid){
+	league_data = "";
+	var temp = "";
+	var temparray = new Array();
+	var league = document.getElementById("league");
+	var bodyI = document.getElementById("bodyL");
+	var templeague;
+	if(document.all){
+ 		 templeague= league.innerText;
+	} else{
+     	 templeague = league.textContent ;
+    	}
+	
+	//var templeague = league.innerText;
+	txt_bodyI = bodyI.innerHTML;
+	if(leaguearray != '') {
+		league_data = leaguearray.split(",");
+		for(i=1; i<league_data.length; i++) {
+			temparray = league_data[i].split("*");
+			txt_league = templeague.replace("*LEAGUE_ID*",temparray[0]);
+			if(lid == temparray[0]) txt_league = txt_league.replace("*SELECT_LEAGUE*","SELECTED");
+			else txt_league = txt_league.replace("*SELECT_LEAGUE*","");
+			txt_league = txt_league.replace("*LEAGUE_NAME*",temparray[1]);
+			temp += txt_league;
+		}
+		txt_bodyI = txt_bodyI.replace("*SHOW_I*",temp);
+	} else {
+		txt_bodyI =txt_bodyI.replace("*SHOW_I*","");
+	}
+	sel_leagues.innerHTML=txt_bodyI;
+}
+
+function loadingOK(){
+	//alert("loadingOK")
+	//try{
+		document.getElementById("rsu_refresh").className="rsu_refresh";
+	//}catch(E){}
+	
+}
+</script>
+<script>
+//-------------------onmouse over out變色---------------------------------
+//if(top.uid=="" || self==top || top.document.domain!=document.domain){ top.location="http:/"+"/"+document.domain;}
+var bgclass="";
+var futrue="";
+var GameFT=new Array();
+var gidx=new Array();
+parent.records=40;
+var Npages=1;
+var rang=0;
+var choice="";
+
+function mouseover_pointer(mouseTR){
+	//alert("11111111");
+	bgclass=mouseTR.bgColor;
+	//mouseTR.className='tr_over';
+	trid=(mouseTR.id).replace("C","");
+	eval("document.getElementById('"+trid+"').bgColor='gold'");
+	try{
+	eval("document.getElementById('"+trid+"C').bgColor='gold'");
+	}catch(E){}
+}
+
+function mouseout_pointer(mouseTR){
+	if (bgclass!="")
+		{
+		//mouseTR.className=bgclass;
+		trid=(mouseTR.id).replace("C","");
+		eval("document.getElementById('"+trid+"').bgColor='"+bgclass+"'");
+		try{
+			eval("document.getElementById('"+trid+"C').bgColor='"+bgclass+"'");
+		}catch(E){}
+	}
+}
+/*
+---------------reload time------------------
+*/
+var ReloadTimeID="";
+var showtime=0;
+var LeagueAry=new Array();
+function set_reloadtime(){
+	//showclass.innerHTML=shows.replace("*showclass*","class=\"FS"+FStype+"\"");
+	//if((""+eval("parent.FS"+FStype+"_lname_ary"))=="undefined") eval("parent.FS"+FStype+"_lname_ary='ALL'");
+	//if((""+eval("parent.FS"+FStype+"_lid_ary"))=="undefined") eval("parent.FS"+FStype+"_lid_ary='ALL'");
+	//alert("try=>"+eval("top.FS"+FStype+"_lid['FS"+FStype+"_lid_ary']"));	
+	document.getElementById("MNFS").className="FS"+FStype;
+	document.getElementById("pg_txt").innerHTML ="&nbsp;";
+	showtime=parent.retime;
+	count_down();
+	
+	parent.sel_league=lidURL(eval("top.FS"+FStype+"_lid['FS"+FStype+"_lid_ary']"));
+	if(parent.sel_league=="ALL")parent.sel_league="";	
+	coun_Leagues();
+	//alert('reloadgame_'+Showtypes+".php?mid="+parent.mid+"&"+get_pageparam());
+	reloadPHP.location.href='reloadgame_'+Showtypes+".php?mid="+parent.mid+"&"+get_pageparam();
+}
+function lidURL(str){
+	var showstr="";
+	var strray=str.split('-'); 
+	for(var i =0;i<strray.length;i++){
+		if(strray[i]=="")continue;
+		if(showstr!=""){
+			showstr+="-";
+		}
+		showstr+=strray[i];
+	}
+	return showstr;
+}
+function coun_Leagues(){
+	var coun=0;
+	var str_tmp ="-"+eval("top.FS"+FStype+"_lid['FS"+FStype+"_lid_ary']");
+	//alert("try=>"+str_tmp);
+	if(str_tmp=='-ALL'){
+		document.getElementById("str_num").innerHTML =top.alldata;
+	}else{
+		var larray=str_tmp.split('-');
+		//alert("===>"+str_tmp+":length=>"+larray.length);
+		
+		for(var i =0;i<larray.length;i++){
+			if(larray[i]!=""){coun++}
+		}
+		//alert("try===>"+coun);
+		//coun =LeagueAry.length;
+		document.getElementById("str_num").innerHTML =coun;
+	}
+}
+function count_down(){
+	return;
+	var rt=document.getElementById('refreshTime');
+	setTimeout('count_down()',1000);
+	if(showtime <= 1){
+		
+		reload_var();
+		return;
+	}
+	showtime--;
+	rt.innerHTML=showtime;
+}
+function reloadtime(){
+	
+	//reloadPHP.location.href='reloadgame_'+Showtypes+".php?uid="+top.uid+"&langx="+top.langx+"&mid="+top.mid;
+	parent.sel_item="";
+	reloadPHP.location.href='reloadgame_'+Showtypes+".php?mid="+parent.mid+"&"+get_pageparam();
+	setrefesh();
+	
+}
+function setrefesh(){
+	//alert("reladtime-------"+top.retime);
+	clearInterval(ReloadTimeID);
+	if ((""+parent.retime=="undefined") || parent.retime=="") parent.retime="X";
+	if (parent.retime != 'X' ){ReloadTimeID = setInterval("reload_var()",parent.retime*1000);}
+	}
+function reload_var(){
+	showtime=parent.retime;
+	parent.sel_league=lidURL(eval("top.FS"+FStype+"_lid['FS"+FStype+"_lid_ary']"));
+	if(parent.sel_league=="ALL")parent.sel_league="";
+	coun_Leagues();
+	reloadPHP.location.href='reloadgame_'+Showtypes+".php?mid="+parent.mid+"&"+get_pageparam();
+
+}
+/*
+----------------功能menu--------------
+*/
+//function change_game(gtype,vals,gid)
+//{
+//if ((gtype=="gopen" || gtype=="strong") && (vals!="all"))
+//	a=confirm(eval("str_"+gtype+vals));
+//else a=true;
+//if (a==true){
+//	alert('FT_Game_change.php?gid='+gid+"&"+gtype+"="+vals+"&ShowType="+Showtypes+"&"+get_pageparam());
+//	self.location.href='FT_Game_change.php?gid='+gid+"&"+gtype+"="+vals+"&ShowType="+Showtypes+"&"+get_pageparam();
+//	}
+//}
+/*
+ 公用 FUNC
+*/
+
+function printf(vals,points){ //小數點位數
+	vals=""+vals;
+	var cmd=new Array();
+	cmd=vals.split(".");
+	if (cmd.length>1){
+		for (ii=0;ii<(points-cmd[1].length);ii++)vals=vals+"0";
+	}else{
+		vals=vals+".";
+		for (ii=0;ii<points;ii++)vals=vals+"0";
+	}
+	return vals;
+}
+
+function get_timer(){return (new Date()).getTime();} // 計數器
+/*
+鍵盤
+*/
+document.onkeypress=checkfunc;
+function checkfunc(e) {
+	switch(event.keyCode){
+	}
+}
+
+function CheckKey(){
+	if(event.keyCode == 13) return true;
+	if (event.keyCode!=46){
+		if((event.keyCode < 48 || event.keyCode > 57))
+		{
+			alert(top.str_only_keyin_num);	/*僅能接受數字!!*/
+			return false;
+		}
+	}
+}
+/*
+parser 球頭
+*/
+function get_cr_str(cr){
+	var crs=new Array();
+	var word ="";
+	if (cr.indexOf("+")>0) {	
+		crs=cr.split("+");		
+		if(crs[0]=="0"){
+			if(crs[1]=="0") word = crs[1].replace('0',top.str_ratio[0]);
+		}else{
+			switch(crs[1]){
+				case '100':
+					//alert(cr);
+					if(crs[0]*1==1){
+						word =top.str_ratio[1];
+					}else{	
+						
+						word =""+(crs[0]*1 - 0.5);
+						
+						word = word.replace('.5',top.str_ratio[2]);	
+					}
+				break;
+				case '50':
+					if(crs[0]*1==1){
+						word =top.str_ratio[1]+"&nbsp;/&nbsp;"+crs[0]+top.str_ratio[3];
+					}else{	
+						word =(crs[0]*1 - 0.5)+"&nbsp;/&nbsp;"+crs[0]+top.str_ratio[3];
+						word = word.replace('.5',top.str_ratio[2]);
+					}
+				break;
+				case '0':
+					word = crs[0]+top.str_ratio[3];
+				break;
+			}
+		}	
+	}
+	
+	if (cr.indexOf("-")>0) {
+		crs=cr.split("-");
+		crs[1]="-"+crs[1];
+		if(crs[0]=="0")	word = top.str_ratio[0]+"&nbsp;/&nbsp;"+top.str_ratio[1];
+		else{
+			word =crs[0]+top.str_ratio[3]+"&nbsp;/&nbsp;"+(1+crs[0]*1 - 0.5);
+			word = word.replace('.5',top.str_ratio[2]);
+		}
+		
+	}
+	if(word=="") return cr;
+	return word;
+}
+
+function get_ou_str(cr){
+	
+	var crs=new Array();
+	var word ="";
+	if (cr.indexOf("+")>0) {	
+		crs=cr.split("+");		
+		if(crs[0]=="0"){
+			if(crs[1]=="0") word = crs[1];
+			if(crs[1]=="50") word = crs[0]+" / "+(crs[0]*1+1 - 0.5);
+		}else{
+			switch(crs[1]){
+				case '100':
+					word =crs[0]*1 - 0.5;	
+				break;
+				case '50':
+					word =(crs[0]*1 - 0.5)+"&nbsp;/&nbsp;"+crs[0];
+				break;
+				case '0':
+					word =crs[0];
+				break;
+			}
+		}	
+	}
+	
+	if (cr.indexOf("-")>0) {
+		crs=cr.split("-");
+		crs[1]="-"+crs[1];
+		word =crs[0]+"&nbsp;/&nbsp;"+(1+crs[0]*1 - 0.5);
+	}
+	
+	
+	if(word=="")return cr;
+	return word;
+}
+function  change_time(get_time){
+	var dates=get_time.split(" ");
+	if (dates.length>1) get_time=dates[1]; 
+	gtime=get_time.split(":");
+	if (gtime[0]>12){
+		return dates[0].substring(5,10) + "<br>" +(gtime[0]*1-12)+":"+gtime[1]+"p";		
+	}else if(gtime[0] == 12){
+		return dates[0].substring(5,10) + "<br>" +gtime[0]+":"+gtime[1]+"p";
+	}
+	
+	return dates[0].substring(5,10) + "<br>" +gtime[0]+":"+gtime[1]+"a";
+}
+/*
+設定分頁
+*/
+function setpage(){
+	
+	//document.getElementById('times').innerHTML=nowtime;
+	
+	var pagehtml="";	
+	
+	if (""+top.pages=="undefined") top.pages=1;
+	if (top.pages<=1) top.pages=1;
+	
+		if (gamount<=(top.records*(top.pages-1))) top.pages=1;
+	
+	for (cc=1;cc<=(Math.floor(gamount/top.records)+1);cc++){
+		if (top.pages==cc)
+			pagehtml+=" <font color=red>"+cc+"</font>";
+		else
+		 pagehtml+=" <font style='cursor:hand' onclick=change_page('"+cc+"')>"+cc+"</font> ";
+		}
+		
+	document.getElementById('pages').innerHTML=pagehtml;
+	}
+function change_page(pages){
+	top.pages=pages;
+	
+	homepage="reloadgame_"+Showtypes+".php?"+get_pageparam();
+	//alert(homepage);
+	reloadPHP.location.href=homepage;
+	}
+function show_xy(){
+	try{
+	if (rs_window.style.visibility=="visible"){
+			top_y=document.body.scrollTop;
+			rs_window.style.top=top_y+200;
+			}
+	}catch(E){}
+}
+function show_layer(showlayer,scrollY){
+
+	try{
+	if (eval(showlayer+".style.visibility=='visible'")){
+			top_y=document.body.scrollTop;
+			eval(showlayer+".style.top=top_y+"+scrollY);
+			}
+	}catch(E){}
+}
+
+
+function change_showtype(){	
+	top.pages=1;	
+	ptypes=document.getElementById('ptype').options[document.getElementById('ptype').selectedIndex].value;	
+	homepage="loadgame_"+ptypes+".php?"+get_pageparam();
+	//alert(homepage);
+	window.location.href=homepage;
+	}
+function show_showRecord()
+{
+	if (""+top.records=="undefined") top.records=-1;
+	 j=0;
+	 for(i=0;i<document.getElementById('showRecord').length;i++){
+			if(document.getElementById('showRecord').options[i].value==top.records) document.getElementById('showRecord').selectedIndex=j;
+			j++;
+			}  
+	
+	
+}
+function set_showRecord()
+{
+	top.pages=1;
+	top.records=document.getElementById('showRecord').options[document.getElementById('showRecord').selectedIndex].value;
+	homepage="loadgame_"+Showtypes+".php?"+get_pageparam();
+	window.location.href=homepage;
+}
+function countdown(){
+	if (keepsec!=""){
+		if (Showtypes=="P1"||Showtypes=="P2"||Showtypes=="P3"){
+			reload_time.innerHTML=keepsec+"&nbsp"+top.str_sec+top.str_auto_upgrade+"&nbsp"+"--"+par_min+"~"+par_max;
+		}else{
+			reload_time.innerHTML=keepsec+"&nbsp"+top.str_sec+top.str_auto_upgrade+"&nbsp";
+		}
+		keepsec--;
+	}
+}
+
+var keepsec="";
+cc=setInterval("countdown()",1000);
+function init(){
+	if ((parent.LegGame=="") || (""+parent.LegGame=='undefined')) parent.LegGame="ALL";
+}
+
+function get_pageparam(){
+	if (choice=="") choice="ALL";
+	if (!parent.LegGame) parent.LegGame="";
+	if (!parent.pages) parent.pages=1;
+	if (!parent.records) parent.records=-1;
+	if ((parent.sel_league=="") || (""+parent.sel_league=="undefined"))parent.sel_league="";
+	if ((parent.sel_item=="") || (""+parent.sel_item=="undefined"))parent.sel_item="";
+	if ((parent.sel_area=="") || (""+parent.sel_area=="undefined"))parent.sel_area="";
+	return parent.base_url+"&choice="+choice+"&LegGame="+parent.LegGame+"&pages="+parent.pages+"&records="+parent.records+"&FStype="+FStype+"&area_id="+parent.sel_area+"&league_id="+parent.sel_league+"&rtype="+parent.rtype+"&hot_game="+top.hot_game; //+"&item_id="+parent.sel_item
+}
+
+function getpararm(se){
+	gtype="FS";
+	param=parent.uid+","+gtype+","+se;
+	return param;
+}
+function getpararmP(){
+	gtype="FS";
+	param=parent.uid+","+gtype;
+	return param;
+}
+function lostFocus(thisButton){
+	thisButton.blur();
+}
+
+
+
+function setleghi(leghight){
+	var legview =document.getElementById('legFrame');
+	
+	if((leghight*1) > 95){
+		legview.height = leghight;
+	}else{
+		
+		legview.height = 95;
+	}
+	
+}
+
+function LegBack(){
+	var legview =document.getElementById('legView');
+	legview.style.display='none';
+	reload_var();
+}
+var keep_drop_layers;
+var dragapproved=false;
+var iex;
+var iey;
+var tempx;
+var tempy;
+if (document.all){
+	document.onmouseup=new Function("dragapproved=false;");
+}
+function initializedragie(drop_layers){
+	keep_drop_layers=drop_layers;
+	iex=event.clientX
+	iey=event.clientY
+	eval("tempx="+drop_layers+".style.pixelLeft")
+	eval("tempy="+drop_layers+".style.pixelTop")
+	dragapproved=true;
+	document.onmousemove=drag_dropie;
+}
+function drag_dropie(){
+	if (dragapproved==true){
+		eval("document.all."+keep_drop_layers+".style.pixelLeft=tempx+event.clientX-iex");
+		eval("document.all."+keep_drop_layers+".style.pixelTop=tempy+event.clientY-iey");
+		return false
+	}
+}
+
+function Euro(){
+	if(top.hot_game!=""){
+		top.hot_game="";
+		top.swShowLoveI=false;
+		document.getElementById("euro_btn").style.display=''; 
+		document.getElementById("euro_up").style.display='none';
+	}else{
+		top.hot_game="HOT_";
+		document.getElementById("euro_btn").style.display='none'; 
+		document.getElementById("euro_up").style.display='';
+	
+	}
+	reload_var();
+
+}
+
+function Eurover(act){
+	if(act.className=="euro_btn"){
+		act.className='euro_over';
+	}else if(act.className=="euro_up"){
+		act.className='euro_up_over';
+	}
+}
+ 
+function Eurout(act){
+ if(act.className=="euro_over"){
+		act.className='euro_btn';
+	}else if(act.className=="euro_up_over"){
+		act.className='euro_up';
+	}
+}
+
+var gameCount="";
+var recordHash=new Array();
+function showHOT(countHOT){
+	
+if( (""+countHOT=="") || (""+countHOT=="undefined") ){
+	
+	document.getElementById("euro_btn").style.display="none";
+	document.getElementById("euro_up").style.display="none";
+			
+}else{		
+	
+	if(""+top.hot_game=="undefined"){
+		top.hot_game="";
+	}	
+	
+	var countgames=countHOT.split(",");
+
+	for( var i=1;i<countgames.length;i++){
+		var detailgame=countgames[i].split("|");
+		recordHash[detailgame[0]+"_"+detailgame[1]]=detailgame[2]*1;
+	}
+	
+	if(recordHash["FS_HOT_"+FStype]*1==0){
+		document.getElementById("euro_btn").style.display="none";
+		document.getElementById("euro_up").style.display="none";
+		
+		if(top.hot_game!=""){
+			top.hot_game="";
+			reload_var();
+		}
+		
+	}else{
+		if(top.hot_game!=""){
+			document.getElementById("euro_btn").style.display="none";
+			document.getElementById("euro_up").style.display="";
+		}else{
+			document.getElementById("euro_btn").style.display="";
+			document.getElementById("euro_up").style.display="none";
+		}
+
+	}
+	
+ }	
+
+}</script>
+<script>
+var FStype='BK';
+parent.uid='448e0b6dm10236972l44080627';
+parent.rtype='fs';
+parent.username='dspi168';
+parent.langx='zh-cn';
+parent.base_url='uid=448e0b6dm10236972l44080627&langx=zh-cn';
+parent.mid='10236972';
+parent.sel_gtype='FSBK';
+parent.retime=180;
+</script></head>
+<body id="MNFS" onload="set_reloadtime();" class="FSBK">
+<!--body id="MNFS" class="bodyset" onLoad="set_reloadtime();" onSelectStart="self.event.returnValue=false" oncontextmenu="self.event.returnValue=false"-->
+<table border="0" cellpadding="0" cellspacing="0" id="box">
+  <tbody><tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td class="top"><h1><em id="tmp_TMP_ITEM">篮球和美式足球 : 冠军</em></h1></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td class="mem"><h2>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" id="fav_bar">
+          <tbody><tr>
+            <td id="page_no"><div id="euro_btn" class="euro_btn" onclick="Euro();" onmouseover="Eurover(this);" onmouseout="Eurout(this);" style="display: none;"><!--奥运--></div><div id="euro_up" class="euro_up" onclick="Euro();" onmouseover="Eurover(this);" onmouseout="Eurout(this);" style="display: none;"><!--所有赛事--></div><span id="pg_txt">&nbsp;</span></td>
+                <td id="tool_td">
+              
+                  <table border="0" cellspacing="0" cellpadding="0" class="tool_box">
+                    <tbody><tr>
+                        <!--td class="sport_btn">选择体育:<div id="sel_areas"></div></td-->
+                        <!--<td class="leg_menu" nowrap>选择联赛:<div  id="sel_leagues"></div></td>-->
+                        <td class="rsu_refresh" id="rsu_refresh" onclick="this.className=&#39;rsu_refresh_on&#39;;"><!--秒数更新--><div onclick="javascript:reload_var()"><font id="refreshTime"></font></div></td>
+                        <td class="leg_btn"><div onclick="javascript:chg_league();" id="sel_leagues">选择联赛 (<span id="str_num">全部</span>)</div></td>
+                        <td class="OrderType"></td>
+                     </tr>
+                  </tbody></table>
+              
+                </td>
+              </tr>
+        </tbody></table>
+      </h2>
+      <!--     资料显示的layer     -->
+      <div id="showgames">
+	
+  <table id="glist_table" border="0" cellpadding="0" cellspacing="1" class="game">
+    <!--tr>
+    <th class="time">时间</th>
+    <th >项目</th>
+     <th width="400">队伍(球员)</th>
+    <th  width="60">赔率</th>
+  </tr-->
+    
+
+  <tbody><tr>
+    <td nowrap="" colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tbody><tr><td class="legicon" onclick="showLEG(&#39;26817&#39;);">
+    <span id="26817_FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+    	<span id="LegOpen"></span>
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="showLEG(&#39;26817&#39;);" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td>
+        <td nowrap="" align="right">2013-09-22 18:00</td>
+        </tr></tbody></table>
+      </td>
+  </tr>
+  <tr id="TR_1_26817" style="">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td nowrap="" align="left">2013冠军</td>
+          
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr id="TR26817" bgcolor="#ffffff" style="">
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">西班牙</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="西班牙" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS06&amp;wtype=FS&amp;langx=zh-cn&#39;);">2.65</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">法国</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="法国" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0B&amp;wtype=FS&amp;langx=zh-cn&#39;);">5.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">斯洛文尼亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="斯洛文尼亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS13&amp;wtype=FS&amp;langx=zh-cn&#39;);">15.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">土耳其</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="土耳其" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS01&amp;wtype=FS&amp;langx=zh-cn&#39;);">26.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">克罗地亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="克罗地亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS07&amp;wtype=FS&amp;langx=zh-cn&#39;);">34.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">意大利</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="意大利" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS17&amp;wtype=FS&amp;langx=zh-cn&#39;);">67.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">格鲁吉亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="格鲁吉亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0F&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">德国</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="德国" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS18&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">大不列颠</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="大不列颠" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS03&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">拉脱维亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="拉脱维亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS09&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">波兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="波兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0C&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">捷克</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="捷克" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS12&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr></tbody></table></td>
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">希臘</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="希臘" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS08&amp;wtype=FS&amp;langx=zh-cn&#39;);">4.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">立陶宛</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="立陶宛" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS04&amp;wtype=FS&amp;langx=zh-cn&#39;);">7.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">塞尔维亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="塞尔维亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS14&amp;wtype=FS&amp;langx=zh-cn&#39;);">21.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">俄罗斯</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="俄罗斯" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0E&amp;wtype=FS&amp;langx=zh-cn&#39;);">26.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">黑山</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="黑山" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS15&amp;wtype=FS&amp;langx=zh-cn&#39;);">51.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">波斯尼亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="波斯尼亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0D&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">马其顿</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="马其顿" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS11&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">比利时</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="比利时" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS02&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">以色列</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="以色列" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS05&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">芬兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="芬兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0A&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">乌克兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="乌克兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS10&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">瑞典</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="瑞典" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26817&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS16&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr></tbody></table></td>
+  </tr>
+
+
+
+
+  <tr>
+    <td nowrap="" colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tbody><tr><td class="legicon" onclick="showLEG(&#39;27175&#39;);">
+    <span id="27175_联盟式橄榄球-澳洲国家赛" class="showleg">
+    	<span id="LegOpen"></span>
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="showLEG(&#39;27175&#39;);" class="leg_bar">联盟式橄榄球-澳洲国家赛</td>
+        <td nowrap="" align="right">2013-09-30 18:00</td>
+        </tr></tbody></table>
+      </td>
+  </tr>
+  <tr id="TR_1_27175" style="">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td nowrap="" align="left">2013冠军</td>
+          
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr id="TR27175" bgcolor="#ffffff" style="">
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">南悉尼兔</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="南悉尼兔" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS07&amp;wtype=FS&amp;langx=zh-cn&#39;);">3.60</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">悉尼公鸡</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="悉尼公鸡" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0A&amp;wtype=FS&amp;langx=zh-cn&#39;);">4.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">坎特伯雷牛头犬</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="坎特伯雷牛头犬" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS04&amp;wtype=FS&amp;langx=zh-cn&#39;);">15.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">克罗纳拉鲨鱼</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="克罗纳拉鲨鱼" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS05&amp;wtype=FS&amp;langx=zh-cn&#39;);">34.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">新西兰勇士</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="新西兰勇士" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0E&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr></tbody></table></td>
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">墨尔本风暴</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="墨尔本风暴" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS10&amp;wtype=FS&amp;langx=zh-cn&#39;);">3.60</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">曼利海雕</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="曼利海雕" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS09&amp;wtype=FS&amp;langx=zh-cn&#39;);">4.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">北昆士兰牛仔</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="北昆士兰牛仔" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS02&amp;wtype=FS&amp;langx=zh-cn&#39;);">26.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">纽卡斯尔骑士</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="纽卡斯尔骑士" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS08&amp;wtype=FS&amp;langx=zh-cn&#39;);">51.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">黄金海岸泰坦</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="黄金海岸泰坦" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27175&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS0D&amp;wtype=FS&amp;langx=zh-cn&#39;);">201.00</font></td></tr></tbody></table></td>
+  </tr>
+
+
+
+
+  <tr>
+    <td nowrap="" colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tbody><tr><td class="legicon" onclick="showLEG(&#39;27176&#39;);">
+    <span id="27176_联合式橄榄球-橄榄球锦标赛" class="showleg">
+    	<span id="LegOpen"></span>
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="showLEG(&#39;27176&#39;);" class="leg_bar">联合式橄榄球-橄榄球锦标赛</td>
+        <td nowrap="" align="right">2013-10-05 18:00</td>
+        </tr></tbody></table>
+      </td>
+  </tr>
+  <tr id="TR_1_27176" style="">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td nowrap="" align="left">2013冠军</td>
+          
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr id="TR27176" bgcolor="#ffffff" style="">
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">纽西兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="纽西兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27176&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS03&amp;wtype=FS&amp;langx=zh-cn&#39;);">1.15</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">澳洲</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="澳洲" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27176&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS04&amp;wtype=FS&amp;langx=zh-cn&#39;);">26.00</font></td></tr></tbody></table></td>
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">南非</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="南非" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27176&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS02&amp;wtype=FS&amp;langx=zh-cn&#39;);">5.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">阿根廷</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="阿根廷" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27176&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS01&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr></tbody></table></td>
+  </tr>
+
+
+
+
+  <tr>
+    <td nowrap="" colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tbody><tr><td class="legicon" onclick="showLEG(&#39;26820&#39;);">
+    <span id="26820_联盟式橄榄球-欧洲超级联赛" class="showleg">
+    	<span id="LegOpen"></span>
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="showLEG(&#39;26820&#39;);" class="leg_bar">联盟式橄榄球-欧洲超级联赛</td>
+        <td nowrap="" align="right">2013-10-06 18:00</td>
+        </tr></tbody></table>
+      </td>
+  </tr>
+  <tr id="TR_1_26820" style="">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td nowrap="" align="left">2013冠军</td>
+          
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr id="TR26820" bgcolor="#ffffff" style="">
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">沃灵顿天狼</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="沃灵顿天狼" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS02&amp;wtype=FS&amp;langx=zh-cn&#39;);">3.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">利兹犀牛</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="利兹犀牛" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS03&amp;wtype=FS&amp;langx=zh-cn&#39;);">4.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">圣海伦斯队</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="圣海伦斯队" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS04&amp;wtype=FS&amp;langx=zh-cn&#39;);">13.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">加泰罗尼亚龙</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="加泰罗尼亚龙" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS07&amp;wtype=FS&amp;langx=zh-cn&#39;);">51.00</font></td></tr></tbody></table></td>
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">伟根战士</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="伟根战士" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS01&amp;wtype=FS&amp;langx=zh-cn&#39;);">3.75</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">哈德斯菲尔德巨人</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="哈德斯菲尔德巨人" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS05&amp;wtype=FS&amp;langx=zh-cn&#39;);">4.50</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">赫尔</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="赫尔" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS06&amp;wtype=FS&amp;langx=zh-cn&#39;);">41.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">赫尔金士顿流浪者</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="赫尔金士顿流浪者" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=26820&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS09&amp;wtype=FS&amp;langx=zh-cn&#39;);">81.00</font></td></tr></tbody></table></td>
+  </tr>
+
+
+
+
+  <tr>
+    <td nowrap="" colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tbody><tr><td class="legicon" onclick="showLEG(&#39;27173&#39;);">
+    <span id="27173_联盟式橄榄球-世界杯(在英格兰和威尔斯)" class="showleg">
+    	<span id="LegOpen"></span>
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="showLEG(&#39;27173&#39;);" class="leg_bar">联盟式橄榄球-世界杯(在英格兰和威尔斯)</td>
+        <td nowrap="" align="right">2013-11-30 18:00</td>
+        </tr></tbody></table>
+      </td>
+  </tr>
+  <tr id="TR_1_27173" style="">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td nowrap="" align="left">2013冠军</td>
+          
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr id="TR27173" bgcolor="#ffffff" style="">
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">澳洲</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="澳洲" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS01&amp;wtype=FS&amp;langx=zh-cn&#39;);">1.25</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">英格兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="英格兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS03&amp;wtype=FS&amp;langx=zh-cn&#39;);">7.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">巴布亚新几内亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="巴布亚新几内亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS05&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">萨摩亚</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="萨摩亚" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS07&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">威尔斯</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="威尔斯" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS09&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr></tbody></table></td>
+    <td nowrap="" class="sub_tab"><table class="b_tab" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="white" width="90%" class="team_name">纽西兰</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="纽西兰" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS02&amp;wtype=FS&amp;langx=zh-cn&#39;);">5.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">斐济</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="斐济" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS04&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">法国</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="法国" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS06&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">湯加</td><td width="60" class="r_bold" bgcolor="white"><font class="b_cen" title="湯加" style="cursor:hand" onclick="parent.mem_order.betOrder(&#39;FT&#39;,&#39;NFS&#39;,&#39;gametype=BK&amp;gid=27173&amp;uid=448e0b6dm10236972l44080627&amp;rtype=FS08&amp;wtype=FS&amp;langx=zh-cn&#39;);">101.00</font></td></tr><tr><td bgcolor="white" width="90%" class="team_name">&nbsp;</td><td width="60" class="r_bold" bgcolor="white">&nbsp;</td></tr></tbody></table></td>
+  </tr>
+
+
+
+
+  
+</tbody></table></div>
+      </td>
+  </tr>
+  <tr>
+    <td id="foot"><b>&nbsp;</b></td>
+  </tr>
+</tbody></table>
+<div id="showlayers" style="display: none">
+	<xmp>
+  <table id="glist_table"  border="0" cellpadding="0" cellspacing="1" class="game">
+    <!--tr>
+    <th class="time">时间</th>
+    <th >项目</th>
+     <th width="400">队伍(球员)</th>
+    <th  width="60">赔率</th>
+  </tr-->
+    *ShowGame*
+</xmp>
+  
+</div>
+<div id="glist" style="display: none" --="">
+<xmp>
+  <tr *ST*>
+    <td nowrap colspan="2" class="b_hline">
+    <table border="0" cellpadding="0" cellspacing="0" class="fs_leg"><tr><td class="legicon" onClick="showLEG('*GID*');">
+    <span id="*GID*_*LEG*" class="showleg">
+    	*LegMark*
+      <!--展开联盟-符号-->
+      <!--span id="LegOpen"></span-->
+      <!--收合联盟-符号-->
+      <!--div id="LegClose"></div-->
+      </span>
+        </td><td onClick="showLEG('*GID*');" class="leg_bar">*LEG*</td>
+        <td nowrap align="right">*TIME*</td>
+        </tr></table>
+      </td>
+  </tr>
+  <tr id="TR_1_*GID*"  style="display: none">
+    <td colspan="2" class="sub_title">
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td nowrap align="left">*ITEM*</td>
+          
+        </tr>
+      </table></td>
+  </tr>
+  <tr id="TR*GID*" *CLASS* style="display: none">
+    <td nowrap class="sub_tab">*TEAM1*</td>
+    <td nowrap class="sub_tab">*TEAM2*</td>
+  </tr>
+
+</xmp>
+</div>
+
+<div id="NoDataTR" style="display:none;">
+
+	   <span class="no_game_fox">您选择的项目暂时没有赛事。请修改您的选项或迟些再返回。</span>
+
+</div>
+
+<!----------------------更改下拉视窗---------------------------->
+<!--区域 START-->
+<span id="area" style="position:absolute; display: none">
+	<xmp>
+<option value="*AREA_ID*" *SELECT_AREA*>*AREA_NAME*</option>
+</xmp>
+</span> <span id="bodyA" style="position:absolute; display: none">
+<select id="sel_aid" name="sel_aid" onchange="chg_area();" class="za_select">
+  <option value="">全部</option>
+  
+		*SHOW_A*
+	
+</select>
+</span>
+<!--区域 END-->
+<!--类别 START-->
+<span id="item" style="position:absolute; display: none">
+	<xmp>
+<option value="*ITEM_ID*" *SELECT_ITEM*>*ITEM_NAME*</option>
+</xmp>
+</span> 
+<span id="bodyI" style="position:absolute; display: none">
+<select id="sel_itemid" name="sel_itemid" onchange="chg_item();" class="za_select">
+  <option value="">全部</option>
+  
+		*SHOW_I*
+	
+</select>
+</span>
+<!--类别 END-->
+<!--联盟 START-->
+<span id="league" style="position:absolute; display: none">
+	<xmp>
+<option value="*LEAGUE_ID*" *SELECT_LEAGUE*>*LEAGUE_NAME*</option>
+</xmp>
+</span> 
+<span id="bodyL" style="position:absolute; display: none">
+<select id="sel_leagueid" name="sel_leagueid" onchange="chg_league();" class="za_select">
+  <option value="">全部</option>
+  
+		*SHOW_I*
+	
+</select>
+</span>
+<!--联盟 END-->
+<!--选择联赛-->
+<div id="legView" style="display:none;" class="legView">
+    <div class="leg_head" onmousedown="initializedragie(&#39;legView&#39;)"></div>
+    
+<div><iframe id="legFrame" frameborder="no" border="0" allowtransparency="true"></iframe></div>
+
+
+    <div class="leg_foot"></div>
+</div>
+<iframe id="reloadPHP" name="reloadPHP" style="display:none"></iframe>
+<div id="controlscroll" style="position: absolute; display: none;"><table border="0" cellspacing="0" cellpadding="0" class="loadBox"><tbody><tr><td><!--loading--></td></tr></tbody></table></div>
+
+
+<!--<div id="copyright">
+    版权所有 皇冠 建议您以 IE 5.0 800 X 600 以上高彩模式浏览本站&nbsp;&nbsp;<a id=download title="下载" href="http://www.microsoft.com/taiwan/products/ie/" target="_blank">立刻下载IE</a>
+</div>-->
+<!--div id="copyright">
+    版权所有 建议您以 IE 5.0 800 X 600 以上高彩模式浏览本站&nbsp;&nbsp;<a id=download title="下载" href="http://www.microsoft.com/taiwan/products/ie/" target="_blank">立刻下载IE</a>
+</div-->
+</body></html>

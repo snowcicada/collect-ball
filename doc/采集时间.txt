@@ -1,0 +1,202 @@
+start loop
+url: http://www.hg0088.com
+url: http://www.hg1088.com
+url: http://www.hg3088.com
+user: Wange778  Wangg6789
+user: cs1688  q12345678q
+strurl=http://www.hg1088.com
+chghasLogin login
+langx zh-cn
+mtype 4
+today_gmt 2013-09-05
+uid 7e224b94m10220238l45359770
+CLT:FT r
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=
+
+ut:2
+CLT:FT pd
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:FT t
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:FT f
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:FT p3
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=
+
+ut:1
+CLT:FT fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=FT&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:5
+CLT:FT r
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=2&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=3&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=4&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=5&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=6&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=7&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=8&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=9&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=10&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=11&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=12&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=13&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=14&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=15&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=16&league_id=&hot_game=&g_date=ALL
+
+ut:8
+CLT:FT pd
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=2&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=3&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=4&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=5&league_id=&hot_game=&g_date=ALL
+
+ut:4
+CLT:FT t
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=2&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=3&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=4&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=t&langx=zh-cn&mtype=4&page_no=5&league_id=&hot_game=&g_date=ALL
+
+ut:3
+CLT:FT f
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=2&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=3&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=4&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=f&langx=zh-cn&mtype=4&page_no=5&league_id=&hot_game=&g_date=ALL
+
+ut:3
+CLT:FT p3
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=1&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=2&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=3&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=4&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=5&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=6&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=7&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=8&league_id=&hot_game=&g_date=ALL
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=9&league_id=&hot_game=&g_date=ALL
+
+ut:6
+CLT:FT fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=FT&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:4
+CLT:BK all
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=all&langx=zh-cn&mtype=4&page_no=0&league_id=undefined&hot_game=
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=all&langx=zh-cn&mtype=4&page_no=0&league_id=undefined&hot_game=
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=all&langx=zh-cn&mtype=4&page_no=1&league_id=undefined&hot_game=
+
+ut:2
+CLT:BK pr
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&mtype=4&page_no=0&league_id=undefined&hot_game=
+
+ut:0
+CLT:BK fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BK&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:1
+CLT:BK all
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=all&langx=zh-cn&g_date=&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=all&langx=zh-cn&g_date=&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:BK pr
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&g_date=&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&g_date=&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:BK fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BK&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:0
+CLT:TN r
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=parent.TN_lid_type&hot_game=
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=parent.TN_lid_type&hot_game=
+
+ut:1
+CLT:TN pd
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=parent.TN_lid_type&hot_game=
+
+ut:0
+CLT:TN pr
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&mtype=4&page_no=0&league_id=parent.TN_lid_type&hot_game=
+
+ut:1
+CLT:TN fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=TN&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:0
+CLT:VB r
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=parent.VB_lid_type&hot_game=
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=parent.VB_lid_type&hot_game=
+
+ut:1
+CLT:VB pd
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pd&langx=zh-cn&mtype=4&page_no=0&league_id=parent.VB_lid_type&hot_game=
+
+ut:1
+CLT:VB pr
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&mtype=4&page_no=0&league_id=parent.VB_lid_type&hot_game=
+
+ut:0
+CLT:VB fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=VB&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:1
+CLT:BS r
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:0
+CLT:BS pr
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=pr&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:BS fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BS&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:1
+CLT:OP r
+http://w782.hg3088.com/app/member/OP_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+http://w782.hg3088.com/app/member/OP_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=r&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:0
+CLT:OP p3
+http://w782.hg3088.com/app/member/OP_browse/body_var.php?uid=7e224b94m10220238l45359770&rtype=p3&langx=zh-cn&mtype=4&page_no=0&league_id=&hot_game=
+
+ut:1
+CLT:OP fs
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=7e224b94m10220238l45359770&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=OP&area_id=&league_id=&rtype=fs&hot_game=
+
+ut:1
+use time:53

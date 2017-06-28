@@ -1,0 +1,2234 @@
+
+<!-- saved from url=(0128)http://w151.hg3088.com/app/member/BK_future/body_browse.php?uid=448e0b6dm10236972l44080627&rtype=all&langx=zh-cn&g_date=&mtype=4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title></title>
+<link rel="stylesheet" href="mem_body_olympics_cn.css" type="text/css">
+<script>
+var DateAry = new Array('2013-09-04','2013-09-05','2013-09-06','2013-09-07','2013-09-08','2013-09-09','2013-09-10','2013-09-11','2013-09-12','2013-09-13','2013-09-14');
+var rtype = 'all';
+var odd_f_str = 'H,M,I,E';
+top.today_gmt = '2013-09-03';
+var Format=new Array();
+Format[0]=new Array( 'H','香港盘','Y');
+Format[1]=new Array( 'M','马来盘','Y');
+Format[2]=new Array( 'I','印尼盘','Y');
+Format[3]=new Array( 'E','欧洲盘','Y');
+</script>
+<script>
+﻿top.str_input_pwd = "密码请务必输入!!";
+top.str_input_repwd = "确认密码请务必输入!!";
+top.str_err_pwd = "密码确认错误,请重新输入!!";
+top.str_pwd_limit = "密码必须是6-12个字元组成。";
+top.str_pwd_limit2 = "密码必须由数字和字母组成。";
+top.str_pwd_NoChg = "您的新密码必须和现用密码不一样。";
+top.str_pwd_NowErr="您的现用密码不正确，请重试。";
+top.str_input_longin_id = "登录帐号请务必输入!!";
+top.str_longin_limit1 = "登录帐号最少必须有2个英文大小写字母和数字(0~9)组合输入限制(6~12字元)";
+top.str_longin_limit2 = "您的登录帐号需使用字母加上数字!!";
+top.str_o="单";
+top.str_e="双";
+top.str_checknum="验证码错误,请重新输入";
+top.str_irish_kiss="和";
+top.dPrivate="私域";
+top.dPublic="公有";
+top.grep="群组";
+top.grepIP="群组IP";
+top.IP_list="IP列表";
+top.Group="组别";
+top.choice="请选择";
+top.account="请输入帐号!!";
+top.password="请输入密码!!";
+top.S_EM="特早";
+top.alldata="全部";
+top.webset="资讯网";
+top.str_renew="更新";
+top.outright="冠军";
+top.financial="金融";
+top.str_HCN = new Array("主","客","无");
+
+//====== Live TV
+top.str_FT = "足球";
+top.str_BK = "篮球";
+top.str_TN = "网球";
+top.str_VB = "排球";
+top.str_BS = "棒球";
+top.str_OP = "其他";
+
+top.str_order_FT = "足球";
+top.str_order_BK = "篮球 / 美式足球 / 橄榄球";
+top.str_order_TN = "网球";
+top.str_order_VB = "排球 / 羽毛球 / 兵乓球";
+top.str_order_BS = "棒球";
+top.str_order_OP = "其他";
+
+
+top.str_fs_FT = "足球 : ";
+top.str_fs_BK = "篮球和美式足球 : ";
+top.str_fs_TN = "网球 : ";
+top.str_fs_VB = "排球 : ";
+top.str_fs_BS = "棒球 : ";
+top.str_fs_OP = "其他体育 : ";
+
+top.str_game_list = "所有球类";
+top.str_date_list = "所有日期";
+top.str_second = "秒";
+top.str_demo = "样本播放";
+top.str_alone = "独立";
+top.str_back = "返回";
+top.str_RB = "LIVE";
+
+top.str_ShowMyFavorite="我的最爱";
+top.str_ShowAllGame="全部赛事";
+top.str_delShowLoveI="移出";
+
+
+top.strRtypeSP = new Array();
+top.strRtypeSP["PGF"]="最先进球";
+top.strRtypeSP["OSF"]="最先越位";
+top.strRtypeSP["STF"]="最先替补球员";
+top.strRtypeSP["CNF"]="第一颗角球";
+top.strRtypeSP["CDF"]="第一张卡";
+top.strRtypeSP["RCF"]="会进球";
+top.strRtypeSP["YCF"]="第一张黄卡";
+top.strRtypeSP["GAF"]="有失球";
+top.strRtypeSP["PGL"]="最后进球";
+top.strRtypeSP["OSL"]="最后越位";
+top.strRtypeSP["STL"]="最后替补球员";
+top.strRtypeSP["CNL"]="最后一颗角球";
+top.strRtypeSP["CDL"]="最后一张卡";
+top.strRtypeSP["RCL"]="不会进球";
+top.strRtypeSP["YCL"]="最后一张黄卡";
+top.strRtypeSP["GAL"]="没有失球";
+top.strRtypeSP["PG"]="最先/最后进球球队";
+top.strRtypeSP["OS"]="最先/最后越位球队";
+top.strRtypeSP["ST"]="最先/最后替补球员球队";
+top.strRtypeSP["CN"]="第一颗/最后一颗角球";
+top.strRtypeSP["CD"]="第一张/最后一张卡";
+top.strRtypeSP["RC"]="会进球/不会进球";
+top.strRtypeSP["YC"]="第一张/最后一张黄卡";
+top.strRtypeSP["GA"]="有失球/没有失球";
+
+
+top.strOver="大";
+top.strUnder="小";
+top.strOdd="单";
+top.strEven="双";
+
+
+//下注警语
+top.message001="请输入下注金额。";
+top.message002="只能输入数字!!";
+top.message003="最低投注额是";
+top.message004="对不起,本场有下注金额最高: ";
+top.message005=" 元限制!!";
+top.message006="最高投注额设在";
+top.message007="总下注金额已超过单场限额。";
+top.message008="本场累计下注共: ";
+top.message009="\n总下注金额已超过单场限额";
+top.message010="下注金额不可大于信用额度。";
+top.message011="可赢金额：";
+top.message012="<br>确定进行下注吗?";
+top.message013="确定进行下注吗?<br>";
+top.message014='未输入下注金额!!!';
+top.message015="下注金额只能输入数字";
+top.message016="\n\n确定进行下注吗?";
+top.message017="串1";
+top.message018="队联碰";
+top.message019="您必须选择至少";
+top.message020="个队伍,否则不能下注!!";
+top.message021="不接受";
+top.message022="串过关投注!!";
+top.message023="请输入欲下注金额!!";
+top.message024="已超过某场次之过关注单限额!!";
+top.message025="下注金额不可大于信用额度。";
+top.message026="请选择下注队伍!!";
+top.message027="单式投注请至单式下注页面下注!!";
+top.message028="仅接受";
+top.message029="串投注!!";
+top.message030="确定要进行交易吗？";
+
+top.message031="请输入要搜寻的文字";
+top.message032="找不到相符项目";
+top.message033="你的浏览器不支援";
+
+
+top.page="页";
+top.refreshTime="刷新";
+top.showmonth="月";
+top.showday="日";
+
+top.str_RB ="滚球";
+top.Half1st="上半滚球";
+top.Half2nd="下半滚球";
+
+top.mem_logut="您的帐号已登出";
+top.retime1H="上";
+top.retime2H="下";
+
+top.str_otb_close="赛事已关闭。";
+//奧運用
+top.no_oly="您选择的项目暂时没有赛事。请查看冠军玩法。";</script>
+
+<script>
+//在body_browse載入
+
+
+var ReloadTimeID;
+var sel_gtype=parent.sel_gtype;
+
+//網頁載入
+function onLoad(){
+	top.swShowLoveI=false;
+	if((""+eval("parent."+sel_gtype+"_lname_ary"))=="undefined") eval("parent."+sel_gtype+"_lname_ary='ALL'");
+	if((""+eval("parent."+sel_gtype+"_lid_ary"))=="undefined") eval("parent."+sel_gtype+"_lid_ary='ALL'");
+	if(parent.ShowType==""||rtype=="r") parent.ShowType = 'OU';
+	if(rtype=="hr") parent.ShowType = 'OU';
+	if(rtype=="re") parent.ShowType = 'RE';
+	if(rtype=="pd") parent.ShowType = 'PD';
+	if(rtype=="hpd") parent.ShowType = 'HPD';
+	if(rtype=="t") parent.ShowType = 'EO';
+	if(rtype=="f") parent.ShowType = 'F';
+	if(parent.parent.leg_flag=="Y"){
+		parent.parent.leg_flag="N";
+		parent.pg=0;
+		reload_var("");
+	}
+	parent.loading = 'N';
+	if(parent.loading_var == 'N'){
+		parent.ShowGameList();
+		obj_layer = document.getElementById('LoadLayer');
+		obj_layer.style.display = 'none';
+	}
+	if (parent.retime_flag == 'Y'){
+		//ReloadTimeID = setInterval("reload_var()",parent.retime*1000);
+		count_down();
+	}else{
+		var rt=document.getElementById('refreshTime');
+rt.innerHTML=top.refreshTime;	
+	}
+	document.getElementById("odd_f_window").style.display = "none";
+	if(sel_gtype=="BU"){
+		
+		if (rtype!="pr"){
+			if(top.showtype!='hgft'){
+				selgdate(rtype);
+			}
+		}
+		//futureShowGtypeTable();
+	}
+	if (""+top.BK_RE_session=="undefined"){
+		top.BK_RE_session="all";	
+	}
+	if (rtype=="r"||rtype=="all"||rtype=="rq4"||rtype=="re"){
+		var selRtype=document.getElementById("sel_rtype");
+		for (i = 0; i < selRtype.length; i++) {
+			if (rtype=="re"){
+				if(selRtype.options[i].value==top.BK_RE_session){
+					selRtype.selectedIndex=i;
+				}
+			}else{
+				if(selRtype.options[i].value==rtype){
+					selRtype.selectedIndex=i;
+				}
+			}
+		}	
+	}
+
+}
+
+window.onscroll = scroll;
+
+function scroll()
+{
+	var refresh_right= document.getElementById('refresh_right');
+	refresh_right.style.top=document.body.scrollTop+39;
+	//refresh_right.style.top=document.body.scrollTop+21+34+25+10;
+	//refresh_right.style.top=document.body.scrollTop+(document.body.clientHeight-118)/2;
+	                      // 捲軸位置              +( frame高度                -header高度)/2
+	
+ //alert("scroll event detected! "+document.body.scrollTop);
+// 
+	//conscroll.style.display="block";
+//conscroll.style.top=document.body.scrollTop;
+ // note: you can use window.innerWidth and window.innerHeight to access the width and height of the viewing area
+}
+
+function setleghi(leghight){
+	var legview =document.getElementById('legFrame');
+	
+	if((leghight*1) > 95){
+		legview.height = leghight;
+	}else{
+		
+		legview.height = 95;
+	}
+	
+}
+
+function reload_var(Level){
+	//alert("reload_var ..................");
+	
+	//var conscroll= document.getElementById('controlscroll');
+	//conscroll.style.display="block";
+	//conscroll.top=document.body.scrollTop;
+	//conscroll.width=screen.availWidth;
+//	conscroll.height=screen.availHeight;
+	parent.loading_var = 'Y';
+	if(Level=="up"){
+		var tmp = "./"+parent.sel_gtype+"_browse/body_var.php";
+		if (parent.sel_gtype=="BU"){
+			tmp = "./BK_future/body_var.php";
+		}
+	}else{
+		var tmp = "./body_var.php";
+	}
+	          
+	var l_id =eval("parent.parent."+sel_gtype+"_lid_type");
+	if(top.showtype=='hgft'&&parent.sel_gtype=="BU"){
+		l_id=3;	
+	}
+	if(parent.rtype == "pr") top.hot_game="";
+	var homepage = tmp+"?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype+"&page_no="+parent.pg+"&league_id="+l_id+"&hot_game="+top.hot_game;
+	//alert("parent.g_date==>"+parent.g_date)
+	if (parent.sel_gtype=="BU"){
+		
+		homepage+="&g_date="+parent.g_date;
+	}
+	parent.body_var.location = homepage;
+	if(rtype=="r") document.getElementById('more_window').style.display='none';
+}
+
+
+
+
+
+//倒數自動更新時間
+function count_down(){
+	var rt=document.getElementById('refreshTime');
+	setTimeout('count_down()',1000);
+	if (parent.retime_flag == 'Y'){
+		if(parent.retime <= 0){
+			if(parent.loading_var == 'N')
+				reload_var("");
+				return;
+		}
+		parent.retime--;
+		rt.innerHTML=parent.retime;
+		//alert(parent.retime);
+		//obj_cd = document.getElementById('cd');
+		//obj_cd.innerHTML = parent.retime;
+	}
+}
+
+
+
+//賽事換頁
+function chg_pg(pg){
+	if (pg==parent.pg) {return;}
+	parent.pg=pg;
+	reload_var("");
+}
+
+function chg_wtype(wtype){
+		var l_id =eval("parent.parent."+sel_gtype+"_lid_type");
+	if(top.showtype=='hgft'&&parent.sel_gtype=="BU"){
+		l_id=3;	
+	}
+	parent.location.href="index.php?uid="+top.uid+"&langx="+top.langx+"&mtype="+parent.ltype+"&rtype="+wtype+"&showtype=&league_id="+l_id;
+	
+	//<frame name="body_var" scrolling="NO" noresize src="body_var.php?uid=<?echo $uid?>&rtype=<?echo $rtype?>&langx=<?echo $langx?>&mtype=<?echo $mtype;?>&delay=<?echo $delay;?>&league_id=<?echo $league_id?>">
+	//<frame name="body_browse" src="body_browse.php?uid=<?echo $uid?>&rtype=<?echo $rtype?>&langx=<?echo $langx?>&mtype=<?echo $mtype;?>&delay=<?echo $delay;?>&showtype=<?echo $showtype?>">
+	
+	
+}
+
+//選擇聯盟
+function chg_league(){
+//	var legframe= document.getElementById('legFrame');
+	var legview =document.getElementById('legView');
+	try{	
+		legFrame.location.href="./body_var_lid.php?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype;
+	}catch(e){
+		legFrame.src="./body_var_lid.php?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype;
+ 
+	}
+	legview.style.display='';
+	legview.style.top=  document.body.scrollTop+82; //21+34+25+10;
+	legview.style.left= 10; //100;
+	//self.location="./body_var_lid.php?uid="+parent.uid+"&rtype="+parent.rtype+"&langx="+parent.langx+"&mtype="+parent.ltype;
+}
+function LegBack(){
+	var legview =document.getElementById('legView');
+	legview.style.display='none';
+	reload_var("");
+
+	}
+
+
+function unload(){
+	clearInterval(ReloadTimeID);
+}
+window.onunload=unload;
+
+//-----------------------------future------------------------
+function selgdate(rtype,cdate){
+	//賽事分日期
+	var date_opt = "";
+	var arrDate =new Array();
+	var year ='';
+	var nowDate="";	
+	if(top.showtype=='hgft'){
+		var tmpdate=DateAry[0].split("-");
+		for (i = 0; i < parent.hotgdateArr.length; i++) {
+			var tmpd =parent.hotgdateArr[i].split("-");
+			if(tmpdate[1]*1 > tmpd[0]*1){
+				year =tmpdate[0]*1+1;
+			}else{
+				year =tmpdate[0];
+			}
+			arrDate =arraySort1(arrDate,year+'-'+parent.hotgdateArr[i]);
+		}
+		if(cdate=='')cdate ='ALL';
+		date_opt = '<select id="g_date" name="g_date" onChange="chg_gdate()">';
+		date_opt+= '<option value="ALL" '+((cdate =='ALL')?'selected':'')+'>'+top.alldata+'</option>';
+		for (i = 0; i < arrDate.length; i++) {
+			nowDate=showdate(arrDate[i]);
+			date_opt+= '<option value="'+arrDate[i]+'" '+((cdate ==arrDate[i])?'selected':'')+'>'+nowDate+'</option>';
+		}
+		date_opt+= "</select>";
+	}else{
+		arrDate=DateAry ;
+		date_opt = "<select id=\"g_date\" name=\"g_date\" onChange=\"chg_gdate()\">";
+		date_opt+= "<option value=\"ALL\">"+top.alldata+"</option>";
+		if (rtype == "r" || rtype == "all") {
+			date_opt+= "<option value=\"1\" >"+top.S_EM+"</option>";
+		}
+		for (i = 0; i < arrDate.length; i++) {
+			nowDate=showdate(arrDate[i]);
+			date_opt+= "<option value=\""+arrDate[i]+"\" >"+nowDate+"</option>";
+		}
+		date_opt+= "</select>";
+	}
+	
+	document.getElementById("show_date_opt").innerHTML = date_opt;
+}
+function showdate(sdate){
+	var showgdate=sdate.split("-");
+	tmpsdate=showgdate[1]+"-"+showgdate[2];
+	if(top.langx=="zh-tw"||top.langx=="zh-cn") {
+		if((showgdate[1]*1)< 10) showgdate[1]=showgdate[1]*1;
+		if((showgdate[2]*1)< 10) showgdate[2]=showgdate[2]*1;
+		tmpsdate=showgdate[1]+top.showmonth+showgdate[2]+top.showday;
+	}
+	return tmpsdate;
+}
+function arraySort1(array ,data){
+	var outarray =new Array();
+	var newarray =new Array();
+	for(var i=0;i < array.length ;i++){
+		if(array[i]<= data){
+			outarray.push(array[i]);
+		}else{
+			newarray.push(array[i]);
+		}
+	}
+	outarray.push(data);
+	for(var i=0;i < newarray.length ;i++){
+		outarray.push(newarray[i]);		
+	}
+	return  outarray;
+}
+
+//切換日期
+function chg_gdate(){
+	
+	var obj_gdate = document.getElementById("g_date");
+	
+	parent.g_date=obj_gdate.value;
+	parent.pg=0;
+	reload_var("");
+}
+
+//====== 取表格 TD 的x軸
+function GetTD_X(TD_lay,GetTableID){
+	alert(GetTableID);
+	alert(document.getElementById(GetTableID))
+	var TBar = document.getElementById(GetTableID);
+	var td_x = TD_lay;
+	for(var i=0; i < TBar.rows[0].children.length; i++){
+		if (i == TD_lay) { break; }
+		td_x += TBar.rows[0].children[i].clientWidth;
+	}
+	return td_x;
+}
+//====== 取表格 TD 的y軸
+function GetTD_Y(AryIndex,GetTableID){
+	var TBar = document.getElementById(GetTableID);
+	var td_y = parseInt(AryIndex)+2;
+	
+	for(var i=0; i <= parseInt(AryIndex)+1; i++){
+		try{
+			td_y += TBar.rows[i].clientHeight;
+		} catch (E){
+			td_y += TBar.rows[i-1].clientHeight;
+		}
+	}
+	return td_y;
+}
+
+
+
+
+//----------------------------我的最愛  start----------------------------------
+function showPicLove(){
+	var gtypeNum= StatisticsGty(top.today_gmt,top.now_gmt,getGtypeShowLoveI());
+	try{
+		document.getElementById("fav_num").style.display = "none";
+		document.getElementById("showNull").style.display = "none";
+		document.getElementById("showAll").style.display = "none";
+		document.getElementById("showMy").style.display = "none";
+		if(gtypeNum!=0){
+			document.getElementById("live_num").innerHTML =gtypeNum;
+			document.getElementById("fav_num").style.display = "block";
+		 if(top.hot_game!=""){
+				document.getElementById("showMy").style.display = "block";	
+		 }else{	
+			if(top.swShowLoveI){
+				document.getElementById("showAll").style.display = "block";
+			}else{
+				document.getElementById("showMy").style.display = "block";	
+			}
+		 }	
+		}else{
+			document.getElementById("showNull").style.display = "block";
+			top.swShowLoveI=false;
+		}
+	}catch(E){}
+}
+
+//我的最愛中的顯示全部
+function showAllGame(gtype){
+	top.swShowLoveI=false;
+	eval("parent.parent."+parent.sel_gtype+"_lid_type=top."+parent.sel_gtype+"_lid['"+parent.sel_gtype+"_lid_type']");
+	reload_var("");
+}
+
+//單式盤面點下我的最愛
+function showMyLove(gtype){
+	top.swShowLoveI =true;
+	//精選賽事導回
+		if(top.hot_game!=""){
+		top.hot_game="";
+		document.getElementById("euro_btn").style.display=''; 
+		document.getElementById("euro_up").style.display='none';
+		}
+	//
+	parent.pg =0;
+	//if (gtype=="FU"){
+		eval("parent.parent."+parent.sel_gtype+"_lid_type='3'");
+	//}
+	reload_var("");
+}
+
+
+function StatisticsGty(today,now_gmt,gtype){
+	var out=0;
+	var array =new Array(0,0,0);
+	var tmp =today.split("-");
+	var newtoday =tmp[1]+"-"+tmp[2];
+	var Months =tmp[1]*1;
+	tmp =now_gmt.split(":");
+	var newgmt=tmp[0]+":"+tmp[1];
+	var tmpgday = new Array(0,0);
+	var bf = false;
+	for (var i=0 ; i < top.ShowLoveIarray[gtype].length ; i++){
+		tmpday = top.ShowLoveIarray[gtype][i][1].split("<br>")[0];
+		tmpgday = tmpday.split("-");
+		tmpgmt =top.ShowLoveIarray[gtype][i][1].split("<br>")[1];
+		tmpgmt=time_12_24(tmpgmt);
+		if(++tmpgday[0] < Months){ 
+			bf = true;
+		}else{
+			bf = false;
+		}
+		if(bf){
+			array[2]++;
+		}else{
+			if(newtoday >= tmpday ){
+				if((newtoday+" "+newgmt) >= (tmpday+" "+tmpgmt)){
+					array[0]++;	//走地	
+				}else{	
+					array[1]++;	//單式	
+				}
+			}else if(newtoday < tmpday){
+				array[2]++;	//早餐
+			}
+		}
+	}
+	if(parent.sel_gtype=="FT"||parent.sel_gtype=="OP"||parent.sel_gtype=="BK"||parent.sel_gtype=="BS"||parent.sel_gtype=="VB"||parent.sel_gtype=="TN"){
+		if(parent.rtype=="re"){
+			out=array[0];
+		}else{	
+			out=array[1];
+		}
+	}else if(parent.sel_gtype=="FU"||parent.sel_gtype=="OM"||parent.sel_gtype=="BU"||parent.sel_gtype=="BSFU"||parent.sel_gtype=="VU"||parent.sel_gtype=="TU"){
+		out=array[2];
+	}
+	
+	return out;
+}
+
+function time_12_24(stTime){
+	var out="";
+	var shour =stTime.split(":")[0]*1;
+	var smin=stTime.split(":")[1];
+	var aop =smin.substr(smin.length-1,1);
+	if(aop =="p"){
+		if((shour*1)>0)
+		shour += 12;
+	}
+	out=((shour < 10)?"0":"")+shour+":"+smin;
+	return out;
+}
+
+// new array{球類 , new array {gid ,data time ,聯盟,H,C,sw}}
+function addShowLoveI(gid,getDateTime,getLid,team_h,team_c){
+	var getGtype =getGtypeShowLoveI();
+	var getnum =top.ShowLoveIarray[getGtype].length;
+	var sw =true;
+	for (var i=0 ; i < top.ShowLoveIarray[getGtype].length ; i++){
+		if(top.ShowLoveIarray[getGtype][i][0]==gid && top.ShowLoveIarray[getGtype][i][1] == getDateTime)
+			sw = false;
+	}
+	if(sw){
+		top.ShowLoveIarray[getGtype]= arraySort(top.ShowLoveIarray[getGtype] ,new Array(gid,getDateTime,getLid,team_h,team_c));	
+		chkOKshowLoveI();
+	}
+	document.getElementById("sp_"+MM_imgId(getDateTime,gid)).innerHTML = "<div class=\"fov_icon_on\" style=\"cursor:hand\" title=\""+top.str_delShowLoveI+"\" onClick=\"chkDelshowLoveI('"+getDateTime+"','"+gid+"');\"></div>";
+}
+function arraySort(array ,data){
+	var outarray =new Array();
+	var newarray =new Array();
+	for(var i=0;i < array.length ;i++){
+		if(array[i][1]<= data[1]){
+			outarray.push(array[i]);
+		}else{
+			newarray.push(array[i]);
+		}
+	}
+	outarray.push(data);
+	for(var i=0;i < newarray.length ;i++){
+		outarray.push(newarray[i]);		
+	}
+	return  outarray;
+}
+
+
+function getGtypeShowLoveI(){
+	var Gtype;
+	var getGtype =parent.sel_gtype;
+	var getRtype =parent.rtype;
+	Gtype =getGtype;
+	if(getRtype=="re"){
+		Gtype +="RE";
+	}
+	/*
+	if(getGtype =="FU"||getGtype=="FT"){
+		Gtype ="FT";
+	}else if(getGtype =="OM"||getGtype=="OP"){
+		Gtype ="OP";
+	}else if(getGtype =="BU"||getGtype=="BK"){
+		Gtype ="BK";
+	}else if(getGtype =="BSFU"||getGtype=="BS"){
+		Gtype ="BS";
+	}else if(getGtype =="VU"||getGtype=="VB"){
+		Gtype ="VB";
+	}else if(getGtype =="TU"||getGtype=="TN"){
+		Gtype ="TN";
+	}else {
+		Gtype ="FT";
+	}
+	*/
+	
+	//alert("in==>"+parent.sel_gtype+",out==>"+Gtype);
+	return Gtype;
+}
+function chkOKshowLoveI(){
+	var getGtype = getGtypeShowLoveI();
+	var getnum =top.ShowLoveIOKarray[getGtype].length ;
+	var ibj="" ;
+	top.ShowLoveIOKarray[getGtype]="";
+	for (var i=0 ; i < top.ShowLoveIarray[getGtype].length ; i++){
+		tmp = top.ShowLoveIarray[getGtype][i][1].split("<br>")[0];
+		top.ShowLoveIOKarray[getGtype]+=tmp+top.ShowLoveIarray[getGtype][i][0]+",";
+	}
+	showPicLove();
+}
+
+
+function chkDelshowLoveI(data2,data){
+	var getGtype = getGtypeShowLoveI();	
+	var tmpdata = data2.split("<br>")[0]+data;
+	var tmpdata1 ="";
+	var ary = new Array();
+	var tmp = new Array();
+	tmp = top.ShowLoveIarray[getGtype];
+	top.ShowLoveIarray[getGtype]= new Array();
+	for (var i=0 ; i < tmp.length ; i++){
+		tmpdata1 =tmp[i][1].split("<br>")[0]+tmp[i][0];
+		if(tmpdata1 == tmpdata){
+			ary = tmp[i];
+			continue;
+		}
+		top.ShowLoveIarray[getGtype].push(tmp[i]);
+	}
+	chkOKshowLoveI();
+	var gtypeNum= StatisticsGty(top.today_gmt,top.now_gmt,getGtypeShowLoveI());
+	if(top.swShowLoveI){
+		
+		var sw=false;
+		//alert(top.swShowLoveI+"-"+gtypeNum);
+		if(gtypeNum==0){
+			top.swShowLoveI=false;
+			eval("parent.parent."+parent.sel_gtype+"_lid_type=top."+parent.sel_gtype+"_lid['"+parent.sel_gtype+"_lid_type']");
+			reload_var("");
+		}else{
+			parent.ShowGameList();
+		}
+	}else{
+		if(gtypeNum==0){ 
+			reload_var("");
+		}else{
+			document.getElementById("sp_"+MM_imgId(ary[1],ary[0])).innerHTML ="<div id='"+MM_imgId(ary[1],ary[0])+"' class=\"fov_icon_out\" style=\"cursor:hand;display:none;\" title=\""+top.str_ShowMyFavorite+"\" onClick=\"addShowLoveI('"+ary[0]+"','"+ary[1]+"','"+ary[2]+"','"+ary[3]+"','"+ary[4]+"'); \"></div>";	
+		}
+	}
+}
+
+function chkDelAllShowLoveI(){
+	var getGtype=getGtypeShowLoveI();
+	top.ShowLoveIarray[getGtype]= new Array();
+	top.ShowLoveIOKarray[getGtype]="";
+	if(top.swShowLoveI){
+		top.swShowLoveI=false;
+		eval("parent.parent."+parent.sel_gtype+"_lid_type=top."+parent.sel_gtype+"_lid['"+parent.sel_gtype+"_lid_type']");
+		parent.pg =0;
+		reload_var("");
+	}else{
+		parent.ShowGameList();
+	}
+ 
+}
+
+//檢查所選的最愛賽事是否已經進入滾球或是結束
+function checkLoveCount(GameArray){
+	
+	var getGtype = getGtypeShowLoveI();	
+	var tmpdata = "";
+	var tmpdata1 ="";
+	var ary = new Array();
+	var tmp = new Array();
+	tmp = top.ShowLoveIarray[getGtype];
+	top.ShowLoveIarray[getGtype] = new Array();
+	for (s=0;s < GameArray.length;s++){
+		tmpdata=GameArray[s].datetime.split("<br>")[0]+GameArray[s].gnum_h;
+		for (var i=0;i < tmp.length; i++){
+			tmpdata1 =tmp[i][1].split("<br>")[0]+tmp[i][0];
+			if(tmpdata1 == tmpdata){
+				top.ShowLoveIarray[getGtype].push(tmp[i]);
+			}
+		}
+	}	
+	chkOKshowLoveI();
+}
+
+function mouseEnter_pointer(tmp){
+	try{
+	document.getElementById(tmp.split("_")[1]).style.display ="block";
+	}catch(E){}
+}
+
+function mouseOut_pointer(tmp){
+	try{
+	document.getElementById(tmp.split("_")[1]).style.display ="none";
+	}catch(E){}
+}
+
+function chkLookShowLoveI(){
+	top.swShowLoveI =true;
+	eval("parent.parent."+parent.sel_gtype+"_lid_type='3'");
+	parent.pg =0;
+	reload_var("");
+}
+
+function MM_imgId(time,gid){	
+	var tmp = time.split("<br>")[0];
+	//alert(tmp+gid);
+	return tmp+gid;
+}
+
+
+//----------------------------我的最愛  end----------------------------------
+
+
+
+
+//--------------------------odd_f 	start--------------------
+//盤口onclick事件
+
+function ChkOddfDiv(){
+
+	
+	var odd_show="<select id=myoddType onchange=chg_odd_type()>";
+	var tmp_check="";
+	for (i = 0; i < Format.length; i++) {
+		//沒盤口選擇時，預設為H(香港變盤)
+	if((odd_f_str.indexOf(Format[i][0])!=(-1))&&Format[i][2]=="Y"){
+	
+	   	if(top.odd_f_type==Format[i][0]){
+	   		odd_show+="<option value="+Format[i][0]+tmp_check+" selected>"+Format[i][1]+"</option>";
+			}else{
+         odd_show+="<option value="+Format[i][0]+tmp_check+">"+Format[i][1]+"</option>"; 
+      }
+		}
+		/*	
+		else{
+			odd_show+="<option value="+Format[i][0]+tmp_check+">"+Format[i][1]+"</option>";
+			}
+		*/			
+	//}
+	}
+	odd_show+"</select>";
+	document.getElementById("Ordertype").innerHTML=odd_show;
+
+}
+
+//切換盤口
+function chg_odd_type(){
+	
+	var myOddtype=document.getElementById("myoddType");
+	top.odd_f_type=myOddtype.options[myOddtype.selectedIndex].value;
+	reload_var("");
+}
+
+function show_oddf(){
+	for (i = 0; i < Format.length; i++) {
+		if(Format[i][0]==top.odd_f_type){
+			document.getElementById("oddftext").innerHTML=Format[i][1];
+		}
+	}
+	
+}
+//--------------------------odd_f 	end--------------------
+
+function change_rtype(){
+	top.hot_game="";
+	var myOddtype=document.getElementById("sel_rtype");
+	rtype=myOddtype.options[myOddtype.selectedIndex].value;
+    parent.location.href="index.php?uid="+top.uid+"&langx="+top.langx+"&mtype="+parent.ltype+"&rtype="+rtype;
+    
+
+
+	}
+function change_RE_session(){
+	top.hot_game="";
+	var myOddtype=document.getElementById("sel_rtype");
+	rtype=myOddtype.options[myOddtype.selectedIndex].value;
+	top.BK_RE_session=rtype;
+	reload_var("");
+   // parent.location.href="index.php?uid="+top.uid+"&langx="+top.langx+"&mtype="+parent.ltype+"&rtype="+rtype;
+}	
+
+var keep_drop_layers;
+var dragapproved=false;
+var iex;
+var iey;
+var tempx;
+var tempy;
+if (document.all){
+	document.onmouseup=new Function("dragapproved=false;");
+}
+function initializedragie(drop_layers){
+	return;
+	keep_drop_layers=drop_layers;
+	iex=event.clientX
+	iey=event.clientY
+	eval("tempx="+drop_layers+".style.pixelLeft")
+	eval("tempy="+drop_layers+".style.pixelTop")
+	dragapproved=true;
+	document.onmousemove=drag_dropie;
+}
+function drag_dropie(){
+	if (dragapproved==true){
+		eval("document.all."+keep_drop_layers+".style.pixelLeft=tempx+event.clientX-iex");
+		eval("document.all."+keep_drop_layers+".style.pixelTop=tempy+event.clientY-iey");
+		return false
+	}
+}
+
+function refreshReload(){
+	
+	document.getElementById("refresh_right").className='refresh_M_on';
+	document.getElementById("refresh_btn").className='refresh_on';
+	document.getElementById("refresh_down").className='refresh_M_on';
+	reload_var("");
+		}
+
+function Euro(){
+	
+	if(top.hot_game!=""){
+		top.hot_game="";
+		top.swShowLoveI=false;
+		document.getElementById("euro_btn").style.display=''; 
+		document.getElementById("euro_up").style.display='none';
+	}else{
+		top.hot_game="HOT_";
+		document.getElementById("euro_btn").style.display='none'; 
+		document.getElementById("euro_up").style.display='';
+	
+	}
+	parent.pg =0;
+	parent.show_page();
+	reload_var("");
+
+}
+
+function Eurover(act){
+ //alert(act.className)
+	if(act.className=="euro_btn"){
+		act.className='euro_over';
+	}else if(act.className=="euro_up"){
+		act.className='euro_up_over';
+	}
+}
+ 
+function Eurout(act){
+	//alert(act.className)
+ if(act.className=="euro_over"){
+		act.className='euro_btn';
+	}else if(act.className=="euro_up_over"){
+		act.className='euro_up';
+	}
+} </script>
+
+</head>
+<body id="MBU" class="bodyset BUR" onload="onLoad();">
+<div id="LoadLayer" style="display: none;">loading...............................................................................</div>
+<div id="showtableData" style="display:none;">
+  <xmp>
+
+          <table id="game_table"  cellspacing="0" cellpadding="0" class="game">
+            <tr>
+              <th class="time">时间</th>
+              <th class="team">赛事</th>
+              <th class="h_r">让分</th>
+              <th class="h_ou">大小</th>
+              <th class="h_oe">单/双</th>
+            </tr>
+            *showDataTR*
+          </table>
+  </xmp>
+</div>
+<!--   表格资料     -->
+<div id="DataTR" style="display:none;">
+	<xmp>
+  <!--SHOW LEGUAGE START-->
+  <tr *ST* >
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tr><td class="legicon" onClick="parent.showLeg('*LEG*')">
+      <span id="*LEG*" class="showleg">
+      	*LegMark*
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onClick="parent.showLeg('*LEG*')" class="leg_bar">*LEG*</td></tr></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_*ID_STR*" *TR_EVENT* *CLASS*>
+    <td rowspan="2" class="b_cen">*DATETIME*</td>
+    <td rowspan="2" class="team_name">*TEAM_H*<br>
+      *TEAM_C*
+       *MYLOVE*<!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">*CON_RH*</span> <span class="ratio">*RATIO_RH*</span></td>
+    <td class="b_rig"><span class="con">*CON_OUH*</span> <span class="ratio">*RATIO_OUH*</span></td>
+    <td class="b_cen">*RATIO_EOO*</td>
+  </tr>
+  <tr id="TR1_*ID_STR*" *TR_EVENT* *CLASS*>
+    <td class="b_rig"><span class="con">*CON_RC*</span> <span class="ratio">*RATIO_RC*</span></td>
+    <td class="b_rig"><span class="con">*CON_OUC*</span> <span class="ratio">*RATIO_OUC*</span></td>
+    <td class="b_cen">*RATIO_EOE*</td>
+  </tr>
+
+</xmp>
+</div>
+<!--右方刷新钮--><div id="refresh_right" style="position: absolute; top: 39px; left: 685px;" class="refresh_M_btn" onclick="this.className=&#39;refresh_M_on&#39;;javascript:reload_var()"><span>刷新</span></div>
+<div id="NoDataTR" style="display:none;">
+	<xmp>
+	    <td colspan="20" class="no_game">您选择的项目暂时没有赛事。请修改您的选项或迟些再返回。</td>
+	 </xmp>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" id="myTable"><tbody><tr><td>
+ <table border="0" cellpadding="0" cellspacing="0" id="box">
+      <!--tr>
+		<td id="ad">
+			<span id="real_msg"></span>
+		<p><a href="javascript://" onClick="javascript: window.open('../scroll_history.php?uid=448e0b6dm10236972l44080627&langx=zh-cn','','menubar=no,status=yes,scrollbars=yes,top=150,left=200,toolbar=no,width=510,height=500')">历史讯息</a></p>
+		</td>
+		</tr-->
+      <tbody><tr>
+        <td class="top"><h1><em>早盘篮球和美式足球 : </em>&nbsp;
+                  <select id="sel_rtype" onchange="change_rtype();">
+						<option value="all" selected="">所有时节</option>
+						<option value="r">单式</option>
+                        <option value="rq4">单节</option>
+					</select>
+            <!--span id="hr_info">秒自动更新</span-->
+          </h1></td>
+      </tr>
+      <tr>
+        <td class="mem"><h2>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" id="fav_bar">
+              <tbody><tr>
+                <td id="page_no"><div id="euro_btn" class="euro_btn" onclick="Euro();" onmouseover="Eurover(this);" onmouseout="Eurout(this);" style="display: none;"><!--奥运--></div><div id="euro_up" class="euro_up" onclick="Euro();" onmouseover="Eurover(this);" onmouseout="Eurout(this);" style="display: none;"><!--所有赛事--></div><span id="pg_txt">1 / 1 页&nbsp;&nbsp; <select onchange="chg_pg(this.options[this.selectedIndex].value)" disabled=""><option value="0" selected="">1</option></select></span>
+                <span class="date_btn">日期:<span id="show_date_opt"><select id="g_date" name="g_date" onchange="chg_gdate()"><option value="ALL">全部</option><option value="1">特早</option><option value="2013-09-04">9月4日</option><option value="2013-09-05">9月5日</option><option value="2013-09-06">9月6日</option><option value="2013-09-07">9月7日</option><option value="2013-09-08">9月8日</option><option value="2013-09-09">9月9日</option><option value="2013-09-10">9月10日</option><option value="2013-09-11">9月11日</option><option value="2013-09-12">9月12日</option><option value="2013-09-13">9月13日</option><option value="2013-09-14">9月14日</option></select></span></span>	
+                </td>
+                <td id="tool_td">
+              
+                  <table border="0" cellspacing="0" cellpadding="0" class="tool_box">
+                    <tbody><tr>
+                        <td id="fav_btn">
+                            <div id="fav_num" title="清空" onclick="chkDelAllShowLoveI();" style="display: none;"><!--我的最爱场数--><span id="live_num"></span></div>
+                            <div id="showNull" title="无资料" class="fav_null" style="display: block;"></div>
+                            <div id="showAll" title="所有赛事" onclick="showAllGame(&#39;FT&#39;);" style="display: none;" class="fav_on"></div>
+                            <div id="showMy" title="我的最爱" onclick="showMyLove(&#39;FT&#39;);" class="fav_out" style="display: none;"></div>
+                        </td>
+                        <td class="refresh_btn" id="refresh_btn" onclick="this.className=&#39;refresh_on&#39;;"><!--秒数更新--><div onclick="javascript:reload_var()"><font id="refreshTime">刷新</font></div></td>
+                        <td class="leg_btn"><div onclick="javascript:chg_league();" id="sel_league">选择联赛 (<span id="str_num">全部</span>)</div></td>
+                        <td class="OrderType" id="Ordertype"><select id="myoddType" onchange="chg_odd_type()"><option value="H" selected="">香港盘</option><option value="M">马来盘</option><option value="I">印尼盘</option><option value="E">欧洲盘</option></select></td>
+                     </tr>
+                  </tbody></table>
+              
+                </td>
+              </tr>
+            </tbody></table>
+          </h2>
+          		<!--     资料显示的layer     -->
+				<div id="showtable">
+  
+
+          <table id="game_table" cellspacing="0" cellpadding="0" class="game">
+            <tbody><tr>
+              <th class="time">时间</th>
+              <th class="team">赛事</th>
+              <th class="h_r">让分</th>
+              <th class="h_ou">大小</th>
+              <th class="h_oe">单/双</th>
+            </tr>
+            
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: ;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430030" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">以色列<br>
+      大不列颠
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430030"><div id="09-0430030" class="fov_icon_out" style="cursor: pointer; display: none;" title="我的最爱" onclick="addShowLoveI(&#39;30030&#39;,&#39;09-04&lt;br&gt;08:30a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;以色列&#39;,&#39;大不列颠&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">13.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30030&amp;strong=H&amp;langx=zh-cn&#39;);" title="以色列"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大148</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30029&amp;langx=zh-cn&#39;);" title="大"><font true="">0.87</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430030" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30029&amp;strong=H&amp;langx=zh-cn&#39;);" title="大不列颠"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">小148</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30030&amp;langx=zh-cn&#39;);" title="小"><font true="">0.91</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159937&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430032" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">拉脱维亚<br>
+      波斯尼亚
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430032"><div id="09-0430032" class="fov_icon_out" style="cursor: pointer; display: none;" title="我的最爱" onclick="addShowLoveI(&#39;30032&#39;,&#39;09-04&lt;br&gt;08:30a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;拉脱维亚&#39;,&#39;波斯尼亚&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30032&amp;strong=C&amp;langx=zh-cn&#39;);" title="拉脱维亚"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">大158.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30031&amp;langx=zh-cn&#39;);" title="大"><font true="">0.90</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430032" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">1</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30031&amp;strong=C&amp;langx=zh-cn&#39;);" title="波斯尼亚"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">小158.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30032&amp;langx=zh-cn&#39;);" title="小"><font true="">0.88</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159944&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430060" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30</td>
+    <td rowspan="2" class="team_name">拉脱维亚<br>
+      波斯尼亚
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430060"><div id="09-0430060" class="fov_icon_out" style="cursor: pointer; display: none;" title="我的最爱" onclick="addShowLoveI(&#39;30060&#39;,&#39;09-04&lt;br&gt;08:30a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;拉脱维亚&#39;,&#39;波斯尼亚&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30060&amp;strong=C&amp;langx=zh-cn&#39;);" title="拉脱维亚"><font true="">0.97</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30059&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430060" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30059&amp;strong=C&amp;langx=zh-cn&#39;);" title="波斯尼亚"><font true="">0.83</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30060&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160042&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430034" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">格鲁吉亚<br>
+      波兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430034"><div id="09-0430034" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30034&#39;,&#39;09-04&lt;br&gt;08:30a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;格鲁吉亚&#39;,&#39;波兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30034&amp;strong=C&amp;langx=zh-cn&#39;);" title="格鲁吉亚"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大149.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30033&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430034" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">5.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30033&amp;strong=C&amp;langx=zh-cn&#39;);" title="波兰"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">小149.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30034&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159951&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430064" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30</td>
+    <td rowspan="2" class="team_name">格鲁吉亚<br>
+      波兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430064"><div id="09-0430064" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30064&#39;,&#39;09-04&lt;br&gt;08:30a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;格鲁吉亚&#39;,&#39;波兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30064&amp;strong=C&amp;langx=zh-cn&#39;);" title="格鲁吉亚"><font true="">2.08</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30063&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430064" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30063&amp;strong=C&amp;langx=zh-cn&#39;);" title="波兰"><font true="">0.38</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30064&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160056&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430036" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">土耳其<br>
+      芬兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430036"><div id="09-0430036" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30036&#39;,&#39;09-04&lt;br&gt;08:30a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;土耳其&#39;,&#39;芬兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">9</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30036&amp;strong=H&amp;langx=zh-cn&#39;);" title="土耳其"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">大150.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30035&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430036" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30035&amp;strong=H&amp;langx=zh-cn&#39;);" title="芬兰"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">小150.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30036&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159958&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430068" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>08:30</td>
+    <td rowspan="2" class="team_name">土耳其<br>
+      芬兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430068"><div id="09-0430068" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30068&#39;,&#39;09-04&lt;br&gt;08:30a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;土耳其&#39;,&#39;芬兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30068&amp;strong=H&amp;langx=zh-cn&#39;);" title="土耳其"><font true="">0.19</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30067&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430068" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30067&amp;strong=H&amp;langx=zh-cn&#39;);" title="芬兰"><font true="">3.84</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30068&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160070&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430038" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">比利时<br>
+      乌克兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430038"><div id="09-0430038" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30038&#39;,&#39;09-04&lt;br&gt;11:45a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;比利时&#39;,&#39;乌克兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30038&amp;strong=C&amp;langx=zh-cn&#39;);" title="比利时"><font true="">0.87</font></a></span></td>
+    <td class="b_rig"><span class="con">大137.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30037&amp;langx=zh-cn&#39;);" title="大"><font true="">0.95</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430038" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30037&amp;strong=C&amp;langx=zh-cn&#39;);" title="乌克兰"><font true="">0.95</font></a></span></td>
+    <td class="b_rig"><span class="con">小137.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30038&amp;langx=zh-cn&#39;);" title="小"><font true="">0.83</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159965&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430072" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45</td>
+    <td rowspan="2" class="team_name">比利时<br>
+      乌克兰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430072"><div id="09-0430072" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30072&#39;,&#39;09-04&lt;br&gt;11:45a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;比利时&#39;,&#39;乌克兰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30072&amp;strong=C&amp;langx=zh-cn&#39;);" title="比利时"><font true="">1.31</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30071&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430072" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30071&amp;strong=C&amp;langx=zh-cn&#39;);" title="乌克兰"><font true="">0.60</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30072&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160084&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430040" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">马其顿<br>
+      黑山
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430040"><div id="09-0430040" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30040&#39;,&#39;09-04&lt;br&gt;11:45a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;马其顿&#39;,&#39;黑山&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30040&amp;strong=H&amp;langx=zh-cn&#39;);" title="马其顿"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">大142</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30039&amp;langx=zh-cn&#39;);" title="大"><font true="">0.87</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430040" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30039&amp;strong=H&amp;langx=zh-cn&#39;);" title="黑山"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">小142</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30040&amp;langx=zh-cn&#39;);" title="小"><font true="">0.91</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159972&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430076" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45</td>
+    <td rowspan="2" class="team_name">马其顿<br>
+      黑山
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430076"><div id="09-0430076" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30076&#39;,&#39;09-04&lt;br&gt;11:45a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;马其顿&#39;,&#39;黑山&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30076&amp;strong=H&amp;langx=zh-cn&#39;);" title="马其顿"><font true="">0.60</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30075&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430076" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30075&amp;strong=H&amp;langx=zh-cn&#39;);" title="黑山"><font true="">1.40</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30076&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160098&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430042" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">西班牙<br>
+      克罗地亚
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430042"><div id="09-0430042" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30042&#39;,&#39;09-04&lt;br&gt;11:45a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;西班牙&#39;,&#39;克罗地亚&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">12</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30042&amp;strong=H&amp;langx=zh-cn&#39;);" title="西班牙"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大151</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30041&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430042" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30041&amp;strong=H&amp;langx=zh-cn&#39;);" title="克罗地亚"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">小151</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30042&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159979&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430080" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45</td>
+    <td rowspan="2" class="team_name">西班牙<br>
+      克罗地亚
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430080"><div id="09-0430080" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30080&#39;,&#39;09-04&lt;br&gt;11:45a&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;西班牙&#39;,&#39;克罗地亚&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30080&amp;strong=H&amp;langx=zh-cn&#39;);" title="西班牙"><font true="">0.10</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30079&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430080" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30079&amp;strong=H&amp;langx=zh-cn&#39;);" title="克罗地亚"><font true="">7.69</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30080&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160112&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430044" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>11:45<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">瑞典<br>
+      希臘
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430044"><div id="09-0430044" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30044&#39;,&#39;09-04&lt;br&gt;11:45a&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;瑞典&#39;,&#39;希臘&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30044&amp;strong=C&amp;langx=zh-cn&#39;);" title="瑞典"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">大148</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30043&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430044" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">20</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30043&amp;strong=C&amp;langx=zh-cn&#39;);" title="希臘"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">小148</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30044&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159986&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430046" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">法国<br>
+      德国
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430046"><div id="09-0430046" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30046&#39;,&#39;09-04&lt;br&gt;03:00p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;法国&#39;,&#39;德国&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">15</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30046&amp;strong=H&amp;langx=zh-cn&#39;);" title="法国"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">大143.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30045&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430046" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30045&amp;strong=H&amp;langx=zh-cn&#39;);" title="德国"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">小143.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30046&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159993&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430048" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">斯洛文尼亚<br>
+      捷克
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430048"><div id="09-0430048" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30048&#39;,&#39;09-04&lt;br&gt;03:00p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;斯洛文尼亚&#39;,&#39;捷克&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">12.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30048&amp;strong=H&amp;langx=zh-cn&#39;);" title="斯洛文尼亚"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">大143.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30047&amp;langx=zh-cn&#39;);" title="大"><font true="">0.84</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430048" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30047&amp;strong=H&amp;langx=zh-cn&#39;);" title="捷克"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">小143.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30048&amp;langx=zh-cn&#39;);" title="小"><font true="">0.94</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160000&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430050" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">俄罗斯<br>
+      意大利
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430050"><div id="09-0430050" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30050&#39;,&#39;09-04&lt;br&gt;03:00p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;俄罗斯&#39;,&#39;意大利&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30050&amp;strong=H&amp;langx=zh-cn&#39;);" title="俄罗斯"><font true="">0.86</font></a></span></td>
+    <td class="b_rig"><span class="con">大146.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30049&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430050" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30049&amp;strong=H&amp;langx=zh-cn&#39;);" title="意大利"><font true="">0.96</font></a></span></td>
+    <td class="b_rig"><span class="con">小146.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30050&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160007&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430096" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00</td>
+    <td rowspan="2" class="team_name">俄罗斯<br>
+      意大利
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430096"><div id="09-0430096" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30096&#39;,&#39;09-04&lt;br&gt;03:00p&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;俄罗斯&#39;,&#39;意大利&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30096&amp;strong=H&amp;langx=zh-cn&#39;);" title="俄罗斯"><font true="">0.59</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30095&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430096" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30095&amp;strong=H&amp;langx=zh-cn&#39;);" title="意大利"><font true="">1.40</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30096&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160168&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430052" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">塞尔维亚<br>
+      立陶宛
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430052"><div id="09-0430052" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30052&#39;,&#39;09-04&lt;br&gt;03:00p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;塞尔维亚&#39;,&#39;立陶宛&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30052&amp;strong=C&amp;langx=zh-cn&#39;);" title="塞尔维亚"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大147.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30051&amp;langx=zh-cn&#39;);" title="大"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">单&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font true="">1.94</font></a></td>
+  </tr>
+  <tr id="TR1_09-0430052" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">5.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30051&amp;strong=C&amp;langx=zh-cn&#39;);" title="立陶宛"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">小147.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30052&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">双&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160014&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font true="">1.94</font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)">
+      <span id="FIBA欧洲篮球赛(在斯洛文尼亚)" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;)" class="leg_bar">FIBA欧洲篮球赛(在斯洛文尼亚)</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0430100" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-04<br>15:00</td>
+    <td rowspan="2" class="team_name">塞尔维亚<br>
+      立陶宛
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0430100"><div id="09-0430100" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;30100&#39;,&#39;09-04&lt;br&gt;03:00p&#39;,&#39;FIBA欧洲篮球赛(在斯洛文尼亚)&#39;,&#39;塞尔维亚&#39;,&#39;立陶宛&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30100&amp;strong=C&amp;langx=zh-cn&#39;);" title="塞尔维亚"><font true="">2.00</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30099&amp;langx=zh-cn&#39;);" title="大"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0430100" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=30099&amp;strong=C&amp;langx=zh-cn&#39;);" title="立陶宛"><font true="">0.40</font></a></span></td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=30100&amp;langx=zh-cn&#39;);" title="小"><font undefined=""></font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1160182&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: ;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0540002" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-05<br>20:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">丹佛野马<br>
+      巴尔的摩乌鸦
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0540002"><div id="09-0540002" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;40002&#39;,&#39;09-05&lt;br&gt;08:30p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;丹佛野马&#39;,&#39;巴尔的摩乌鸦&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">7.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=40002&amp;strong=H&amp;langx=zh-cn&#39;);" title="丹佛野马"><font true="">1.04</font></a></span></td>
+    <td class="b_rig"><span class="con">大48</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=40001&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0540002" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=40001&amp;strong=H&amp;langx=zh-cn&#39;);" title="巴尔的摩乌鸦"><font true="">0.84</font></a></span></td>
+    <td class="b_rig"><span class="con">小48</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=40002&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159398&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870006" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">水牛城比尔<br>
+      新英格兰爱国者
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870006"><div id="09-0870006" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70006&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;水牛城比尔&#39;,&#39;新英格兰爱国者&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70006&amp;strong=C&amp;langx=zh-cn&#39;);" title="水牛城比尔"><font true="">1.00</font></a></span></td>
+    <td class="b_rig"><span class="con">大51</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70005&amp;langx=zh-cn&#39;);" title="大"><font true="">0.91</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870006" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">9.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70005&amp;strong=C&amp;langx=zh-cn&#39;);" title="新英格兰爱国者"><font true="">0.88</font></a></span></td>
+    <td class="b_rig"><span class="con">小51</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70006&amp;langx=zh-cn&#39;);" title="小"><font true="">0.95</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159405&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870008" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">芝加哥熊<br>
+      辛辛那堤孟加拉虎
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870008"><div id="09-0870008" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70008&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;芝加哥熊&#39;,&#39;辛辛那堤孟加拉虎&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70008&amp;strong=H&amp;langx=zh-cn&#39;);" title="芝加哥熊"><font true="">0.96</font></a></span></td>
+    <td class="b_rig"><span class="con">大41.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70007&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870008" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70007&amp;strong=H&amp;langx=zh-cn&#39;);" title="辛辛那堤孟加拉虎"><font true="">0.92</font></a></span></td>
+    <td class="b_rig"><span class="con">小41.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70008&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159412&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870010" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">克里夫兰布朗<br>
+      迈阿密海豚
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870010"><div id="09-0870010" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70010&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;克里夫兰布朗&#39;,&#39;迈阿密海豚&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">0</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70010&amp;strong=H&amp;langx=zh-cn&#39;);" title="克里夫兰布朗"><font true="">0.85</font></a></span></td>
+    <td class="b_rig"><span class="con">大41</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70009&amp;langx=zh-cn&#39;);" title="大"><font true="">0.86</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870010" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70009&amp;strong=H&amp;langx=zh-cn&#39;);" title="迈阿密海豚"><font true="">1.03</font></a></span></td>
+    <td class="b_rig"><span class="con">小41</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70010&amp;langx=zh-cn&#39;);" title="小"><font true="">1.00</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159419&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870012" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">新奥尔良圣徒<br>
+      亚特兰大猎鹰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870012"><div id="09-0870012" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70012&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;新奥尔良圣徒&#39;,&#39;亚特兰大猎鹰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70012&amp;strong=H&amp;langx=zh-cn&#39;);" title="新奥尔良圣徒"><font true="">0.86</font></a></span></td>
+    <td class="b_rig"><span class="con">大54</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70011&amp;langx=zh-cn&#39;);" title="大"><font true="">0.97</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870012" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70011&amp;strong=H&amp;langx=zh-cn&#39;);" title="亚特兰大猎鹰"><font true="">1.02</font></a></span></td>
+    <td class="b_rig"><span class="con">小54</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70012&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159426&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870014" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">纽约喷气机<br>
+      坦帕湾海盗
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870014"><div id="09-0870014" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70014&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;纽约喷气机&#39;,&#39;坦帕湾海盗&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70014&amp;strong=C&amp;langx=zh-cn&#39;);" title="纽约喷气机"><font true="">1.03</font></a></span></td>
+    <td class="b_rig"><span class="con">大39.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70013&amp;langx=zh-cn&#39;);" title="大"><font true="">0.91</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870014" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70013&amp;strong=C&amp;langx=zh-cn&#39;);" title="坦帕湾海盗"><font true="">0.85</font></a></span></td>
+    <td class="b_rig"><span class="con">小39.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70014&amp;langx=zh-cn&#39;);" title="小"><font true="">0.95</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159433&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870016" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">匹兹堡钢人<br>
+      田纳西巨神
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870016"><div id="09-0870016" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70016&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;匹兹堡钢人&#39;,&#39;田纳西巨神&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">7</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70016&amp;strong=H&amp;langx=zh-cn&#39;);" title="匹兹堡钢人"><font true="">1.04</font></a></span></td>
+    <td class="b_rig"><span class="con">大42</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70015&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870016" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70015&amp;strong=H&amp;langx=zh-cn&#39;);" title="田纳西巨神"><font true="">0.84</font></a></span></td>
+    <td class="b_rig"><span class="con">小42</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70016&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159440&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870018" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">底特律雄狮<br>
+      明尼苏达维京人
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870018"><div id="09-0870018" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70018&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;底特律雄狮&#39;,&#39;明尼苏达维京人&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">4.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70018&amp;strong=H&amp;langx=zh-cn&#39;);" title="底特律雄狮"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大46.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70017&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870018" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70017&amp;strong=H&amp;langx=zh-cn&#39;);" title="明尼苏达维京人"><font true="">0.97</font></a></span></td>
+    <td class="b_rig"><span class="con">小46.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70018&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159447&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870020" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">印第安那小马<br>
+      奥克兰突击者
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870020"><div id="09-0870020" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70020&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;印第安那小马&#39;,&#39;奥克兰突击者&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">10</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70020&amp;strong=H&amp;langx=zh-cn&#39;);" title="印第安那小马"><font true="">1.05</font></a></span></td>
+    <td class="b_rig"><span class="con">大47</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70019&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870020" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70019&amp;strong=H&amp;langx=zh-cn&#39;);" title="奥克兰突击者"><font true="">0.83</font></a></span></td>
+    <td class="b_rig"><span class="con">小47</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70020&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159454&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870022" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">卡罗莱纳黑豹<br>
+      西雅图海鹰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870022"><div id="09-0870022" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70022&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;卡罗莱纳黑豹&#39;,&#39;西雅图海鹰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70022&amp;strong=C&amp;langx=zh-cn&#39;);" title="卡罗莱纳黑豹"><font true="">1.09</font></a></span></td>
+    <td class="b_rig"><span class="con">大45</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70021&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870022" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">3</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70021&amp;strong=C&amp;langx=zh-cn&#39;);" title="西雅图海鹰"><font true="">0.79</font></a></span></td>
+    <td class="b_rig"><span class="con">小45</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70022&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159461&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870024" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>13:00</td>
+    <td rowspan="2" class="team_name">傑克逊威尔美洲虎<br>
+      堪萨斯城酋长
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870024"><div id="09-0870024" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70024&#39;,&#39;09-08&lt;br&gt;01:00p&#39;,&#39;美国职业美式足球&#39;,&#39;傑克逊威尔美洲虎&#39;,&#39;堪萨斯城酋长&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70024&amp;strong=C&amp;langx=zh-cn&#39;);" title="傑克逊威尔美洲虎"><font true="">0.92</font></a></span></td>
+    <td class="b_rig"><span class="con">大41</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70023&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870024" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">3.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70023&amp;strong=C&amp;langx=zh-cn&#39;);" title="堪萨斯城酋长"><font true="">0.96</font></a></span></td>
+    <td class="b_rig"><span class="con">小41</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70024&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159468&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870026" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>16:25<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">圣路易斯公羊<br>
+      亚历桑那红雀
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870026"><div id="09-0870026" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70026&#39;,&#39;09-08&lt;br&gt;04:25p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;圣路易斯公羊&#39;,&#39;亚历桑那红雀&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">4.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70026&amp;strong=H&amp;langx=zh-cn&#39;);" title="圣路易斯公羊"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大40.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70025&amp;langx=zh-cn&#39;);" title="大"><font true="">0.85</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870026" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70025&amp;strong=H&amp;langx=zh-cn&#39;);" title="亚历桑那红雀"><font true="">0.97</font></a></span></td>
+    <td class="b_rig"><span class="con">小40.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70026&amp;langx=zh-cn&#39;);" title="小"><font true="">1.01</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159475&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870028" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>16:25<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">旧金山49人<br>
+      绿湾包装工
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870028"><div id="09-0870028" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70028&#39;,&#39;09-08&lt;br&gt;04:25p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;旧金山49人&#39;,&#39;绿湾包装工&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">4.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70028&amp;strong=H&amp;langx=zh-cn&#39;);" title="旧金山49人"><font true="">0.91</font></a></span></td>
+    <td class="b_rig"><span class="con">大48.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70027&amp;langx=zh-cn&#39;);" title="大"><font true="">0.97</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870028" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70027&amp;strong=H&amp;langx=zh-cn&#39;);" title="绿湾包装工"><font true="">0.97</font></a></span></td>
+    <td class="b_rig"><span class="con">小48.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70028&amp;langx=zh-cn&#39;);" title="小"><font true="">0.89</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159482&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0870030" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-08<br>20:30<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">达拉斯牛仔<br>
+      纽约巨人
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0870030"><div id="09-0870030" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;70030&#39;,&#39;09-08&lt;br&gt;08:30p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;达拉斯牛仔&#39;,&#39;纽约巨人&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70030&amp;strong=H&amp;langx=zh-cn&#39;);" title="达拉斯牛仔"><font true="">0.95</font></a></span></td>
+    <td class="b_rig"><span class="con">大48.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70029&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0870030" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=70029&amp;strong=H&amp;langx=zh-cn&#39;);" title="纽约巨人"><font true="">0.93</font></a></span></td>
+    <td class="b_rig"><span class="con">小48.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=70030&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159489&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0910002" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-09<br>19:00<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">华盛顿红皮<br>
+      费城老鹰
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0910002"><div id="09-0910002" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;10002&#39;,&#39;09-09&lt;br&gt;07:00p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;华盛顿红皮&#39;,&#39;费城老鹰&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con">3.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=10002&amp;strong=H&amp;langx=zh-cn&#39;);" title="华盛顿红皮"><font true="">0.99</font></a></span></td>
+    <td class="b_rig"><span class="con">大51</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=10001&amp;langx=zh-cn&#39;);" title="大"><font true="">0.83</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0910002" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=10001&amp;strong=H&amp;langx=zh-cn&#39;);" title="费城老鹰"><font true="">0.89</font></a></span></td>
+    <td class="b_rig"><span class="con">小51</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=10002&amp;langx=zh-cn&#39;);" title="小"><font true="">1.03</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159496&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+	
+  <!--SHOW LEGUAGE START-->
+  <tr style="display: none;">
+    <td colspan="8" class="b_hline">
+    	<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="legicon" onclick="parent.showLeg(&#39;美国职业美式足球&#39;)">
+      <span id="美国职业美式足球" class="showleg">
+      	<span id="LegOpen"></span>
+       <!--展开联盟-符号--><!--span id="LegOpen"></span-->
+       <!--收合联盟-符号--><!--div id="LegClose"></div-->
+      </span>
+        </td><td onclick="parent.showLeg(&#39;美国职业美式足球&#39;)" class="leg_bar">美国职业美式足球</td></tr></tbody></table>
+      </td>
+  </tr>
+  <!--SHOW LEGUAGE END-->
+  <tr id="TR_09-0910004" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td rowspan="2" class="b_cen">09-09<br>22:15<br><font color="red">滚球</font></td>
+    <td rowspan="2" class="team_name">圣地牙哥电光<br>
+      休斯顿德克萨斯人
+       <table border="0" cellpadding="0" cellspacing="0" class="fav_tab"><tbody><tr><td class="hot_star"><span id="sp_09-0910004"><div id="09-0910004" class="fov_icon_out" style="cursor:hand;display:none;" title="我的最爱" onclick="addShowLoveI(&#39;10004&#39;,&#39;09-09&lt;br&gt;10:15p&lt;br&gt;&lt;font color=red&gt;滚球&lt;/font&gt;&#39;,&#39;美国职业美式足球&#39;,&#39;圣地牙哥电光&#39;,&#39;休斯顿德克萨斯人&#39;); "></div></span></td><td class="hot_tv"></td></tr></tbody></table><!--星星符号--><!--div class="fov_icon_on"></div--><!--星星符号-灰色--><!--div class="fov_icon_out"></div-->
+      </td>
+    <td class="b_rig"><span class="con"></span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=10004&amp;strong=C&amp;langx=zh-cn&#39;);" title="圣地牙哥电光"><font true="">0.92</font></a></span></td>
+    <td class="b_rig"><span class="con">大44</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=10003&amp;langx=zh-cn&#39;);" title="大"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=ODD&amp;langx=zh-cn&#39;);" title="单"><font undefined=""></font></a></td>
+  </tr>
+  <tr id="TR1_09-0910004" onmouseover="mouseEnter_pointer(this.id);" onmouseout="mouseOut_pointer(this.id);" style="display: ;">
+    <td class="b_rig"><span class="con">3.5</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;R&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=C&amp;gnum=10003&amp;strong=C&amp;langx=zh-cn&#39;);" title="休斯顿德克萨斯人"><font true="">0.96</font></a></span></td>
+    <td class="b_rig"><span class="con">小44</span> <span class="ratio"><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;OU&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;type=H&amp;gnum=10004&amp;langx=zh-cn&#39;);" title="小"><font true="">0.93</font></a></span></td>
+    <td class="b_cen"><span class="con_oe">&nbsp;</span><a href="javascript://" onclick="parent.parent.mem_order.betOrder(&#39;BK&#39;,&#39;EO&#39;,&#39;gid=1159503&amp;uid=448e0b6dm10236972l44080627&amp;odd_f_type=H&amp;rtype=EVEN&amp;langx=zh-cn&#39;);" title="双"><font undefined=""></font></a></td>
+  </tr>
+
+
+
+          </tbody></table>
+  
+</div>
+	</td>
+      </tr>
+      <tr>
+        <td id="foot"><b>&nbsp;</b></td>
+      </tr>
+    </tbody></table>
+
+	
+	<!--下方刷新钮--><div id="refresh_down" class="refresh_M_btn" onclick="this.className=&#39;refresh_M_on&#39;;javascript:reload_var()"><span>刷新</span></div>
+	
+
+</td></tr></tbody></table>
+<div class="more" id="more_window" name="more_window" style="position:absolute; display:none; ">
+  <iframe id="showdata" name="showdata" scrolling="no" frameborder="NO" border="0" framespacing="0" noresize="" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"></iframe>
+</div>
+<!--选择联赛-->
+<div id="legView" style="display:none;" class="legView">
+    <div class="leg_head" onmousedown="initializedragie(&#39;legView&#39;)"></div>
+    
+<div><iframe id="legFrame" frameborder="no" border="0" allowtransparency="true"></iframe></div>
+
+
+    <div class="leg_foot"></div>
+</div>
+<div id="controlscroll" style="position: absolute; top: 1px; display: none;"><table border="0" cellspacing="0" cellpadding="0" class="loadBox"><tbody><tr><td><!--loading--></td></tr></tbody></table></div>
+
+
+<!--<div id="copyright">
+    版权所有 皇冠 建议您以 IE 5.0 800 X 600 以上高彩模式浏览本站&nbsp;&nbsp;<a id=download title="下载" href="http://www.microsoft.com/taiwan/products/ie/" target="_blank">立刻下载IE</a>
+</div>-->
+<!--div id="copyright">
+    版权所有 建议您以 IE 5.0 800 X 600 以上高彩模式浏览本站&nbsp;&nbsp;<a id=download title="下载" href="http://www.microsoft.com/taiwan/products/ie/" target="_blank">立刻下载IE</a>
+</div-->
+<!-- ------------------------------ 盘口选择 ------------------------------ -->
+
+<div id="odd_f_window" style="display: none; position: absolute;">
+<table id="odd_group" width="100" border="0" cellspacing="1" cellpadding="1">
+		<tbody><tr>
+			<td class="b_hline">盘口</td>
+		</tr>
+		<tr>
+			<td class="b_cen" width="100">
+				<span id="show_odd_f"></span></td>
+		</tr>
+	</tbody></table>
+</div>
+
+<!-- ------------------------------ 盘口选择 ------------------------------ --></body></html>

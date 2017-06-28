@@ -1,0 +1,36 @@
+球类 必须分类
+CBall
+派生，此批应用于今日赛事和早盘
+CFootBall CBasketBall CTennisBall CVolleyBall CBaseBall COpBall
+在每种类型的类中，各自匹配需要的值，写入数据库
+
+另外派生一批，应用于滚球栏目
+CNowFootBall CNowBasketBall CNowTennisBall CNowVolleyBall CNowBaseBall CNowOpBall
+
+投注类型，可以自定义设置
+
+
+
+规则:
+除了冠军和赛果，其余的数据都是Array字段名称和Array数据，可以统一匹配出来
+冠军，使用Array匹配出数据，没有Array字段名称
+赛果，匹配html数据
+
+
+数据库命令池,定时执行数据库命令,单例对象
+CSqlCmdPool
+
+
+
+###########
+投注类 可以给每种球型类设置固定的投注类型 ignore
+CBet
+派生
+CR CPd CT CF CPr CFs CResult
+
+
+模式类
+CMode
+派生
+CCurrentMode CTodayMode CFutureMode 后面2个解析一样,第一个有差异
+

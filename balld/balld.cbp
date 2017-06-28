@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="balld" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/balld" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/balld" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wall -O1" />
+			<Add directory="." />
+		</Compiler>
+		<Linker>
+			<Add option="-lpthread -ljson -lpcre++ -lpcre -L /usr/local/lib -lcurl -lmysqlclient -L /usr/lib/mysql" />
+		</Linker>
+		<Unit filename="CAes.cpp" />
+		<Unit filename="CAes.h" />
+		<Unit filename="CBall.cpp" />
+		<Unit filename="CBall.h" />
+		<Unit filename="CBaseBall.cpp" />
+		<Unit filename="CBaseBall.h" />
+		<Unit filename="CBasketBall.cpp" />
+		<Unit filename="CBasketBall.h" />
+		<Unit filename="CCltCurrentJob.cpp" />
+		<Unit filename="CCltCurrentJob.h" />
+		<Unit filename="CCltCurrentThread.cpp" />
+		<Unit filename="CCltCurrentThread.h" />
+		<Unit filename="CCltFutureJob.cpp" />
+		<Unit filename="CCltFutureJob.h" />
+		<Unit filename="CCltFutureThread.cpp" />
+		<Unit filename="CCltFutureThread.h" />
+		<Unit filename="CCltResultJob.cpp" />
+		<Unit filename="CCltResultJob.h" />
+		<Unit filename="CCltResultThread.cpp" />
+		<Unit filename="CCltResultThread.h" />
+		<Unit filename="CCltTodayJob.cpp" />
+		<Unit filename="CCltTodayJob.h" />
+		<Unit filename="CCltTodayThread.cpp" />
+		<Unit filename="CCltTodayThread.h" />
+		<Unit filename="CCollectThread.cpp" />
+		<Unit filename="CCollectThread.h" />
+		<Unit filename="CCondition.cpp" />
+		<Unit filename="CCondition.h" />
+		<Unit filename="CCurl.cpp" />
+		<Unit filename="CCurl.h" />
+		<Unit filename="CElapsedTimer.cpp" />
+		<Unit filename="CElapsedTimer.h" />
+		<Unit filename="CFlagMutex.cpp" />
+		<Unit filename="CFlagMutex.h" />
+		<Unit filename="CFootBall.cpp" />
+		<Unit filename="CFootBall.h" />
+		<Unit filename="CIniFile.cpp" />
+		<Unit filename="CIniFile.h" />
+		<Unit filename="CJob.cpp" />
+		<Unit filename="CJob.h" />
+		<Unit filename="CJson.cpp" />
+		<Unit filename="CJson.h" />
+		<Unit filename="CLoginThread.cpp" />
+		<Unit filename="CLoginThread.h" />
+		<Unit filename="CMatchResult.cpp" />
+		<Unit filename="CMatchResult.h" />
+		<Unit filename="CMd5.cpp" />
+		<Unit filename="CMd5.h" />
+		<Unit filename="CMutex.cpp" />
+		<Unit filename="CMutex.h" />
+		<Unit filename="CMysql.cpp" />
+		<Unit filename="CMysql.h" />
+		<Unit filename="CNowBaseBall.cpp" />
+		<Unit filename="CNowBaseBall.h" />
+		<Unit filename="CNowBasketBall.cpp" />
+		<Unit filename="CNowBasketBall.h" />
+		<Unit filename="CNowFootBall.cpp" />
+		<Unit filename="CNowFootBall.h" />
+		<Unit filename="CNowOpBall.cpp" />
+		<Unit filename="CNowOpBall.h" />
+		<Unit filename="CNowTennisBall.cpp" />
+		<Unit filename="CNowTennisBall.h" />
+		<Unit filename="CNowVolleyBall.cpp" />
+		<Unit filename="CNowVolleyBall.h" />
+		<Unit filename="COpBall.cpp" />
+		<Unit filename="COpBall.h" />
+		<Unit filename="CPublic.cpp" />
+		<Unit filename="CPublic.h" />
+		<Unit filename="CRegex.cpp" />
+		<Unit filename="CRegex.h" />
+		<Unit filename="CSettings.cpp" />
+		<Unit filename="CSettings.h" />
+		<Unit filename="CSqlCmdPool.cpp" />
+		<Unit filename="CSqlCmdPool.h" />
+		<Unit filename="CTcpServer.cpp" />
+		<Unit filename="CTcpServer.h" />
+		<Unit filename="CTcpSocket.cpp" />
+		<Unit filename="CTcpSocket.h" />
+		<Unit filename="CTennisBall.cpp" />
+		<Unit filename="CTennisBall.h" />
+		<Unit filename="CThread.cpp" />
+		<Unit filename="CThread.h" />
+		<Unit filename="CTimeout.cpp" />
+		<Unit filename="CTimeout.h" />
+		<Unit filename="CVolleyBall.cpp" />
+		<Unit filename="CVolleyBall.h" />
+		<Unit filename="ball.h" />
+		<Unit filename="ballstruct.h" />
+		<Unit filename="json/autolink.h" />
+		<Unit filename="json/config.h" />
+		<Unit filename="json/features.h" />
+		<Unit filename="json/forwards.h" />
+		<Unit filename="json/json.h" />
+		<Unit filename="json/reader.h" />
+		<Unit filename="json/value.h" />
+		<Unit filename="json/writer.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="stdhdr.h" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

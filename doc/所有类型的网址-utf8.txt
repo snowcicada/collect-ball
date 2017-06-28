@@ -1,0 +1,214 @@
+网址规则:
+
+开头:http://w782.hg3088.com/app/member/
+
+时间:
+	今日:browse
+	早盘:future
+
+类型:
+	足球:FT
+	篮球/美式足球/橄榄球:BK
+	网球:TN
+	排球/羽毛球/乒乓球:VB
+	棒球:BS
+	其他:OP
+
+rtype:
+	独赢 ＆ 让球 ＆ 大小 & 单 / 双: r
+	波胆: pd
+	总入球: t
+	半场 / 全场: f
+	足球/其他的综合过关: p3
+	篮球/美式足球/橄榄球/网球/排球/羽毛球/乒乓球/棒球的综合过关: pr
+	让分 ＆ 大小 ＆ 单 / 双: all
+	冠军: fs
+
+语言:
+	简体中文: zh-cn
+	繁体中文: zh-tw
+	英文: en-us
+
+uid:动态
+
+页数:page_no,从0开始
+
+#####所有类型的网址#####
+1.足球
+(1).独赢 ＆ 让球 ＆ 大小 & 单 / 双
+第1页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(2).波胆
+第1页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(3).总入球
+第1页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=t&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=t&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(4).半场 / 全场
+第1页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=f&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=f&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(5).综合过关
+第1页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=p3&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+http://w782.hg3088.com/app/member/FT_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=p3&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(6).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=&pages=1&records=40&FStype=FT&area_id=&league_id=&rtype=fs&hot_game=
+
+
+2.足球早盘
+(1).独赢 ＆ 让球 ＆ 大小 & 单 / 双
+第1页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1&g_date=ALL
+
+(2).波胆
+第1页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1&g_date=ALL
+
+(3).总入球
+第1页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=t&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=t&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1&g_date=ALL
+
+(4).半场 / 全场
+第1页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=f&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=f&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1&g_date=ALL
+
+(5).综合过关
+第1页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=p3&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+http://w782.hg3088.com/app/member/FT_future/body_var.php?uid=2c97324m10220238l44383795&rtype=p3&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1&g_date=ALL
+
+(6).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=FT&area_id=&league_id=&rtype=fs&hot_game=
+
+
+3.篮球/美式足球/橄榄球
+(1).让分 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=all&langx=zh-cn&mtype=4&league_id=undefined&hot_game=
+//第2页
+
+(2).综合过关
+第1页
+http://w782.hg3088.com/app/member/BK_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pr&langx=zh-cn&mtype=4&league_id=&hot_game=
+第2页
+
+(3).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BK&area_id=&league_id=&rtype=fs&hot_game=
+
+
+4.篮球早盘
+(1).让分 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=2c97324m10220238l44383795&rtype=all&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+
+(2).综合过关
+第1页
+http://w782.hg3088.com/app/member/BK_future/body_var.php?uid=2c97324m10220238l44383795&rtype=pr&langx=zh-cn&g_date=&mtype=4&league_id=&hot_game=
+第2页
+
+(3).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BK&area_id=&league_id=&rtype=fs&hot_game=
+
+
+3.网球
+(1).独赢 ＆ 让盘 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&delay=&league_id=parent.TN_lid_type&hot_game=
+第2页
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&page_no=1
+
+(2).赛盘投注
+第1页
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&mtype=4&delay=&league_id=parent.TN_lid_type&hot_game=
+第2页
+
+(3).综合过关
+第1页
+http://w782.hg3088.com/app/member/TN_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pr&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(4).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=TN&area_id=&league_id=&rtype=fs&hot_game=
+
+
+4.排球/羽毛球/乒乓球
+(1).独赢 ＆ 让盘 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&delay=&league_id=parent.VB_lid_type&hot_game=
+第2页
+
+(2).赛盘投注
+第1页
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pd&langx=zh-cn&mtype=4&delay=&league_id=parent.VB_lid_type&hot_game=
+第2页
+
+(3).综合过关
+第1页
+http://w782.hg3088.com/app/member/VB_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pr&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(4).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=VB&area_id=&league_id=&rtype=fs&hot_game=
+
+
+5.棒球
+(1).独赢 ＆ 让盘 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(2).综合过关
+第1页
+http://w782.hg3088.com/app/member/BS_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=pr&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(3).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=BS&area_id=&league_id=&rtype=fs&hot_game=
+
+
+6.其他
+(1).独赢 ＆ 让盘 ＆ 大小 ＆ 单 / 双
+第1页
+http://w782.hg3088.com/app/member/OP_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=r&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(2).综合过关
+第1页
+http://w782.hg3088.com/app/member/OP_browse/body_var.php?uid=2c97324m10220238l44383795&rtype=p3&langx=zh-cn&mtype=4&league_id=&hot_game=&delay=
+第2页
+
+(3).冠军
+http://w782.hg3088.com/app/member/browse_FS/reloadgame_R.php?mid=10220238&uid=2c97324m10220238l44383795&langx=zh-cn&choice=ALL&LegGame=ALL&pages=1&records=40&FStype=OP&area_id=&league_id=&rtype=fs&hot_game=
+
+
+#####网站规则#####
+1.页数
+字段parent.t_page;为页数
+第一页不需要使用页数
+第二页以上指定页数，页数从0开始
+
+2.匹配出Array，并删除内容里面的字体

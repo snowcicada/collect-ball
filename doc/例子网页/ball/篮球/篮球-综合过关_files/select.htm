@@ -1,0 +1,1093 @@
+
+<!-- saved from url=(0087)http://w151.hg3088.com/app/member/select.php?uid=448e0b6dm10236972l44080627&langx=zh-cn -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+top.uid = '448e0b6dm10236972l44080627';
+top.langx = 'zh-cn';
+top.liveid = ''
+top.casino = 'SI2';
+top.mtype = '4';
+</script>
+
+
+<meta name="Robots" contect="none">
+
+<title></title>
+<link href="mem_order_sel.css" rel="stylesheet" type="text/css">
+<link href="mem_order_olympics_cn.css" rel="stylesheet" type="text/css">
+<script>
+
+//--------------------------------public function ----------------------------
+
+function setRefreshPos(){
+		var refresh_right= body_browse.document.getElementById('refresh_right');
+		refresh_right.style.left= body_browse.document.getElementById('myTable').clientWidth*1+20;
+		//refresh_right.style.top= 39;
+	}
+
+function parseArray(gameHead,gameData){
+	var gameObj=new Object();
+	for (var i=0;i<gameHead.length;i++){
+		if (gameHead[i]!=""){	
+			eval("gameObj."+gameHead[i]+"='"+gameData[i]+"'");
+		}
+	}
+	return gameObj;
+}
+
+
+function check_ioratio(rec,rtype,GameData){
+//alert(flash_ior_set);
+	//return true;
+	//alert(GameFT.length+"----"+keepGameData.length)
+
+	if (flash_ior_set =='Y'){
+		//alert(oldObjDataFT[rec]);
+		if (""+oldObjDataFT[rec]=="undefined" || oldObjDataFT[rec].gid != GameData.gid){
+			var gameObj=new Object();
+			gameObj.gid=GameData.gid;
+			oldObjDataFT[rec]=gameObj;
+		}
+		
+		var new_ioratio=eval("GameData."+rtype);
+		var old_ioratio=eval("oldObjDataFT[rec]."+rtype);
+		
+		
+		if (""+old_ioratio=="undefined"){
+			eval("oldObjDataFT[rec]."+rtype+"=GameData."+rtype);
+			old_ioratio=eval("oldObjDataFT[rec]."+rtype);
+		}
+		
+		//alert("old_ioratio==>"+old_ioratio+",new_ioratio==>"+new_ioratio);
+		if (""+new_ioratio=="undefined" || new_ioratio==""){
+			eval("oldObjDataFT[rec]."+rtype+"=GameData."+rtype);
+			return;
+		}
+		
+		/*
+		if (parseFloat(old_ioratio)>parseFloat(new_ioratio) ){
+			eval("oldObjDataFT[rec]."+rtype+"=GameData."+rtype);
+			return "  style='border: 1px solid #FF0000;' ";
+		}
+		if (parseFloat(old_ioratio)<parseFloat(new_ioratio) ){
+			eval("oldObjDataFT[rec]."+rtype+"=GameData."+rtype);
+			return "  style='border: 1px solid #00FF00;' ";
+		}
+		*/
+		
+		if (old_ioratio!=new_ioratio && old_ioratio !="" && new_ioratio!="") {
+	    	eval("oldObjDataFT[rec]."+rtype+"=GameData."+rtype);
+			return "  style='background-color : yellow' ";
+		}
+		
+		return true;
+	}
+
+}
+//--------------判斷聯盟顯示或隱藏----------------
+function showLeg(leg){
+	for (var i=0;i<myLeg[leg].length;i++){
+	if ( body_browse.document.getElementById("TR_"+myLeg[leg][i]).style.display!="none"){
+				showLegIcon(leg,"LegClose",myLeg[leg][i],"none");
+				
+		}else{
+			showLegIcon(leg,"LegOpen",myLeg[leg][i],"");
+		}
+	}
+	if ((""+NoshowLeg[leg])=="undefined"){
+		NoshowLeg[leg]=-1;
+	}else{
+		NoshowLeg[leg]=NoshowLeg[leg]*-1;
+	}
+
+}
+function showLegIcon(leg,state,gnumH,display){
+	var  ary=body_browse.document.getElementsByName(leg);
+			
+	for (var j=0;j<ary.length;j++){
+		ary[j].innerHTML="<span id='"+state+"'></span>";
+	}
+	try{
+		body_browse.document.getElementById("TR3_"+gnumH).style.display=display;
+	}catch(E){}
+	try{
+		body_browse.document.getElementById("TR2_"+gnumH).style.display=display;
+	}catch(E){}
+	try{
+		body_browse.document.getElementById("TR1_"+gnumH).style.display=display;
+	}catch(E){}
+	try{
+		body_browse.document.getElementById("TR_"+gnumH).style.display=display;
+	}catch(E){}
+}
+//----------------------
+
+//分頁
+function show_page(){
+	//alert(rtype)
+	pg_str='';
+	obj_pg = body_browse.document.getElementById('pg_txt');
+//	alert(t_page);
+	if (t_page==0){
+		t_page=1;
+		//obj_pg.innerHTML = "";
+		//return;
+	}
+	var tmp_lid="";
+	if (rtype=="re"){
+		tmp_lid=eval("parent."+sel_gtype+"_lid_ary_RE");
+	}else{
+		tmp_lid=eval("parent."+sel_gtype+"_lid_ary");
+	}
+	//alert(tmp_lid+"--"+top.swShowLoveI+"--"+t_page)
+	if(tmp_lid=='ALL'&&!top.swShowLoveI){
+		var disabled="";
+		if (t_page==1){
+			disabled="disabled";
+			}
+		var pghtml=(pg*1+1)+" / " +t_page+" "+top.page+"&nbsp;&nbsp; <select  onchange='chg_pg(this.options[this.selectedIndex].value)' "+disabled+">";
+		for(var i=0;i<t_page;i++){
+			if (pg==i){
+		 		pghtml+="<option value='"+i+"' selected>"+(i+1)+"</option>";
+		 	}else{
+		  		pghtml+="<option value='"+i+"' >"+(i+1)+"</option>";
+		  	}
+		}
+		pghtml+="</select>";
+		obj_pg.innerHTML = pghtml;
+	}else{
+		obj_pg.innerHTML = "";
+	}
+}
+
+//將時間 轉回 24小時//04:00p
+function  change_time(get_time){
+	
+	if (get_time.indexOf("font") > 0 ) return get_time;
+	if (get_time.indexOf("p")>0 || get_time.indexOf("a")>0){
+		gtime=get_time.split(":");
+		if (gtime[1].indexOf("p")>0){
+			
+			if (gtime[0]!="12"){
+				gtime[0]=gtime[0]*1+12;
+			}	
+		}
+		gtime[1]=gtime[1].replace("a","").replace("p","");
+		
+	}else{
+		return get_time;
+	}
+	return gtime[0]+":"+gtime[1];
+	
+}
+
+//隱藏我的最愛選擇聯賽
+function dis_ShowLoveI(){
+
+if(top.swShowLoveI){
+  body_browse.document.getElementById("sel_league").style.display="none";
+ }else{
+  body_browse.document.getElementById("sel_league").style.display="";
+ }
+ 
+}
+
+
+function changeTitleStr(s,at){
+	if (s.charAt(at)=="H"){
+		return "H";
+	}else if(s.charAt(at)=="C"){
+		return "A";
+	}else if(s.charAt(at)=="N"){
+		return "D";
+	}
+	return "";
+}
+
+
+function loadingOK(){
+	//alert("loadingOK")
+	try{
+		body_browse.document.getElementById("refresh_btn").className="refresh_btn";
+	}catch(E){}
+	try{
+	body_browse.document.getElementById("refresh_right").className="refresh_M_btn";
+	}catch(E){}
+	try{	
+	body_browse.document.getElementById("refresh_down").className="refresh_M_btn";
+	}catch(E){}
+}
+
+
+var gameCount="";
+var recordHash=new Array();
+function showHOT(countHOT){
+	
+if( (""+countHOT=="") || (""+countHOT=="undefined") ){
+	
+	 body_browse.document.getElementById("euro_btn").style.display="none";
+	 body_browse.document.getElementById("euro_up").style.display="none";
+			
+}else{	
+		
+	if(""+top.hot_game=="undefined"){
+		top.hot_game="";
+	}	
+	var gtypeHOT =new Array("FT","BK","TN","VB","OP");
+	var countgames=countHOT.split(",");
+	recordHash=new Array();
+	var head_str="";
+	
+	if(rtype == "re"){
+		head_str="RB";
+	}else{
+		head_str=top.head_FU;
+	}
+	//alert(head_str);
+	
+	for( var i=0;i<countgames.length;i++){
+		var detailgame=countgames[i].split("|");
+		recordHash[detailgame[0]+"_"+detailgame[1]]=detailgame[2]*1;
+	}
+	if(recordHash[top.head_gtype+"_HOT_"+head_str]*1==0){
+		body_browse.document.getElementById("euro_btn").style.display="none";
+		body_browse.document.getElementById("euro_up").style.display="none";
+		//body_browse.document.getElementById("euro_close").style.display="";
+		if(top.hot_game!=""){
+			top.hot_game="";
+			body_browse.reload_var();
+		}
+	}else{	
+		if(top.hot_game!=""){
+			body_browse.document.getElementById("euro_btn").style.display="none";
+			body_browse.document.getElementById("euro_up").style.display="";
+		}else{
+			body_browse.document.getElementById("euro_btn").style.display="";
+			body_browse.document.getElementById("euro_up").style.display="none";
+		}
+		//body_browse.document.getElementById("euro_close").style.display="none";	
+	}
+	//alert(recordHash[top.head_gtype+"_HOT_RB"]);
+	//alert(recordHash[top.head_gtype+"_HOT_FT"]);
+	//alert(recordHash[top.head_gtype+"_HOT_FU"]);
+	//parent.mem_order.showHOT(recordHash[top.head_gtype+"_HOT_FT"],recordHash[top.head_gtype+"_HOT_FU"]);
+	//parent.mem_order.showHOT(recordHash["FT_HOT_FT"],recordHash["FT_HOT_FU"]);
+	/*
+	var today_hot=0;
+	var early_hot=0;
+	for( var i=0;i<gtypeHOT.length;i++){
+		try{
+		parent.mem_order.document.getElementById(gtypeHOT[i]+"_FT").innerHTML=eval("top.str_"+gtypeHOT[i]) + "("+recordHash[gtypeHOT[i]+"_HOT_FT"]+")";
+		parent.mem_order.document.getElementById(gtypeHOT[i]+"_FU").innerHTML=eval("top.str_"+gtypeHOT[i]) + "("+recordHash[gtypeHOT[i]+"_HOT_FU"]+")";
+		}catch(E){}
+			
+		today_hot +=recordHash[gtypeHOT[i]+"_HOT_FT"];
+		early_hot +=recordHash[gtypeHOT[i]+"_HOT_FU"];
+	}	
+	
+		parent.mem_order.showHOT(today_hot,early_hot);
+	*/	
+	try{
+		parent.mem_order.getCountHOT(countHOT);
+	}catch(e){}
+		
+ }		
+ 	
+}
+
+//function getCountHOT(){
+//	return recordHash[top.head_gtype+"_HOT_FT"];
+//}</script><script>
+﻿function bodyLoad(){
+	close_bet();
+	setMsg(msg);
+	//reload_live_game(GameHead,GameData);
+	//window.onscroll();
+	//document.getElementById('main').onscroll=scroll;
+	//var obj=document.getElementById('main');
+	//obj.
+	scroll();
+	try{
+		//var gamecountHot=parent.body.getCountHOT();
+		getCountHOT(countHOT);
+		goRB();
+		document.getElementById('euro_open').style.zIndex=-1;
+	}catch(e){
+		document.getElementById('euro_open').style.display='none';
+	}	
+}
+window.onresize = scroll;
+function setMsg(msg){
+	document.getElementById('real_msg').innerHTML=msg;
+}
+
+function showOrder(){
+	
+	try{
+		bet_order_frame.resetTimer();
+	}catch(e){}
+	document.getElementById('rec_frame').height=0;
+	rec_frame.document.close();
+	document.getElementById('order_button').className="ord_on";
+	document.getElementById('record_button').className="record_btn";
+	var betDiv=document.getElementById('bet_div');
+	var rec5Div=document.getElementById('rec5_div');
+	betDiv.style.display="";
+	rec5Div.style.display="none";
+	document.getElementById('pls_bet').style.display="none";
+	document.getElementById('info_div').style.display='';
+	document.getElementById('switch_web').style.display="";
+	//scroll();
+	
+	top.open_Rec="";
+	try{
+		//var gamecountHot=parent.body.getCountHOT();
+		getCountHOT(countHOT);
+	}catch(e){
+		document.getElementById('euro_open').style.display='none';
+	}	
+	
+}
+
+function showRec(){
+
+	try{
+		bet_order_frame.clearAllTimer();
+	}catch(e){}
+	try{		
+		close_bet();
+	}catch(e){}
+	//	bet_order_frame.document.close();
+	
+	document.getElementById('order_button').className="ord_btn";
+	document.getElementById('record_button').className="record_on";
+	//document.getElementById('info_div').style.display='none';
+	
+	var betDiv=document.getElementById('bet_div');
+	var rec5Div=document.getElementById('rec5_div');
+	
+	betDiv.style.display="none";
+	rec5Div.style.display="";
+	rec5_div.focus();
+	//alert(top.uid);
+	rec_frame.location.replace("./today/show10rec.php?uid="+top.uid+"&langx="+top.langx);
+	document.getElementById('pls_bet').style.display="none";
+	
+	try{	
+		if(tenrec_id ==""){
+			top.open_Rec="";
+		}else{
+			top.open_Rec="Y";
+		}	
+	}catch(e){}	
+		
+	try{
+		//var gamecountHot=parent.body.getCountHOT();
+		getCountHOT(countHOT);
+	}catch(e){
+		document.getElementById('euro_open').style.display='none';
+	}			
+
+	//scroll();
+	//alert("showRec");
+}
+function onloadSet(w,h,frameName){
+	
+	//alert("width="+w+",height="+h+",frameName="+frameName);
+	//document.getElementById(frameName).style.display="";
+	document.getElementById(frameName).width  =216;
+	document.getElementById(frameName).height =h;
+	//document.getElementById(frameName).height =311;
+	document.getElementById('pls_bet').style.display="none";
+	if (frameName=="rec_frame"){
+		try{	
+			if(tenrec_id!=""){
+				top.open_Rec="Y";
+				document.getElementById('info_div').style.display='none';
+				document.getElementById('switch_web').style.display="none";	
+				document.getElementById('euro_open').style.display='none';
+			}else{
+				top.open_Rec="";
+			}	
+		}catch(e){}	
+			
+		try{
+			//var gamecountHot=parent.body.getCountHOT();
+			getCountHOT(countHOT);
+		}catch(e){
+			document.getElementById('euro_open').style.display='none';
+		}		
+	}
+
+	//scroll();
+}
+//var top.ioradio="";
+
+function betOrder(gtype,wtype,param){
+		//alert(gtype+","+wtype+","+param)
+	if (wtype=="P3"||wtype=="PR"){
+		//top.keepGold_PR="";
+	}else{
+		top.keepGold="";
+		top.keepGold_PR="";
+	}
+	top.ioradio="";
+	var url=parseUrl(gtype,wtype,param);
+	document.getElementById('order_button').className="ord_on";
+	document.getElementById('record_button').className="record_btn";
+	document.getElementById('pls_bet').style.display="none";
+	document.getElementById('rec_frame').height=0;
+	rec_frame.document.close();
+	document.getElementById('rec5_div').style.display="none";
+	document.getElementById('bet_div').style.display="";
+	bet_order_frame.location.replace(url);
+	document.getElementById('info_div').style.display='none';
+	document.getElementById('switch_web').style.display="none";
+	
+	//document.getElementById('euro_close').style.display='none';
+	document.getElementById('euro_open').style.display="none";
+
+	top.open_bet="Y";	
+	top.open_Rec="";
+	//bet_order_frame.onload=onloadSet;
+	//alert("betorder")
+}
+
+function parseUrl(gtype,wtype,param){
+	var urlArray=new Array();
+	urlArray['R']=new Array("../"+gtype+"_order/"+gtype+"_order_r.php");
+	urlArray['HR']=new Array("../"+gtype+"_order/"+gtype+"_order_hr.php");
+	urlArray['OU']=new Array("../"+gtype+"_order/"+gtype+"_order_ou.php");
+	urlArray['HOU']=new Array("../"+gtype+"_order/"+gtype+"_order_hou.php");
+	urlArray['M']=new Array("../"+gtype+"_order/"+gtype+"_order_m.php");
+	urlArray['HM']=new Array("../"+gtype+"_order/"+gtype+"_order_hm.php");
+	urlArray['EO']=new Array("../"+gtype+"_order/"+gtype+"_order_t.php");
+	urlArray['REO']=new Array("../"+gtype+"_order/"+gtype+"_order_rt.php");
+	urlArray['PD']=new Array("../"+gtype+"_order/"+gtype+"_order_pd.php");
+	urlArray['RPD']=new Array("../"+gtype+"_order/"+gtype+"_order_rpd.php");
+	urlArray['HPD']=new Array("../"+gtype+"_order/"+gtype+"_order_hpd.php");
+	urlArray['HRPD']=new Array("../"+gtype+"_order/"+gtype+"_order_hrpd.php");
+	urlArray['F']=new Array("../"+gtype+"_order/"+gtype+"_order_f.php");
+	urlArray['RF']=new Array("../"+gtype+"_order/"+gtype+"_order_rf.php");
+	urlArray['T']=new Array("../"+gtype+"_order/"+gtype+"_order_t.php");
+	urlArray['RT']=new Array("../"+gtype+"_order/"+gtype+"_order_rt.php");
+	urlArray['SP']=new Array("../"+gtype+"_order/"+gtype+"_order_sp.php");
+	urlArray['P']=new Array("../"+gtype+"_order/"+gtype+"_order_p.php");
+	urlArray['P3']=new Array("../"+gtype+"_order/"+gtype+"_order_p3.php");
+	urlArray['PR']=new Array("../"+gtype+"_order/"+gtype+"_order_pr.php");
+	urlArray['RE']=new Array("../"+gtype+"_order/"+gtype+"_order_re.php");
+	urlArray['HRE']=new Array("../"+gtype+"_order/"+gtype+"_order_hre.php");
+	urlArray['ROU']=new Array("../"+gtype+"_order/"+gtype+"_order_rou.php");
+	urlArray['HROU']=new Array("../"+gtype+"_order/"+gtype+"_order_hrou.php");
+	urlArray['RM']=new Array("../"+gtype+"_order/"+gtype+"_order_rm.php");
+	urlArray['HRM']=new Array("../"+gtype+"_order/"+gtype+"_order_hrm.php");
+	urlArray['NFS']=new Array("../"+gtype+"_order/"+gtype+"_order_nfs.php");
+	var url=urlArray[wtype]+"?"+param;
+	return url;
+}
+function close_bet(){
+	document.getElementById('pls_bet').style.display="none";
+	//document.getElementById('bet_div').style.display="";
+	document.getElementById('bet_order_frame').height =0;
+	//alert("close bet 1");
+	bet_order_frame.document.close();
+	//alert("close bet 2");
+//	bet_order_frame.document.body.className="ord_main";
+//	bet_order_frame.document.body.bgColor="red";
+	//bet_order_frame.document.body.style.background-color="red";
+	//document.getElementById('pls_bet').style.backgroundColor="#007000";
+	//alert(document.getElementById('pls_bet').style.backgroundColor);
+	
+	bet_order_frame.document.writeln("<html><link href=\"../../../style/member/mem_order_sel.css\" rel=\"stylesheet\" type=\"text/css\">");
+	bet_order_frame.document.writeln("<body class=\"bet_info\" style='margin:0;'>");
+	
+	bet_order_frame.document.writeln(document.getElementById('pls_bet').innerHTML);
+	bet_order_frame.document.writeln("</body></html>");
+	//alert("write order frame");
+//	bet_order_frame.location.replace("");
+	document.getElementById('bet_order_frame').height = bet_order_frame.document.body.scrollHeight;
+	//document.getElementById('bet_order_frame').height = 20;
+	document.getElementById('info_div').style.display='';
+	document.getElementById('switch_web').style.display="";
+	top.scripts=new Array();
+	top.keepGold="";
+	top.keepGold_PR="";
+	try{
+		parent.body.orderRemoveALL();
+	}catch (E) {}
+		
+	top.open_bet="";			
+	try{
+		//var gamecountHot=parent.body.getCountHOT();
+		getCountHOT(countHOT);
+	}catch(e){
+		document.getElementById('euro_open').style.display='none';
+	}		
+		
+}
+function Show10List(){
+	var objs=document.getElementById('reloadPHP');
+    if (parent.refresh_var=='Y'||(""+parent.refresh_var=="undefined")){
+    	objs.src = "./today/show10rec.php?uid="+top.uid;
+    }else{
+    	objs.src="../../../tpl/member/"+top.langx+"/show10rec_norefresh.html?uid="+top.uid;
+    }
+}
+
+function show_record(){
+	if (parent.show=='N'||(""+parent.show=="undefined")){
+		parent.show='';
+	}else{
+		parent.show='N';
+	}
+	self.location = "./select.php?uid="+top.uid+"&langx="+top.langx+"&show="+parent.show;
+}
+function reload_var(){
+	parent.refresh_var='Y';
+	self.location.reload();
+}
+function Hot_click(a,b,c){
+    parent.location=a+"&league_id=3";
+}
+function OpenLive(){
+	if (top.liveid == undefined) {
+		parent.self.location = "";
+		return;
+	}
+	window.open("./live/live.php?langx="+top.langx+"&uid="+top.uid+"&liveid="+top.liveid,"Live","width=780,height=580,top=0,left=0,status=no,toolbar=no,scrollbars=yes,resizable=no,personalbar=no");
+}
+
+var ObjDataLive=new Array();
+function reload_live_game(Game_Head,gamedata){
+	for (var j=0;j < gamedata.length;j++){
+		if (gamedata[j]!=null){
+			ObjDataLive[j]=parseArray(Game_Head,gamedata[j]);
+		}	
+	}
+	var showtableData;
+	var trdata;
+	if(document.all){
+		showtableData=document.getElementById('livetableData').innerText;
+	 	trdata=document.getElementById('DataTR').innerText;
+	} else{
+		showtableData=document.getElementById('livetableData').textContent;
+	 	trdata=document.getElementById('DataTR').textContent;
+	}
+	var showlayers="";
+	if(ObjDataLive.length > 0){
+		for ( i=0 ;i < ObjDataLive.length;i++){
+			showlayers+=getLayer(trdata,i);
+		}
+	}else{
+		var tmp_layer=trdata;
+		tmp_layer=tmp_layer.replace("*TIME*","");
+		tmp_layer=tmp_layer.replace("*TEAMS*","無直播資料");
+		showlayers = tmp_layer;
+	}
+	var showtable=document.getElementById('showLive_table');
+	showtableData=showtableData.replace("*showDataTR*",showlayers);
+	showtable.innerHTML=showtableData;
+}
+//表格內容
+function getLayer(onelayer,gamerec){
+	onelayer=onelayer.replace("*TIME*",ObjDataLive[gamerec].time+":");
+	onelayer=onelayer.replace("*TEAMS*",ObjDataLive[gamerec].teamH+" VS "+ObjDataLive[gamerec].teamC);
+	return onelayer; 
+	
+}
+
+
+//window.onscroll = scroll;
+
+function scroll(){
+	//return; 
+	var refresh_right = document.getElementById('info_div');
+	
+	var msg_height=(refresh_right.style.height.replace("px","")*1);
+	var recframe=document.getElementById('rec_frame');
+	//alert(recframe.height+"---"+document.body.scrollHeight+"---"+msg_height);
+	//if(recframe.height+msg_height < document.body.scrollHeight){
+		//alert("1");
+		refresh_right.style.top=document.body.scrollHeight - msg_height-15;
+	//}else{
+		//alert("2");
+		//refresh_right.style.top=recframe.height*1+msg_height+250;
+		//refresh_right.style.left=0;
+	//}
+	
+}
+function showMoreMsg(){
+	//parent.body.location='./scroll_history.php?uid='+top.uid+'&langx='+top.langx;
+	window.open('./scroll_history.php?uid='+top.uid+'&langx='+top.langx,"History","width=617,height=500,top=0,left=0,status=no,toolbar=no,scrollbars=yes,resizable=no,personalbar=no");
+}
+/*
+function chg_URL(){
+	if(!confirm("請問是否切換至舊網址"){
+		return false;
+	}
+	chgURL.location.href='retimeset.php?gid='+gamegid+"&gtype="+gamegtype+"&se="+gamese+"&retime="+gameretime+"&"+get_pageparam();
+}
+*/
+var xmlHttp;
+function createXHR(){
+ if (window.XMLHttpRequest) {
+  xmlHttp = new XMLHttpRequest();
+ }else if (window.ActiveXObject) {
+  xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+ }
+
+ if (!xmlHttp) {
+  alert('您使用的瀏覽器不支援 XMLHTTP 物件');
+  return false;
+ }
+}
+function sendRequest(url){
+//alert(url);
+ createXHR();
+ xmlHttp.open('GET',url,true);
+ xmlHttp.onreadystatechange=catchResult;
+ xmlHttp.send(null);
+}
+
+
+
+function catchResult(){
+ if (xmlHttp.readyState==4){
+  s=xmlHttp.responseText;
+  if (xmlHttp.status == 200) {
+  //alert("已成功加入~~"+s+":");
+  // location.reload();  
+  document.getElementById('showURL').innerHTML=s;
+  
+  var obj = document.getElementById('newdomain');
+  obj.submit();
+      // document.getElementById(s).innerHTML='<img src="058/btn_cart.gif" width="129" height="32" align="absmiddle" />';
+  }else{
+       alert('執行錯誤,代碼:'+xmlHttp.status+'\('+xmlHttp.statusText+'\)');
+      }
+ }
+}
+function showHOT(){
+	var countgtype =new Array("FT","BK","TN","VB","BS","OP");
+	//alert(top.open_bet+"---"+mem_enable)
+	//alert("top.open_bet:"+top.open_bet+",mem_enable="+mem_enable+",top.open_Rec="+top.open_Rec);
+	if(top.open_bet =="Y" || mem_enable=="S" || top.open_Rec=="Y"){
+		document.getElementById('euro_open').style.display="none";	
+	}else{
+	  var today_RB=0;
+	  for( var i=0;i<countgtype.length;i++){
+			today_RB +=recordHash[countgtype[i]+"_RB"];
+			//塞場次進去div
+			var tmp_obj_RB=document.getElementById(countgtype[i]+"_RB");
+					tmp_obj_RB.innerHTML=eval("top.str_order_"+countgtype[i]) + "("+recordHash[countgtype[i]+"_RB"]+")";	
+					//該球類沒有滾球隱藏
+					if(recordHash[countgtype[i]+"_RB"]*1==0){
+						tmp_obj_RB.style.display="none";
+					}else{
+						tmp_obj_RB.style.display="";
+					}
+			
+		}
+		//alert("today_RB=="+today_RB);	
+		//今日沒有滾球賽程,整個MENU隱藏     			
+		if (today_RB > 0) {
+			document.getElementById('euro_open').style.display="";
+		}else{
+			
+			document.getElementById('euro_open').style.display="none";
+		}	
+			
+ 	}
+ 	
+}
+
+function showRB(gtypeFT){
+	if(recordHash[gtypeFT+"_RB"]*1==0){
+		//alert(top.no_oly);
+		return;		
+	}	
+top.hot_game="";
+top.head_FU="FT";	
+parent.header.location.href="http://"+document.domain+"/app/member/"+gtypeFT+"_header.php?uid="+top.uid+"&showtype=&langx="+top.langx+"&mtype="+top.mtype;	
+parent.body.location.href="http://"+document.domain+"/app/member/"+gtypeFT+"_browse/index.php?rtype=re&uid="+top.uid+"&langx="+top.langx+"&mtype="+top.mtype+"&showtype="+top.showtype+"&hot_game="+top.hot_game;
+parent.header.chg_button_bg(gtypeFT,"rb");	
+
+}
+
+function showHotFT(gtypeFT){	
+	if(recordHash[gtypeFT+"_HOT_FT"]*1==0){
+		//alert(top.no_oly);
+		return;
+	}
+	top.hot_game="HOT_";
+	parent.header.location.href="http://"+document.domain+"/app/member/"+gtypeFT+"_header.php?uid="+top.uid+"&showtype=&langx="+top.langx+"&mtype="+top.mtype;
+	//parent.body.location.href="http://"+document.domain+"/app/member/"+top.head_gtype+"_browse/index.php?rtype=r&uid="+top.uid+"&langx="+top.langx+"&mtype="+top.mtype+"&showtype="+top.showtype+"&hot_game="+top.hot_game;
+	parent.body.location.href="http://"+document.domain+"/app/member/"+gtypeFT+"_browse/index.php?rtype=r&uid="+top.uid+"&langx="+top.langx+"&mtype="+top.mtype+"&showtype="+top.showtype+"&hot_game="+top.hot_game;
+	parent.header.chg_button_bg(gtypeFT,"today");
+
+
+}
+
+function showHotFU(gtypeFU){
+	if(recordHash[gtypeFU+"_HOT_FU"]*1==0){
+		//alert(top.no_oly);
+		return;		
+	}
+	top.hot_game="HOT_";
+	parent.header.location.href="http://"+document.domain+"/app/member/"+gtypeFU+"_header.php?uid="+top.uid+"&showtype=future&langx="+top.langx+"&mtype="+top.mtype;
+	//parent.body.location.href="http://"+document.domain+"/app/member/"+top.head_gtype+"_future/index.php?rtype=r&uid="+top.uid+"&langx="+top.langx+"&mtype="+top.mtype+"&showtype=future&hot_game="+top.hot_game;
+	parent.body.location.href="http://"+document.domain+"/app/member/"+gtypeFU+"_future/index.php?rtype=r&uid="+top.uid+"&langx="+top.langx+"&mtype="+top.mtype+"&showtype=future&hot_game="+top.hot_game;
+	
+	parent.header.chg_button_bg(gtypeFU,"early");
+
+}
+
+function Eurover(act){
+	if(act.className=="hot_btn"){
+		act.className='hot_up';
+	}else if(act.className=="early_btn"){
+		act.className='early_up';
+	}else if(act.className=="rb_btn"){
+		act.className='rb_up';
+	}
+}
+ 
+function Eurout(act){
+	if(act.className=="hot_up"){
+		act.className='hot_btn';
+	}else if(act.className=="early_up"){
+		act.className='early_btn';
+	}else if(act.className=="rb_up"){
+		act.className='rb_btn';
+	}
+}
+
+var recordHash=new Array();
+function getCountHOT(countHOT){
+	//alert("getCountHOT==>"+countHOT)
+	var countgtype =new Array("FT","BK","TN","VB","BS","OP");
+	var countgames=countHOT.split(",");
+		for( var i=0;i<countgames.length;i++){
+			var detailgame=countgames[i].split("|");
+			recordHash[detailgame[0]+"_"+detailgame[1]]=detailgame[2]*1;
+		}
+		/*
+			for( var i=0;i<countgtype.length;i++){
+						document.getElementById(countgtype[i]+"_RB").innerHTML=eval("top.str_"+countgtype[i]) + "("+recordHash[countgtype[i]+"_RB"]+")";	
+						document.getElementById(countgtype[i]+"_FT").innerHTML=eval("top.str_"+countgtype[i]) + "("+recordHash[countgtype[i]+"_HOT_FT"]+")";
+						document.getElementById(countgtype[i]+"_FU").innerHTML=eval("top.str_"+countgtype[i]) + "("+recordHash[countgtype[i]+"_HOT_FU"]+")";
+			}
+			*/
+	return showHOT();	
+}
+
+function goRB(){
+	document.getElementById('RB_btn').className="rb_over";
+	//document.getElementById('today_btn').className="hot_btn";
+	//document.getElementById('early_btn').className="early_btn";						
+	document.getElementById('RB_oly').style.display="";
+	//document.getElementById('today_oly').style.display="none";
+	//document.getElementById('early_oly').style.display="none";
+}
+
+function goHOT_FT(){
+	document.getElementById('RB_btn').className="rb_btn";
+	document.getElementById('today_btn').className="hot_over";
+	document.getElementById('early_btn').className="early_btn";					
+	document.getElementById('RB_oly').style.display="none";
+	document.getElementById('today_oly').style.display="";
+	document.getElementById('early_oly').style.display="none";
+}
+
+function goHOT_FU(){
+	document.getElementById('RB_btn').className="rb_btn";
+	document.getElementById('today_btn').className="hot_btn";
+	document.getElementById('early_btn').className="early_over";						
+	document.getElementById('RB_oly').style.display="none";
+	document.getElementById('today_oly').style.display="none";
+	document.getElementById('early_oly').style.display="";
+}</script><script>
+﻿top.str_input_pwd = "密码请务必输入!!";
+top.str_input_repwd = "确认密码请务必输入!!";
+top.str_err_pwd = "密码确认错误,请重新输入!!";
+top.str_pwd_limit = "密码必须是6-12个字元组成。";
+top.str_pwd_limit2 = "密码必须由数字和字母组成。";
+top.str_pwd_NoChg = "您的新密码必须和现用密码不一样。";
+top.str_pwd_NowErr="您的现用密码不正确，请重试。";
+top.str_input_longin_id = "登录帐号请务必输入!!";
+top.str_longin_limit1 = "登录帐号最少必须有2个英文大小写字母和数字(0~9)组合输入限制(6~12字元)";
+top.str_longin_limit2 = "您的登录帐号需使用字母加上数字!!";
+top.str_o="单";
+top.str_e="双";
+top.str_checknum="验证码错误,请重新输入";
+top.str_irish_kiss="和";
+top.dPrivate="私域";
+top.dPublic="公有";
+top.grep="群组";
+top.grepIP="群组IP";
+top.IP_list="IP列表";
+top.Group="组别";
+top.choice="请选择";
+top.account="请输入帐号!!";
+top.password="请输入密码!!";
+top.S_EM="特早";
+top.alldata="全部";
+top.webset="资讯网";
+top.str_renew="更新";
+top.outright="冠军";
+top.financial="金融";
+top.str_HCN = new Array("主","客","无");
+
+//====== Live TV
+top.str_FT = "足球";
+top.str_BK = "篮球";
+top.str_TN = "网球";
+top.str_VB = "排球";
+top.str_BS = "棒球";
+top.str_OP = "其他";
+
+top.str_order_FT = "足球";
+top.str_order_BK = "篮球 / 美式足球 / 橄榄球";
+top.str_order_TN = "网球";
+top.str_order_VB = "排球 / 羽毛球 / 兵乓球";
+top.str_order_BS = "棒球";
+top.str_order_OP = "其他";
+
+
+top.str_fs_FT = "足球 : ";
+top.str_fs_BK = "篮球和美式足球 : ";
+top.str_fs_TN = "网球 : ";
+top.str_fs_VB = "排球 : ";
+top.str_fs_BS = "棒球 : ";
+top.str_fs_OP = "其他体育 : ";
+
+top.str_game_list = "所有球类";
+top.str_date_list = "所有日期";
+top.str_second = "秒";
+top.str_demo = "样本播放";
+top.str_alone = "独立";
+top.str_back = "返回";
+top.str_RB = "LIVE";
+
+top.str_ShowMyFavorite="我的最爱";
+top.str_ShowAllGame="全部赛事";
+top.str_delShowLoveI="移出";
+
+
+top.strRtypeSP = new Array();
+top.strRtypeSP["PGF"]="最先进球";
+top.strRtypeSP["OSF"]="最先越位";
+top.strRtypeSP["STF"]="最先替补球员";
+top.strRtypeSP["CNF"]="第一颗角球";
+top.strRtypeSP["CDF"]="第一张卡";
+top.strRtypeSP["RCF"]="会进球";
+top.strRtypeSP["YCF"]="第一张黄卡";
+top.strRtypeSP["GAF"]="有失球";
+top.strRtypeSP["PGL"]="最后进球";
+top.strRtypeSP["OSL"]="最后越位";
+top.strRtypeSP["STL"]="最后替补球员";
+top.strRtypeSP["CNL"]="最后一颗角球";
+top.strRtypeSP["CDL"]="最后一张卡";
+top.strRtypeSP["RCL"]="不会进球";
+top.strRtypeSP["YCL"]="最后一张黄卡";
+top.strRtypeSP["GAL"]="没有失球";
+top.strRtypeSP["PG"]="最先/最后进球球队";
+top.strRtypeSP["OS"]="最先/最后越位球队";
+top.strRtypeSP["ST"]="最先/最后替补球员球队";
+top.strRtypeSP["CN"]="第一颗/最后一颗角球";
+top.strRtypeSP["CD"]="第一张/最后一张卡";
+top.strRtypeSP["RC"]="会进球/不会进球";
+top.strRtypeSP["YC"]="第一张/最后一张黄卡";
+top.strRtypeSP["GA"]="有失球/没有失球";
+
+
+top.strOver="大";
+top.strUnder="小";
+top.strOdd="单";
+top.strEven="双";
+
+
+//下注警语
+top.message001="请输入下注金额。";
+top.message002="只能输入数字!!";
+top.message003="最低投注额是";
+top.message004="对不起,本场有下注金额最高: ";
+top.message005=" 元限制!!";
+top.message006="最高投注额设在";
+top.message007="总下注金额已超过单场限额。";
+top.message008="本场累计下注共: ";
+top.message009="\n总下注金额已超过单场限额";
+top.message010="下注金额不可大于信用额度。";
+top.message011="可赢金额：";
+top.message012="<br>确定进行下注吗?";
+top.message013="确定进行下注吗?<br>";
+top.message014='未输入下注金额!!!';
+top.message015="下注金额只能输入数字";
+top.message016="\n\n确定进行下注吗?";
+top.message017="串1";
+top.message018="队联碰";
+top.message019="您必须选择至少";
+top.message020="个队伍,否则不能下注!!";
+top.message021="不接受";
+top.message022="串过关投注!!";
+top.message023="请输入欲下注金额!!";
+top.message024="已超过某场次之过关注单限额!!";
+top.message025="下注金额不可大于信用额度。";
+top.message026="请选择下注队伍!!";
+top.message027="单式投注请至单式下注页面下注!!";
+top.message028="仅接受";
+top.message029="串投注!!";
+top.message030="确定要进行交易吗？";
+
+top.message031="请输入要搜寻的文字";
+top.message032="找不到相符项目";
+top.message033="你的浏览器不支援";
+
+
+top.page="页";
+top.refreshTime="刷新";
+top.showmonth="月";
+top.showday="日";
+
+top.str_RB ="滚球";
+top.Half1st="上半滚球";
+top.Half2nd="下半滚球";
+
+top.mem_logut="您的帐号已登出";
+top.retime1H="上";
+top.retime2H="下";
+
+top.str_otb_close="赛事已关闭。";
+//奧運用
+top.no_oly="您选择的项目暂时没有赛事。请查看冠军玩法。";</script><script>
+gamedate = '2013-09-03';
+var GameData = new Array();
+GameData[0] = new Array('TN','20:30','ATP美國網球公開賽','安迪.穆雷(大不列顛)','丹尼斯.伊斯托明(烏茲別克)','nullnull96428');
+var GameHead = new Array('gtype','time','league','teamH','teamC','gidm');
+var msg='网球赛事:09月03日 WTA美国网球公开赛 (塞雷娜.威廉姆斯 VS 卡拉.苏亚雷兹.纳瓦罗) 因全场滚球让球盘口错误, 滚球注单号:4674551440, 4674551073一律取消..';
+var chgURL_domain='hg0088.com';
+var mtype='4';
+var mem_enable='Y';
+var countHOT= 'FT|RB|10,FT|FT|0,FT|FU|518,FT|HOT_RB|0,FT|HOT_FT|0,FT|HOT_FU|0,BK|RB|1,BK|FT|1,BK|FU|36,BK|HOT_RB|0,BK|HOT_FT|0,BK|HOT_FU|0,BS|RB|4,BS|FT|4,BS|FU|0,BS|HOT_RB|0,BS|HOT_FT|0,BS|HOT_FU|0,TN|RB|2,TN|FT|0,TN|FU|10,TN|HOT_RB|0,TN|HOT_FT|0,TN|HOT_FU|0,VB|RB|0,VB|FT|0,VB|FU|0,VB|HOT_RB|0,VB|HOT_FT|0,VB|HOT_FU|0,OP|RB|0,OP|FT|0,OP|FU|22,OP|HOT_RB|0,OP|HOT_FT|0,OP|HOT_FU|0,FS|HOT_FT|0,FS|HOT_BK|0,FS|HOT_BS|0,FS|HOT_TN|0,FS|HOT_VB|0,FS|HOT_OP|0' ;
+</script></head>
+
+
+
+
+
+
+<body id="OSEL" class="bodyset" onload="bodyLoad();">
+
+<div id="main" style="overflow-y:auto;width:224;height:100%">
+
+
+  <div id="menu">
+    <div class="ord_on" id="order_button" onclick="showOrder();">交易单</div>
+    <div class="record_btn" id="record_button" onclick="showRec();">最新十笔交易</div>
+  </div>
+
+  <div id="order_div" name="order_div" style=" overflow:hidden;">
+    <div id="pls_bet" name="pls_bet" style="background-color: rgb(227, 207, 170); left: 0px; top: 0px; display: none;">
+     <img src="order_none.jpg" width="216" height="22">
+    	<div style="width:216; height:63px; text-align:center; padding-top:16px;">
+       
+    		<font style="font:0.75em Arial, Helvetica, sans-serif; font-weight:bold;">点击赔率便可将<br>选项加到交易单里。</font>
+    	</div>
+  </div>
+    <div id="bet_div" name="bet_div">
+      <iframe id="bet_order_frame" name="bet_order_frame" scrolling="NO" frameborder="NO" border="0" height="101"></iframe>
+    </div>
+    <div id="rec5_div" name="rec5_div">
+      <iframe id="rec_frame" name="rec_frame" scrolling="NO" frameborder="NO" border="0" height="0"></iframe>
+    </div>
+  </div>
+
+<!-- 奥运   Start -->
+
+    <!-- 已开赛 -->
+    <div id="euro_open" style="z-index: -1;">
+        <div id="euro_menu">
+						<div class="rb_over" id="RB_btn" onmouseover="Eurover(this);" onmouseout="Eurout(this);" onclick="goRB();"></div>
+            <!--div class="hot_btn" id="today_btn"  onmouseover="Eurover(this);" onMouseOut="Eurout(this);" onClick="goHOT_FT();"></div>
+            <div class="early_btn" id="early_btn"  onmouseover="Eurover(this);" onMouseOut="Eurout(this);" onClick="goHOT_FU();"></div-->
+        </div>
+         
+         <!--div id="oly_main"--> 
+         	<div> 
+            <!--滚球 -->
+            <div id="RB_oly">
+                <div id="FT_RB" onclick="showRB(&#39;FT&#39;);" class="oly_tr">足球(10)</div>
+                <div id="BK_RB" onclick="showRB(&#39;BK&#39;);" class="oly_tr">篮球 / 美式足球 / 橄榄球(1)</div>
+                <div id="TN_RB" onclick="showRB(&#39;TN&#39;);" class="oly_tr">网球(2)</div>
+                <div id="VB_RB" onclick="showRB(&#39;VB&#39;);" class="oly_tr" style="display: none;">排球 / 羽毛球 / 兵乓球(0)</div>
+                <div id="BS_RB" onclick="showRB(&#39;BS&#39;);" class="oly_tr">棒球(4)</div>	
+                <div id="OP_RB" onclick="showRB(&#39;OP&#39;);" class="oly_tr" style="display: none;">其他(0)</div>	
+            </div>         	
+         	 
+            <!--今日 -->
+            <!--div id="today_oly">
+                <div id="FT_FT" onClick="showHotFT('FT');" class="oly_tr"></div>
+                <div id="BK_FT" onClick="showHotFT('BK');" class="oly_tr"></div>
+                <div id="TN_FT" onClick="showHotFT('TN');" class="oly_tr"></div>
+                <div id="VB_FT" onClick="showHotFT('VB');" class="oly_tr"></div>
+                <div id="BS_FT" onClick="showHotFT('BS');" class="oly_tr"></div>	
+                <div id="OP_FT" onClick="showHotFT('OP');" class="oly_tr"></div>	
+            </div-->
+            
+            <!--早盘 -->
+            <!--div id="early_oly">
+                <div id="FT_FU" onClick="showHotFU('FT');" class="oly_tr"></div>
+                <div id="BK_FU" onClick="showHotFU('BK');" class="oly_tr"></div>
+                <div id="TN_FU" onClick="showHotFU('TN');" class="oly_tr"></div>
+                <div id="VB_FU" onClick="showHotFU('VB');" class="oly_tr"></div>
+                <div id="BS_FU" onClick="showHotFU('BS');" class="oly_tr"></div>
+                <div id="OP_FU" onClick="showHotFU('OP');" class="oly_tr"></div>
+            </div-->
+         </div>
+        
+    </div>
+          
+<!-- 奥运   End -->
+
+<div id="switch_web" onclick="sendRequest(&#39;chgurl.php?uid=&#39;+top.uid+&#39;&amp;langx=&#39;+top.langx+&#39;&amp;mtype=&#39;+mtype+&#39;&amp;chgURL_domain=&#39;+chgURL_domain+&#39;&amp;ts=&#39;+new Date().getTime());return false;"><!--连结旧站--></div>
+
+
+  <!--div id="showLive_table"></div>
+  <!--div id="livetableData" style="display:none;">
+    <xmp>
+      <div id="live_box">
+      	<h2>现场直播<span class="more"><a href="javascript://" onClick="OpenLive();">查看所有直播</a></span></h2>
+        <div class="live_main">
+   	     <ul class="live_list">
+         	*showDataTR*
+   		 </ul>
+        </div>
+      </div>
+     
+    </xmp>
+  </div-->
+  
+  <!-- LIVE表格资料-->
+  <div id="DataTR" style="display:none;">
+    <xmp>
+      <li><span class="time">*TIME*</span><span class="team">*TEAMS*</span></li>
+    </xmp>
+  </div>
+  <!--公告 Start--> 
+	<!--div id="info_div" name="info_div" style="position: absolute;"-->
+    <div id="info_div" name="info_div" style="top: 636px;">
+		<div class="msg_box">
+		<h2>公告<span class="more"><a href="http://w151.hg3088.com/app/member/select.php?uid=448e0b6dm10236972l44080627&langx=zh-cn#" onclick="showMoreMsg();">更多</a></span> </h2>
+			<div class="msg_main">
+				<marquee height="70" scrollamount="1" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+				<span id="real_msg">网球赛事:09月03日 WTA美国网球公开赛 (塞雷娜.威廉姆斯 VS 卡拉.苏亚雷兹.纳瓦罗) 因全场滚球让球盘口错误, 滚球注单号:4674551440, 4674551073一律取消..</span>
+				</marquee>
+			</div>
+		</div>
+	</div>
+     <!--公告 End--> 
+  
+</div>
+<div id="showURL"></div>
+
+
+</body></html>

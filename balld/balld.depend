@@ -1,0 +1,458 @@
+# depslib dependency file v1.0
+1367135551 source:/opt/prj/ball/balld/CAes.cpp
+	<stdhdr.h>
+	<CAes.h>
+
+1380007375 /opt/prj/ball/balld/stdhdr.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<errno.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<sys/epoll.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<fcntl.h>
+	<time.h>
+	<sys/time.h>
+	<pthread.h>
+	<getopt.h>
+	<sys/resource.h>
+	<syslog.h>
+	<mysql/mysql.h>
+	<iostream>
+	<list>
+	<map>
+	<vector>
+	<string>
+	<algorithm>
+	<CCondition.h>
+	<CMutex.h>
+	<CFlagMutex.h>
+	<CAes.h>
+	<CMd5.h>
+	<CTimeout.h>
+	<CIniFile.h>
+	<json/json.h>
+	<pcre++.h>
+	<ballstruct.h>
+
+1367135712 /opt/prj/ball/balld/CCondition.h
+	<iostream>
+	<pthread.h>
+	<sys/time.h>
+
+1367135702 /opt/prj/ball/balld/CMutex.h
+	<pthread.h>
+
+1365586436 /opt/prj/ball/balld/CFlagMutex.h
+	<iostream>
+	<CMutex.h>
+
+1366698740 /opt/prj/ball/balld/CAes.h
+
+1366695857 /opt/prj/ball/balld/CMd5.h
+	<stdhdr.h>
+
+1379905628 /opt/prj/ball/balld/CTimeout.h
+	<time.h>
+
+1368167111 /opt/prj/ball/balld/CIniFile.h
+	<iostream>
+	<fstream>
+	<vector>
+	<list>
+	<map>
+	<stdlib.h>
+
+1268379095 /opt/prj/ball/balld/json/json.h
+	"autolink.h"
+	"value.h"
+	"reader.h"
+	"writer.h"
+	"features.h"
+
+1268379095 /opt/prj/ball/balld/json/autolink.h
+	"config.h"
+	<cpptl/cpptl_autolink.h>
+	"autolink.h"
+
+1268379095 /opt/prj/ball/balld/json/config.h
+	<cpptl/config.h>
+
+1268379095 /opt/prj/ball/balld/json/value.h
+	"forwards.h"
+	<string>
+	<vector>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
+
+1268379095 /opt/prj/ball/balld/json/forwards.h
+	"config.h"
+
+1268379095 /opt/prj/ball/balld/json/reader.h
+	"features.h"
+	"value.h"
+	<deque>
+	<stack>
+	<string>
+	<iostream>
+
+1268379095 /opt/prj/ball/balld/json/features.h
+	"forwards.h"
+
+1268379095 /opt/prj/ball/balld/json/writer.h
+	"value.h"
+	<vector>
+	<string>
+	<iostream>
+
+1371196458 source:/opt/prj/ball/balld/CCondition.cpp
+	<CCondition.h>
+
+1379411795 source:/opt/prj/ball/balld/CCurl.cpp
+	<CCurl.h>
+	<CPublic.h>
+
+1370588488 /opt/prj/ball/balld/CCurl.h
+	<stdhdr.h>
+	<curl/curl.h>
+
+1379416180 /opt/prj/ball/balld/CPublic.h
+	<stdhdr.h>
+
+1377755947 source:/opt/prj/ball/balld/CDataWarehouse.cpp
+	<CDataWarehouse.h>
+	<CPublic.h>
+
+1377755962 /opt/prj/ball/balld/CDataWarehouse.h
+	<stdhdr.h>
+
+1378375151 source:/opt/prj/ball/balld/CElapsedTimer.cpp
+	<CElapsedTimer.h>
+
+1378375154 /opt/prj/ball/balld/CElapsedTimer.h
+	<stdhdr.h>
+
+1365586871 source:/opt/prj/ball/balld/CFlagMutex.cpp
+	<CFlagMutex.h>
+
+1368167122 source:/opt/prj/ball/balld/CIniFile.cpp
+	<CIniFile.h>
+	<CPublic.h>
+
+1378278126 source:/opt/prj/ball/balld/CJson.cpp
+	<CJson.h>
+	<CPublic.h>
+
+1378196481 /opt/prj/ball/balld/CJson.h
+	<stdhdr.h>
+
+1370398798 source:/opt/prj/ball/balld/CMd5.cpp
+	<CMd5.h>
+
+1365586255 source:/opt/prj/ball/balld/CMutex.cpp
+	<CMutex.h>
+
+1378116023 source:/opt/prj/ball/balld/CPublic.cpp
+	<CPublic.h>
+
+1379927522 source:/opt/prj/ball/balld/CRegex.cpp
+	<CRegex.h>
+	<CPublic.h>
+
+1379927470 /opt/prj/ball/balld/CRegex.h
+	<stdhdr.h>
+
+1380000399 source:/opt/prj/ball/balld/CSettings.cpp
+	<CSettings.h>
+	<CPublic.h>
+	<CTcpSocket.h>
+
+1379907362 /opt/prj/ball/balld/CSettings.h
+	<stdhdr.h>
+	<CMutex.h>
+
+1371546591 /opt/prj/ball/balld/CTcpSocket.h
+	<stdhdr.h>
+
+1379900402 source:/opt/prj/ball/balld/CTcpServer.cpp
+	<CSettings.h>
+	<CJson.h>
+	<CTcpServer.h>
+	<CPublic.h>
+
+1378453896 /opt/prj/ball/balld/CTcpServer.h
+	<stdhdr.h>
+	<CCollectThread.h>
+
+1377503635 source:/opt/prj/ball/balld/CTcpSocket.cpp
+	<CTcpSocket.h>
+
+1379916251 source:/opt/prj/ball/balld/CThread.cpp
+	<string.h>
+	<stdio.h>
+	<errno.h>
+	<CThread.h>
+
+1379905562 /opt/prj/ball/balld/CThread.h
+	<stdhdr.h>
+	<CFlagMutex.h>
+	<CCondition.h>
+	<CJob.h>
+
+1379905649 source:/opt/prj/ball/balld/CTimeout.cpp
+	<CTimeout.h>
+
+1377746526 source:/opt/prj/ball/balld/CWorkerThread.cpp
+	<stdio.h>
+	<CWorkerThread.h>
+	<CFlagMutex.h>
+
+1377746478 /opt/prj/ball/balld/CWorkerThread.h
+	<stdhdr.h>
+	<CThread.h>
+	<CMutex.h>
+	<CCondition.h>
+
+1380007461 source:/opt/prj/ball/balld/main.cpp
+	<stdhdr.h>
+	<CPublic.h>
+	<CJson.h>
+	<CCurl.h>
+	<CTcpServer.h>
+	<CTcpSocket.h>
+	<CSettings.h>
+	<CRegex.h>
+	<signal.h>
+	<CMysql.h>
+	<CCltTodayThread.h>
+	<CCltFutureThread.h>
+	<CCltCurrentThread.h>
+	<CCltResultThread.h>
+	<CCltTodayJob.h>
+	<CCltFutureJob.h>
+	<CCltCurrentJob.h>
+	<CCltResultJob.h>
+
+1378889863 source:/opt/prj/ball/balld/CCollectThread.cpp
+	<CCollectThread.h>
+	<CCurl.h>
+	<CPublic.h>
+	<CRegex.h>
+	<CSettings.h>
+	<CJson.h>
+	<CTimeout.h>
+	<CElapsedTimer.h>
+	<ball.h>
+
+1378691206 /opt/prj/ball/balld/CCollectThread.h
+	<stdhdr.h>
+	<CThread.h>
+
+1379494436 /opt/prj/ball/balld/ball.h
+
+1378705603 source:/opt/prj/ball/balld/CLoginThread.cpp
+	<CLoginThread.h>
+
+1378705591 /opt/prj/ball/balld/CLoginThread.h
+	<stdhdr.h>
+	<CThread.h>
+
+1379383628 source:/opt/prj/ball/balld/CJob.cpp
+	<CJob.h>
+
+1379387509 source:/opt/prj/ball/balld/CBaseBall.cpp
+	<CBaseBall.h>
+
+1379387385 source:/opt/prj/ball/balld/CBasketBall.cpp
+	<CBasketBall.h>
+
+1380002879 source:/opt/prj/ball/balld/CFootBall.cpp
+	<CFootBall.h>
+	<CRegex.h>
+	<CMysql.h>
+	<CPublic.h>
+	<CSettings.h>
+
+1378713800 source:/opt/prj/ball/balld/CNowBaseBall.cpp
+
+1378713800 source:/opt/prj/ball/balld/CNowBasketBall.cpp
+
+1380002888 source:/opt/prj/ball/balld/CNowFootBall.cpp
+	<CNowFootBall.h>
+	<CRegex.h>
+	<CMysql.h>
+	<CPublic.h>
+	<CSettings.h>
+	<CJson.h>
+
+1378713800 source:/opt/prj/ball/balld/CNowOpBall.cpp
+
+1378713800 source:/opt/prj/ball/balld/CNowTennisBall.cpp
+
+1378713800 source:/opt/prj/ball/balld/CNowVolleyBall.cpp
+
+1379387612 source:/opt/prj/ball/balld/COpBall.cpp
+	<COpBall.h>
+
+1379320240 source:/opt/prj/ball/balld/CSqlCmdPool.cpp
+	<CSqlCmdPool.h>
+
+1379387646 source:/opt/prj/ball/balld/CTennisBall.cpp
+	<CTennisBall.h>
+
+1379387466 source:/opt/prj/ball/balld/CVolleyBall.cpp
+	<CVolleyBall.h>
+
+1380007417 source:/opt/prj/ball/balld/CBall.cpp
+	<CBall.h>
+	<ball.h>
+	<CCurl.h>
+	<CPublic.h>
+	<CRegex.h>
+	<CSettings.h>
+
+1380004172 /opt/prj/ball/balld/CBall.h
+	<stdhdr.h>
+
+1379387354 /opt/prj/ball/balld/CBasketBall.h
+	<CBall.h>
+
+1379844006 /opt/prj/ball/balld/CFootBall.h
+	<CBall.h>
+
+1379387400 /opt/prj/ball/balld/CTennisBall.h
+	<CBall.h>
+
+1379387439 /opt/prj/ball/balld/CVolleyBall.h
+	<CBall.h>
+
+1379843975 /opt/prj/ball/balld/CSqlCmdPool.h
+	<stdhdr.h>
+
+1379918210 source:/opt/prj/ball/balld/CMysql.cpp
+	<CMysql.h>
+
+1379918198 /opt/prj/ball/balld/CMysql.h
+	<stdhdr.h>
+
+1379936799 /opt/prj/ball/balld/ballstruct.h
+
+1379915910 source:/opt/prj/ball/balld/CCltTodayJob.cpp
+	<CCltTodayJob.h>
+	<CFootBall.h>
+	<CBasketBall.h>
+	<CTennisBall.h>
+	<CVolleyBall.h>
+	<CBaseBall.h>
+	<COpBall.h>
+
+1379418643 /opt/prj/ball/balld/CCltTodayJob.h
+	<stdhdr.h>
+	<CJob.h>
+	<CBall.h>
+
+1379383530 /opt/prj/ball/balld/CJob.h
+	<stdhdr.h>
+
+1379387475 /opt/prj/ball/balld/CBaseBall.h
+	<CBall.h>
+
+1379387565 /opt/prj/ball/balld/COpBall.h
+	<stdhdr.h>
+	<CBall.h>
+
+1380005201 source:/opt/prj/ball/balld/CMatchResult.cpp
+	<CMatchResult.h>
+	<CRegex.h>
+	<CMysql.h>
+	<CPublic.h>
+	<CSettings.h>
+
+1379838030 /opt/prj/ball/balld/CMatchResult.h
+	<CBall.h>
+
+1379915953 source:/opt/prj/ball/balld/CCltCurrentJob.cpp
+	<CCltCurrentJob.h>
+	<CNowFootBall.h>
+	<CNowBasketBall.h>
+	<CNowTennisBall.h>
+	<CNowVolleyBall.h>
+	<CNowBaseBall.h>
+	<CNowOpBall.h>
+
+1379915939 source:/opt/prj/ball/balld/CCltFutureJob.cpp
+	<CCltFutureJob.h>
+	<CFootBall.h>
+	<CBasketBall.h>
+	<CTennisBall.h>
+	<CVolleyBall.h>
+	<CBaseBall.h>
+	<COpBall.h>
+
+1379839100 /opt/prj/ball/balld/CCltFutureJob.h
+	<stdhdr.h>
+	<CJob.h>
+	<CBall.h>
+
+1379991664 /opt/prj/ball/balld/CNowFootBall.h
+	<CBall.h>
+
+1379844493 /opt/prj/ball/balld/CCltCurrentJob.h
+	<stdhdr.h>
+	<CJob.h>
+	<CBall.h>
+
+1378713800 /opt/prj/ball/balld/CNowBasketBall.h
+
+1378713800 /opt/prj/ball/balld/CNowTennisBall.h
+
+1378713800 /opt/prj/ball/balld/CNowVolleyBall.h
+
+1378713800 /opt/prj/ball/balld/CNowBaseBall.h
+
+1378713800 /opt/prj/ball/balld/CNowOpBall.h
+
+1379902313 source:/opt/prj/ball/balld/CCltResultJob.cpp
+	<CCltResultJob.h>
+	<CMatchResult.h>
+
+1380003580 source:/opt/prj/ball/balld/CCltFutureThread.cpp
+	<CCltFutureThread.h>
+	<CMysql.h>
+
+1379904201 /opt/prj/ball/balld/CCltFutureThread.h
+	<CThread.h>
+
+1379902213 /opt/prj/ball/balld/CCltResultJob.h
+	<stdhdr.h>
+	<CJob.h>
+	<CBall.h>
+
+1380003586 source:/opt/prj/ball/balld/CCltResultThread.cpp
+	<CCltResultThread.h>
+	<CMysql.h>
+
+1379904305 /opt/prj/ball/balld/CCltResultThread.h
+	<CThread.h>
+
+1380003576 source:/opt/prj/ball/balld/CCltTodayThread.cpp
+	<CCltTodayThread.h>
+	<CMysql.h>
+
+1379904150 /opt/prj/ball/balld/CCltTodayThread.h
+	<CThread.h>
+
+1380003604 source:/opt/prj/ball/balld/CCltCurrentThread.cpp
+	<CCltCurrentThread.h>
+	<CMysql.h>
+
+1379904267 /opt/prj/ball/balld/CCltCurrentThread.h
+	<CThread.h>
+

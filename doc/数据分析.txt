@@ -1,0 +1,55 @@
+gid			1470578
+datetime	09-04 05:00a	日期和时间，到页面转换为24小时制
+league		南韩国家联赛	一个国家的赛事的名称
+gnum_h		30072
+gnum_c		30071
+team_h		天安城			1队
+team_c		龙仁市FC		2队
+strong		C
+ratio		0.5				2队全场-让球
+ior_RH		0.760			1队全场-让球
+ior_RC		1.080			2队全场-让球
+ratio_o		O2.5			1队全场-大小
+ratio_u		U2.5			2队全场-大小
+ior_OUH		0.910			1队全场大小
+ior_OUC		0.910			2队全场-大小
+ior_MH		3.20			1队全场独赢
+ior_MC		1.97			2队全场独赢
+ior_MN		3.30			和 全场独赢
+str_odd		单				1队单双
+str_even	双				2队单双
+ior_EOO		1.96			1队单双结果
+ior_EOE		1.9				2队单双结果
+hgid		1470579
+hstrong		C
+hratio		0 / 0.5			2队半场-让球
+ior_HRH		0.770			1队半场-让球
+ior_HRC		1.070			2队半场-让球
+hratio_o	O1				1队半场-大小
+hratio_u	U1				2队半场-大小
+ior_HOUH	0.860			2队半场-大小
+ior_HOUC	0.960			1队半场-大小
+ior_HMH		4.10			1队半场独赢
+ior_HMC		2.50			2队半场独赢
+ior_HMN		2.10			和 半场独赢
+more		0
+eventid
+hot
+center_tv	N
+play
+
+
+
+足球类型的格式:
+独赢 让球 大小 单双
+Array('gid','datetime','league','gnum_h','gnum_c','team_h','team_c','strong','ratio','ior_RH','ior_RC','ratio_o','ratio_u','ior_OUH','ior_OUC','ior_MH','ior_MC','ior_MN','str_odd','str_even','ior_EOO','ior_EOE','hgid','hstrong','hratio','ior_HRH','ior_HRC','hratio_o','hratio_u','ior_HOUH','ior_HOUC','ior_HMH','ior_HMC','ior_HMN','more','eventid','hot','center_tv','play');
+综合过关:
+Array('gid','datetime','league','gnum_h','gnum_c','team_h','team_c','strong','ratio','ior_PRH','ior_PRC','ratio_o','ratio_u','ior_POUC','ior_POUH','ior_PO','ior_PE','ior_MH','ior_MC','ior_MN','ior_H1C0','ior_H2C0','ior_H2C1','ior_H3C0','ior_H3C1','ior_H3C2','ior_H4C0','ior_H4C1','ior_H4C2','ior_H4C3','ior_H0C0','ior_H1C1','ior_H2C2','ior_H3C3','ior_H4C4','ior_OVH','ior_H0C1','ior_H0C2','ior_H1C2','ior_H0C3','ior_H1C3','ior_H2C3','ior_H0C4','ior_H1C4','ior_H2C4','ior_H3C4','ior_OVC','ior_T01','ior_T23','ior_T46','ior_OVER','ior_FHH','ior_FHN','ior_FHC','ior_FNH','ior_FNN','ior_FNC','ior_FCH','ior_FCN','ior_FCC','hgid','hstrong','hratio','ior_HPRH','ior_HPRC','hratio_o','hratio_u','ior_HPOUH','ior_HPOUC','ior_HH1C0','ior_HH2C0','ior_HH2C1','ior_HH3C0','ior_HH3C1','ior_HH3C2','ior_HH4C0','ior_HH4C1','ior_HH4C2','ior_HH4C3','ior_HH0C0','ior_HH1C1','ior_HH2C2','ior_HH3C3','ior_HH4C4','ior_HOVH','ior_HH0C1','ior_HH0C2','ior_HH1C2','ior_HH0C3','ior_HH1C3','ior_HH2C3','ior_HH0C4','ior_HH1C4','ior_HH2C4','ior_HH3C4','ior_HOVC','ior_HPMH','ior_HPMC','ior_HPMN','more','gidm','par_minlimit','par_maxlimit');
+半场-全场
+Array('gid','datetime','league','gnum_h','gnum_c','team_h','team_c','strong','ior_FHH','ior_FHN','ior_FHC','ior_FNH','ior_FNN','ior_FNC','ior_FCH','ior_FCN','ior_FCC');
+总入球
+Array('gid','datetime','league','gnum_h','gnum_c','team_h','team_c','strong','ior_ODD','ior_EVEN','ior_T01','ior_T23','ior_T46','ior_OVER','ior_MH','ior_MC','ior_MN');
+波胆
+Array('gid','datetime','league','gnum_h','gnum_c','team_h','team_c','strong','ior_H1C0','ior_H2C0','ior_H2C1','ior_H3C0','ior_H3C1','ior_H3C2','ior_H4C0','ior_H4C1','ior_H4C2','ior_H4C3','ior_H0C0','ior_H1C1','ior_H2C2','ior_H3C3','ior_H4C4','ior_OVH','ior_H0C1','ior_H0C2','ior_H1C2','ior_H0C3','ior_H1C3','ior_H2C3','ior_H0C4','ior_H1C4','ior_H2C4','ior_H3C4','ior_OVC');
+
+

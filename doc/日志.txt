@@ -1,0 +1,393 @@
+开发时间：2013/8/28 17:24:40
+
+服务器:
+223.27.37.196
+w16w
+
+http://hg0088.com 菲律宾
+http://hg1088.com 菲律宾
+http://hg3088.com 台湾
+
+
+用户名
+http://w087.hg0088.com
+Wange778
+Wangg6789
+
+http://hg1088.com
+xiu123
+aaa111
+aaa222
+
+账号:
+http://hg3088.com
+cs1688
+q12345678q
+
+账号:
+linux123
+q1234567q
+
+dspi169
+linux12
+q123456q
+
+uid=448e0b6dm10236972l44080627
+http://w151.hg3088.com/app/member/FT_browse/body_var.php?uid=448e0b6dm10236972l44080627&rtype=r&langx=zh-cn&mtype=4&delay=&league_id=&hot_game=
+
+
+页面的元素parent.t_page，就是指当前总共有几页
+
+
+
+
+====2013/8/28 17:25:00
+1.使用webhelper的源码整理出需要的框架
+2.设计balld的流程
+
+端口：6000
+
+
+
+===2013/8/29 18:42:51
+1.完成命令通道对程序的控制
+2.重新封装线程类
+
+===明天
+1.测试线程的睡眠	ok
+2.处理网站数据
+3.使用vc写一个控制balld的界面
+
+mtype是动态的
+
+====2013/9/5 13:42:49
+1.2小时，登陆一次网站，获取一个新的uid	no
+2.循环遍历 滚球 今日赛事 早盘	no
+3.完善命令通道，写一个windows客户端管理服务群
+4.判断网站是否维护，封装成一个函数	ok
+5.单独一个函数，判断结束和睡眠标志有没有改变	ok
+6.客户端获取用户状态
+7.滚球 今日赛事 早盘 3个线程同时采集？	ok
+8.多线程操作信息，加锁
+9.生成网址	ok
+
+3个线程共享用户，
+mid为1	ok
+登陆用户，为单独一个线程
+获取到的数据可能会错乱，必须判断是否存在重复的数据，以id判断
+
+
+
+====2013/9/12 17:44:30
+1.创建一个线程，管理用户与uid，类似webhelper的登陆模块
+2.考虑，停止采集，是否停止线程的运行 ？
+3.线程任务，封装成job形式，实现任务参数化
+4.客户端获取数据，一次性获取全部
+5.命令通道的，命令，整型化
+6.流程图，任务计划书
+7.先完成足球采集类
+8.冠军,赛果,在任何时间任何球型,都一样,不能重复采集
+9.去掉<font...
+足球要去font这些，可以在子类进行
+10.完成数据库操作类
+11.要考虑顺序问题，使用链表
+12.时间使用美国时间，如何处理?
+美国中国时间转换，时间戳转换 12小时
+13.翻墙命令
+ssh -qTfnN -D [local proxy port] root@[remote ip] -p[remote port]
+socket v5
+重启浏览器
+
+14.换行符
+15.更多
+
+16.滚球类，继承CFootBall
+基类的处理函数修改为虚函数
+足球:
+独赢 一样，不修改
+波胆,字段不一样，要修改,所有字段多一个R
+总入球，同上
+半全场，同上
+
+17.配置文件
+
+18.足球中场，值设为100
+
+
+
+编号			id				自动生成
+运动项目ID		match_id		gid
+运动项目半场ID	match_halfId	hgid
+运动项目名称	match_name		league
+主队球队ID		master_id		gnum_h
+主队球队名称	master_name		team_h
+客队ID			guest_id		gnum_c
+客队名称		guest_name		team_c
+开赛日期		match_date		datetime日期
+开赛时间		match_time		datetime时间 24小时
+添加时间		add_date		
+比赛时间		cover_date		转换time_t
+当前比赛时间	match_curTime	滚球-timer上下半场时间	滚球使用
+是否结束		match_isclose	
+比赛结束时间	match_endTime	
+结果比分		score			json 累加	滚球使用
+{
+	score_h:1 host
+	score_c:2 custom
+	time:22
+}
+{xxx};{xxx};
+比赛类型		match_type		datetime日期字段后面内容 <font color=red>Running Ball</font> 代表有滚球
+独赢赔率		dy				json	更新
+{
+	full:
+	{
+		ior_MH:1
+		ior_MC:1
+		ior_MN:1
+	}
+	half:
+	{
+		ior_HMH:1
+		ior_HMC:1
+		ior_HMN:1
+	}
+}
+让球数			rqnum			json 更新
+{
+	full:
+	{
+		strong:H/C
+		ratio:0.5
+	}
+	half:
+	{
+		strong:H/C
+		ratio:0.5
+	}
+}
+让球赔率		rq				json 更新
+{
+	full:
+	{
+		ior_RH:1
+		ior_RC:1
+	}
+	half:
+	{
+		ior_RH:1
+		ior_RC:1
+	}
+}
+大小数			dxnum			json 更新
+{
+	full:
+	{
+		ratio_o:O2 / 2.5
+		ratio_u:U2 / 2.5
+	}
+	half:
+	{
+		hratio_o:O1
+		hratio_u:U1
+	}
+}
+大小赔率		dx				json 更新
+{
+	full:
+	{
+		ior_OUH:1	
+		ior_OUC:1	
+	}
+	half:
+	{
+		ior_HOUH:1
+		ior_HOUC:1
+	}
+}
+单赔率			dan				更新
+双赔率			shuang			更新
+X滚球赔率		exp				
+X进球数			jq				
+比赛显示类型	match_showType	
+红黄牌角球等	rlj				json 获取结果的时候更新数据库
+{
+	获取所有数据
+	http://w151.hg3088.com/app/member/result/result_sp.php?uid=79ac91e3m10266692l45542026&gtype=FT&gid=1477152&langx=zh-cn
+}
+波胆			bodan			json 更新
+{
+	bdH:
+	[6.5,7....]
+	bdC:
+	[14,31,...]
+	bdO:
+	[10, 7..]
+}
+总入球			zrq		json 更新
+{
+	total:[3, 1.75 ]
+}
+
+半场/全场		bqc			json 更新
+{
+	full:[3, 1.75 ]
+}
+
+
+
+
+
+
+
+balld命令通道控制协议:
+命令格式:
+开始采集:
+{
+	cmd : start
+	data: 空
+}
+
+
+停止采集:
+{
+	cmd : stop
+	data: 空
+}
+
+退出程序:
+{
+	cmd : quit
+	data: 空
+}
+
+心跳测试:
+{
+	cmd : heart
+	data: 空
+}
+若没有响应，说明服务端没有开启
+
+添加N个用户信息:
+改进版:
+{
+	cmd : adduser
+	data:
+	[
+		用户名|密码,
+		用户名|密码,
+		用户名|密码,
+		...,
+		用户名|密码
+	]
+}
+
+添加N个网址:
+改进版:
+{
+	cmd : addurl
+	data:
+	[
+		网址1,
+		网址2,
+		网址3,
+		...,
+		网址n
+	]
+}
+
+设置信息:
+{
+	cmd : set
+	data:
+	{
+		sqladdr		: 数据库地址
+		sqluser		: 数据库用户名
+		sqlpasswd	: 数据库密码
+	}
+}
+2013/9/6 14:40:43
+//获取版本信息:
+{
+	cmd : version
+	data: 空
+}
+
+#####添加协议
+删除用户
+{
+	cmd : deluser
+	data:
+	[
+		user1,
+		user2,
+		...,
+		usern
+	]
+}
+
+清空用户
+{
+	cmd : clearuser
+	data: 空
+}
+
+删除网址
+{
+	cmd : delurl
+	data:
+	[
+		url1,
+		url2,
+		...,
+		urln
+	]
+}
+
+清空网址
+{
+	cmd : clearurl
+	data: 空
+}
+
+采集周期
+{
+	cmd : cltperiod
+	data:
+	{
+		today 	: x	//今日
+		future	: y //早盘
+		current : z //滚球
+	}
+}
+
+
+保存在本地客户端
+
+命令响应:
+2种情况:
+1.
+客户端发送过来的数据错误:
+dataerror
+
+2.命令的处理结果
+{
+	cmd : 命令
+	data: 
+	{
+		res : yes/no/版本信息
+	}
+}
+
+通信数据均采用AES加密方式：
+AES#
+
+
+{"cmd":"quit","data":""}#
+{"cmd":"start","data":""}#
+{"cmd":"stop","data":""}#
+{"cmd":"heart","data":""}#
+{"cmd":"version","data":""}#
+
+{"cmd":"addurl","data":["http://www.hg0088.com","http://www.hg1088.com","http://www.hg3088.com"]}#
+{"cmd":"adduser","data":["Wange778|Wangg6789","cs1688|q12345678q"]}#
